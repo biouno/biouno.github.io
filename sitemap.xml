@@ -8,7 +8,82 @@
 
 <url>
   <loc>http://www.biouno.org/</loc>
-  <changefreq>always</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/jenkins-plugins</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/update-site</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/docs/getting-started</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/docs/scheduling-your-first-job</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/docs/configuring-job-notification</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/docs/reproducing-an-existing-pipeline</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/tools/running-mrbayes-with-jenkins</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/tools/running-structure-in-parallel-with-jenkins</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/tools/creating-a-pipeline-using-mrbayes%20and-figtree</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/tools/using-jenkins-r-plugin</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/tools/creating-graphs-with-r-and-creating-image-galleries</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/team</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/sponsors</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/license</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.biouno.org/contact</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
 </urlset>
