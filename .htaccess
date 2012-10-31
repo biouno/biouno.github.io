@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond $1 !^(google33e27ff3c33225af.html|index\.php|assets|uploads|robots\.txt)
+RewriteCond $1 !^(index\.php|assets|robots\.txt)
 RewriteRule ^(.*)$ /biouno.org/index.php/$1 [L]
 </IfModule>
 

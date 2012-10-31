@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Oct 31, 2012 1:17:29 PM                                                        
+
+     biouno.org site    
+     
+     BioUno web site http://www.biouno.org. Written in PHP, using CodeIgniter, 
+     Template Hook, Twitter Bootstrap and  Eclipse IDE.
+     
+     Bruno P. Kinoshita                                                                
+     ====================================================================== -->
+<project name="biouno.org site" default="usage">
+    
+	<description>
+            BioUno web site http://www.biouno.org. Written in PHP, using CodeIgniter, 
+    	    Template Hook, Twitter Bootstrap and  Eclipse IDE.
+    </description>
+
+    <!-- ================================= 
+          target: usage              
+         ================================= -->
+    <target name="usage" depends="clean" description="Prints build usage">
+        <echo message="clean: removes dist directory and its contents" />
+    	<echo message="dist: prepares dist directory with a production ready web site" />
+    	<echo message="usage: prints this help menu" />
+    </target>
+	
+	<!-- ================================= 
+          target: dist              
+         ================================= -->
+    <target name="dist" depends="clean" description="Creates production ready site">
+        <mkdir dir="${basedir}/dist"/>
+    	<copy todir="${basedir}/dist">
+    	   <fileset dir="${basedir}">
+    	      <include name="application/**" />
+    	      <include name="system/**" />
+    	   	  <include name="assets/**" />
+    	   </fileset>
+    	   <fileset dir="${basedir}">
+              <include name="robots.txt" />
+    	   	  <include name="favicon.ico" />
+    	   	  <include name="sitemap.xml" />
+           </fileset>
+    	</copy>
+    	<copy todir="${basedir}/dist" overwrite="true">
+           <!-- .htaccess and index.php -->
+           <fileset dir="${basedir}/build">
+              <include name="**/**" />
+           </fileset>
+        </copy>
+    </target>
+	
+	<!-- ================================= 
+          target: deploy              
+         ================================= -->
+    <target name="deploy" depends="dist" description="Deploys via FTP to the server">
+    	<input message="Please enter SSH user:" addproperty="ssh.username" />
+    	<!--input message="Please enter SSH host:" addproperty="ssh.host" /-->
+    	<!--input message="Please enter SSH dir:" addproperty="ssh.dir" /-->
+    		
+    	<exec executable="rsync" dir="${basedir}/dist" failonerror="true">
+	      <arg value="-r"/>
+	      <arg value="."/>
+	      <arg value="${ssh.username}@biouno.org:/var/www/biouno.org/"/>
+	      <arg value="--exclude-from=${basedir}/rsync.excludes"/>
+	      <arg value="-v"/>
+	    </exec>
+    </target>
+
+
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+    <target name="clean" description="Cleans dist directory">
+        <delete dir="${basedir}/dist" failonerror="false" />
+    </target>
+
+</project>
