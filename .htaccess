@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond $1 !^(index\.php|assets|robots\.txt)
+RewriteCond $1 !^(index\.php|assets|plugins|robots\.txt)
 RewriteRule ^(.*)$ /biouno.org/index.php/$1 [L]
 </IfModule>
 

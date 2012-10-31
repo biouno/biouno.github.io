@@ -24,7 +24,7 @@
 					the posterior distribution of model parameters.</td>
 				<td><a href="http://mrbayes.sourceforge.net/" title="MrBayes">http://mrbayes.sourceforge.net/</a>
 				</td>
-				<td><a href="http://www.biouno.org/bin/mrbayes.hpi">mrbayes.hpi</a>
+				<td><a href="{base_url}plugins/mrbayes.hpi">mrbayes.hpi</a>
 				</td>
 			</tr>
 			<tr>
@@ -36,7 +36,7 @@
 					and as a program for producing publication-ready figures</td>
 				<td><a href="http://tree.bio.ed.ac.uk/software/figtree/"
 					title="FigTree">http://tree.bio.ed.ac.uk/software/figtree/</a></td>
-				<td><a href="http://www.biouno.org/bin/figtree.hpi">figtree.hpi</a>
+				<td><a href="{base_url}plugins/figtree.hpi">figtree.hpi</a>
 				</td>
 			</tr>
 			<tr>
@@ -52,7 +52,7 @@
 				<td><a href="http://pritch.bsd.uchicago.edu/software.html"
 					title="Structure">http://pritch.bsd.uchicago.edu/software.html</a>
 				</td>
-				<td><a href="http://www.biouno.org/bin/structure.hpi">structure.hpi</a>
+				<td><a href="{base_url}plugins/structure.hpi">structure.hpi</a>
 				</td>
 			</tr>
 			<tr>

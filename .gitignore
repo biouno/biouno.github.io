@@ -11,6 +11,8 @@
 *.sass-cache
 
 wp-config.php
+plugins/*
+dist/*
 
 # OS or Editor folders
 .DS_Store
