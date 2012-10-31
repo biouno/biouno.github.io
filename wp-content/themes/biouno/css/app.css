@@ -1,0 +1,122 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+body { 
+	margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body { padding: 10px 0px; }
+body.admin-bar .navbar-fixed-top {  }
+
+
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+#logo h1 {
+	text-indent: -50000em;
+	width: 450px;
+	height: 95px;
+	background-image: url('../img/biouno.png');
+	background-repeat: no-repeat;
+}
+
+#content { }
+
+#menu { 
+padding: 0px 0px;
+}
+
+.well-lean {
+	padding: 10px 0px;
+	margin: 0px 0px;
+}
+
+/* =============================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { }
+
+
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar { }
+
+
+
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry h2 a { text-decoration: none; }
+.hentry time { display: block; }
+.hentry p.byline { }
+.hentry footer { clear: both; }
+
+
+
+/* =============================================================================
+   Post Comments
+   ========================================================================== */
+
+#comments, #respond, #submit { clear: both; display: block; }
+ol.commentlist img.avatar { float: left; margin-right: 10px; }
+
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#content-info {
+  margin-top: 20px;;
+  padding: 10px 0 0px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+#content-info p small { font-size: 13px; }
+
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body {
+    padding-top: 0;
+  }
+}
