@@ -2,9 +2,19 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    color: #444444;
+    font: 13px/1.2 Arial, sans-serif;
+    color: #222222;
+}
+
+p {
+	line-height: 1.4em;
+	margin-bottom: 1em;
+	vertical-align: baseline;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 
 #sidebar {
@@ -12,9 +22,21 @@ html, button, input, select, textarea,
 }
 
 header h1 {
-	color: #0088cc;;
+	color: #333333;
 	margin: 4px 20px;
 	padding: 0px 0px;
+	font-family: 'Londrina Solid', cursive;
+	font-size: 60px;
+	font-weight: normal;
+}
+
+div.page-header h1 {
+	color: #333333;
+	margin: 4px 0px;
+	padding: 0px 0px;
+	font-family: 'Londrina Solid', cursive;
+	font-size: 48px;
+	font-weight: normal;
 }
 
 header h2 {
