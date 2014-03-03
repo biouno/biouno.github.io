@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>BioUno | {{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -44,46 +44,46 @@
         <h1>{{ site.title }}</h1>
         <h2>{{ site.tagline }}</h2>
       </header>
-      <section id="sidebar">
-        <div class='pure-u-6-24'>
+        <div class='pure-u-5-24'>
           <div class="l-box">
             <div class="pure-menu pure-menu-open">
                 <a class="pure-menu-heading">Principal</a>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Jenkins Plug-ins</a></li>
-                    <li><a href="#">Jenkins update site</a></li>
+                    <li><a href="{{ site.baseurl }}">Home</a></li>
+                    <li><a href="{{ site.baseurl }}jenkins-plugins.html">Jenkins Plug-ins</a></li>
+                    <li><a href="{{ site.baseurl }}jenkins-update-site.html">Jenkins Update Site</a></li>
                 </ul>
 
                 <a class="pure-menu-heading">Documentation</a>
 
                 <ul>
-                    <li><a href="#">Getting started with Jenkins</a></li>
-                    <li><a href="#">Scheduling your first job</a></li>
-                    <li><a href="#">Configuring job notification</a></li>
-                    <li><a href="#">Installing plug-ins</a></li>
-                    <li><a href="#">Reproducing an existing pipeline</a></li>
-                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="{{ site.baseurl }}getting-started-with-jenkins.html">Getting started with Jenkins</a></li>
+                    <li><a href="{{ site.baseurl }}scheduling-your-first-job.html">Scheduling your first job</a></li>
+                    <li><a href="{{ site.baseurl }}configuring-job-notification.html">Configuring job notification</a></li>
+                    <li><a href="{{ site.baseurl }}installing-plugins.html">Installing plug-ins</a></li>
+                    <li><a href="{{ site.baseurl }}tutorials.html">Tutorials</a></li>
                 </ul>
 
                 <a class="pure-menu-heading">Project Information</a>
 
                 <ul>
-                    <li><a href="#">Publications</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Sponsors</a></li>
-                    <li><a href="#">License</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ site.baseurl }}blog.html">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}publications.html">Publications</a></li>
+                    <li><a href="{{ site.baseurl }}team.html">Team</a></li>
+                    <li><a href="{{ site.baseurl }}sponsors.html">Sponsors</a></li>
+                    <li><a href="{{ site.baseurl }}license.html">License</a></li>
+                    <li><a href="{{ site.baseurl }}contact.html">Contact</a></li>
                 </ul>
             </div>
           </div>
         </div>
-        <div class='pure-u-18-24'>
+        <div class='pure-u-16-24'>
           <div class='l-box'>
             {{ content }}
           </div>
         </div>
+        <div class="pure-u-3-24">&nbsp;</div>
         <footer class='pure-u-1-1'>
           <div class="l-box">
             <p>&copy; 2011-{{ site.time | date: '%Y' }} {{ site.author.name }}</p>

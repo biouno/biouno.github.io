@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BioUno
+title: The BioUno project
 ---
 BioUno is a project that applies Continuous Integration tools and techniques in Bioinformatics. 
 It uses tools like Jenkins for creating biology workflows and to manage computer clusters.
@@ -12,3 +12,5 @@ And it uses Jenkins slaves as general-purpose computing grid.
 Jenkins can also be used to glue scripts and programs in your existing pipeline in Galaxy, 
 Taverna, Mobyle or CloudGene. Read more about how to use Jenkins to orchestrate 
 existing biology pipelines.
+
+Check out our [blog]({{ site.baseurl }}blog.html) for the latest news about the project.
