@@ -53,3 +53,6 @@ title: Installing Plug-ins
 
 <p>Wait until the screen is refreshed and voilà, you have just
 	installed your first plug-in.</p>
+
+In order to install BioUno Jenkins Plug-ins, you will have to add our 
+[update site]({{ site.baseurl }}jenkins-update-site.html).

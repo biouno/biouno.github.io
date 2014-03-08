@@ -11,56 +11,44 @@ stores all bio-plugins, like MrBayes and FigTree.
 You can install any plug-in automatically using the Web user
 interface or by running a command in your shell.
 
-<table class="pure-table pure-table-bordered">
-	<colgroup>
-		<col width="25%" />
-		<col width="60%" />
-		<col width="15%" />
-	</colgroup>
+<table class="pure-table pure-table-bordered" style='width: 100%'>
 	<tbody>
 		<tr>
-			<th colspan="4" style="background-color: #EEEEEE">Grid computing</th>
+			<th colspan="2" style="background-color: #EEEEEE">Grid computing</th>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/pbs-plugin" title="Jenkins PBS Plug-in">PBS Plug-in</a></td>
 			<td>This plug-ins lets you use Jenkins to control a <a href="http://www.adaptivecomputing.com/products/open-source/torque/">Torque PBS</a> cluster.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/pbs-plugin/lastStableBuild/org.jenkins-ci.plugins$pbs/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
-			<th colspan="4" style="background-color: #EEEEEE">Phylogenetics</th>
+			<th colspan="2" style="background-color: #EEEEEE">Phylogenetics</th>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/mrbayes-plugin" title="Jenkins MrBayes Plug-in">MrBayes Plug-in</a></td>
 			<td>Integrates <a href="http://mrbayes.sourceforge.net/">MrBayes</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/mrbayes-plugin/lastStableBuild/org.jenkins-ci.plugins$mrbayes/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/figtree-plugin" title="Jenkins FigTree Plug-in">FigTree Plug-in</a></td>
 			<td>Integrates <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/figtree-plugin/lastStableBuild/org.jenkins-ci.plugins$figtree/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
-			<th colspan="4" style="background-color: #EEEEEE">Genetic Analysis</th>
+			<th colspan="2" style="background-color: #EEEEEE">Genetic Analysis</th>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/structure-plugin" title="Jenkins Structure Plug-in">Structure Plug-in</a></td>
 			<td>Integrates <a href="http://pritch.bsd.uchicago.edu/software.html">Structure</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/structure-plugin/lastStableBuild/org.biouno$structure/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/structure-harvester-plugin" title="Jenkins Structure Harvester Plug-in">Structure Harvester Plug-in</a></td>
 			<td>Integrates <a href="http://taylor0.biology.ucla.edu/structureHarvester/">Structure Harvester</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/structure-harvester-plugin/lastStableBuild/org.biouno$structure-harvester/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/clumpp-plugin" title="Jenkins CLUMPP Plug-in">CLUMPP Plug-in</a></td>
 			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/clumpp.html">CLUMPP</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/clumpp-plugin/lastStableBuild/org.biouno$clumpp/">Download Plug-in .hpi</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/distruct-plugin" title="Jenkins Distruct Plug-in">Distruct Plug-in</a></td>
 			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/distruct.html">Distruct</a> and Jenkins.</td>
-			<td><a href="https://buildhive.cloudbees.com/job/biouno/job/distruct-plugin/lastStableBuild/org.biouno$distruct/">Download Plug-in .hpi</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -70,7 +58,7 @@ interface or by running a command in your shell.
 Jenkins already has several plug-ins that you can find useful for your lab. We have listed a few plug-ins below with 
 a brief description.
 
-<table class="pure-table pure-table-bordered">
+<table class="pure-table pure-table-bordered" style='width: 100%'>
 	<thead>
 		<tr>
 			<th>Plug-in name</th>
