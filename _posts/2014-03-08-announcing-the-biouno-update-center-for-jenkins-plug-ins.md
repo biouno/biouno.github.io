@@ -3,13 +3,7 @@ layout: post
 title: "Announcing the BioUno Update Center for Jenkins plug-ins"
 description: "Our Jenkins plug-ins will be available online for all Jenkins instances"
 category: 
-tags: [
-	"news",
-	"announce",
-	"jenkins",
-	"update-center",
-	"plugins"
-]
+tags: ["news","announce","jenkins","update-center","plugins"]
 ---
 {% include JB/setup %}
 
@@ -22,3 +16,6 @@ be able to use Jenkins interface (or scripts) to download plug-ins.
 
 Follow the instructions in the page [Jenkins Update Site]({{site.baseurl}}jenkins-update-site.html) 
 to add the new update center and have fun hacking your Jenkins.
+
+ps. Thanks to the [@ikedam](https://github.com/ikedam) for the perfect 
+instructions on [how to create an update center for Jenkins](https://github.com/ikedam/backend-update-center2/wiki/How-to-create-your-own-Jenkins-Update-Center).
