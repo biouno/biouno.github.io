@@ -6,7 +6,8 @@ BioUno is a project that applies Continuous Integration tools and techniques in 
 It uses tools like Jenkins for creating biology workflows and to manage computer clusters.
 
 <div class='center'>
-<iframe width="500" height="315" src="http://www.youtube.com/embed/6Dl6V249W30" frameborder="0"></iframe>
+<div id="videoplayer" style="display:none;">&nbsp;</div>
+<img src="{{ site.baseurl }}assets/img/video.png" id="videoimage" />
 </div>
 
 Jenkins plug-in API is used for creating wrappers for tools like MrBayes, Structure, R and scripts 
@@ -18,4 +19,3 @@ Taverna, Mobyle or CloudGene. Read more about how to use Jenkins to orchestrate
 existing biology pipelines.
 
 Check out our [blog]({{ site.baseurl }}blog.html) for the latest news about the project.
-
