@@ -20,7 +20,8 @@ existing biology pipelines.
 
 Check out our [blog]({{ site.baseurl }}blog.html) for the latest news about the project.
 
-<script type='text/javascript'\>
+<script type='text/javascript'>
+
 $(function() {
 	$('#videoimage').click(function() {
 		$('#videoplayer').show();
@@ -28,4 +29,4 @@ $(function() {
 		$('#videoimage').hide();
 	});
 });
-</script\>
+</script>
