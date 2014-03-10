@@ -14,8 +14,9 @@ title: Running Structure in parallel using Jenkins slaves
 	<strong>TL;DR</strong>
 </p>
 
-<div class="center">
-	<object width="420" height="315"><param name="movie" value="//www.youtube-nocookie.com/v/4xZh6xxiTv4?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube-nocookie.com/v/4xZh6xxiTv4?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<div class='center'>
+<div id="videoplayer" style="display:none;">&nbsp;</div>
+<img src="{{ site.baseurl }}assets/img/video2.png" id="videoimage" width="500" />
 </div>
 
 <p>
@@ -175,3 +176,13 @@ title: Running Structure in parallel using Jenkins slaves
 		<img src="{{ site.baseurl }}assets/img/screenshot_structure_014.png">
 	</a>
 </p>
+
+<script type='text/javascript'>
+$(function() {
+	$('#videoimage').click(function() {
+		$('#videoplayer').show();
+		$('#videoplayer').append("<iframe width='500' height='315' src='http://www.youtube.com/embed/4xZh6xxiTv4' frameborder='0' allowfullscreen='allowfullscreen'></iframe>");
+		$('#videoimage').hide();
+	});
+});
+</script>
