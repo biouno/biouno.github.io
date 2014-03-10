@@ -178,6 +178,7 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <script type='text/javascript'>
+
 $(function() {
 	$('#videoimage').click(function() {
 		$('#videoplayer').show();
@@ -185,4 +186,5 @@ $(function() {
 		$('#videoimage').hide();
 	});
 });
+
 </script>
