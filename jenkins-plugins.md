@@ -55,7 +55,7 @@ interface or by running a command in your shell.
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Distruct Plug-in">Uno-Choice Plug-in</a></td>
-			<td>UI enhancements to dynamic parameter generation in Jenkins</td>
+			<td>A proposal for a new Jenkins UI plugin for selecting one or multiple parameters. Attempting to fill the gaps left by current plugin options. </td>
 		</tr>
 	</tbody>
 </table>
