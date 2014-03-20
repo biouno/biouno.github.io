@@ -50,6 +50,13 @@ interface or by running a command in your shell.
 			<td><a href="https://github.com/biouno/distruct-plugin" title="Jenkins Distruct Plug-in">Distruct Plug-in</a></td>
 			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/distruct.html">Distruct</a> and Jenkins.</td>
 		</tr>
+		<tr>
+			<th colspan="2" style="background-color: #EEEEEE">UI</th>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Distruct Plug-in">Uno-Choice Plug-in</a></td>
+			<td>UI enhancements to dynamic parameter generation in Jenkins</td>
+		</tr>
 	</tbody>
 </table>
 
