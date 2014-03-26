@@ -55,7 +55,18 @@ interface or by running a command in your shell.
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Distruct Plug-in">Uno-Choice Plug-in</a></td>
-			<td>A proposal for a new Jenkins UI plugin for selecting one or multiple parameters. Attempting to fill the gaps left by current plugin options. </td>
+			<td>A proposal for a new Jenkins UI plugin for selecting one or multiple parameters. Attempting to fill the gaps left by current plugin options.</td>
+		</tr>
+		<tr>
+			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin" title="Image Gallery  Plug-in">Image Gallery Plug-in</a></td>
+			<td>This plug-in reads a job workspace and collects images to produce an image gallery using colorbox lightbox Javascript library.</td>
+		</tr>
+		<tr>
+			<th colspan="2" style="background-color: #EEEEEE">Misc</th>
+		</tr>
+		<tr>
+			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin" title="R Plug-in">R Plug-in</a></td>
+			<td>A simple plug-in to invoke R interpreter and execute an R script.</td>
 		</tr>
 	</tbody>
 </table>
