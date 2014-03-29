@@ -14,5 +14,6 @@ The project roadmap includes in no specific order:
 - Create automated release notes
 - Add a citation standard for plug-ins (and external tools used as well)
 - Create a cron or Jenkins (or a monitored cron) job to update the [plug-ins update center](http://biouno.org/jenkins-update-site.html)
+- Work on the improvement of capturing and searching analysis of metadata (Thanks for [@imoutsatsos](https://github.com/imoutsatsos) for the suggestion)
 
 Would you like to see any other item in the roadmap? [Send us your suggestions](https://github.com/biouno/biouno.github.io/issues/new).
