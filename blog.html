@@ -1,10 +1,22 @@
 ---
 layout: page
-title : Archive
-header : Post Archive
+title : Blog
+header : Blog
 group: navigation
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+<div id='blog'>
+	{% for post in site.posts %}
+	<div>
+	   <h3><a href="{{ site.production_url }}{{ post.url }}">{{ post.title }}</a></h3>
+	   <span class='subtitle'><small><em>{{ post.date | date: "%-d %B %Y" }} by {{ post.author }}</em></small></span>
+	   <div>
+	   {{ post.content | raw }}
+	   </div>
+	</div>
+	<hr/>
+	{% endfor %}
+
+	<p class='right'><a href="{{ site.baseurl }}archive.html">Blog Archive</a></p>
+</div>

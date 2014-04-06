@@ -4,6 +4,7 @@ title: "The BioUno blog is live"
 description: "Our first post in our brand new blog in our re-designed web site"
 category: 
 tags: ["news", "announce"]
+author: BioUno team
 ---
 {% include JB/setup %}
 

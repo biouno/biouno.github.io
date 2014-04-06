@@ -4,6 +4,7 @@ title: "Uno-Choice: Our first user contributed plug-in"
 description: "Uno-Choice was proposed to BioUno project by Ioannis Moutsatsos"
 category: 
 tags: ["news","announce","jenkins","update-center","plugins", "uno-choice-plugin"]
+author: BioUno team
 ---
 {% include JB/setup %}
 

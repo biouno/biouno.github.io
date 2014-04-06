@@ -57,3 +57,27 @@ footer p {
 .center {
 	text-align: center;
 }
+
+.right {
+	text-align: right;
+}
+
+#blog > div > h3 {
+	margin-bottom: 2px;
+}
+
+#blog > div > span.subtitle {
+	color: #666666;
+}
+
+#blog a {
+	color: #2c3e50;
+}
+
+#blog a:visited {
+	color: #34495e;
+}
+
+#blog a:current {
+	color: #34495e;
+}
