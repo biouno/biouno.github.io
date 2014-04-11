@@ -11,5 +11,6 @@ title: Publications
 ##Articles
 
 - Ioannis Moutsatsos (2012). Jenkins-CI: A script execution platform for lab scientists. [Toolbox.com](http://it.toolbox.com/blogs/life-science-dev/jenkinsci-a-script-execution-platform-for-lab-scientists-54237).
+- Bruno P. Kinoshita (2012). Jenkins and Bioinformatics, catch us at BOSC 2012. [Jenkins-CI Blog](http://jenkins-ci.org/content/jenkins-and-bioinformatics-catch-us-bosc-2012)
 
 Did you use BioUno in your paper? [Send us]({{ site.baseurl }}contact.html) your details and we will include your publication to the list.
