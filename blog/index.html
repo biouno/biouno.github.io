@@ -14,17 +14,11 @@ group: navigation
 	   <span class='subtitle'><small><em>{{ post.date | date: "%-d %B %Y" }} by {{ post.author }}</em></small></span>
 	   <div>
 	    {% if post.content contains '<!--more-->' %}
-    
 		    {{ post.content | split:'<!--more-->' | first }}
-		    
 		    <p><a href="{{ post.url }}">Continue reading</a></p>
-
 		{% else %}
-
 		    {{ post.content | raw }}
-		    
 		{% endif %}
-	   
 	   </div>
 	</div>
 	<hr/>
