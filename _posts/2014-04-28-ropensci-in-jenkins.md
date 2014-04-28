@@ -42,6 +42,8 @@ Now click the "Add build step" and select "Execute R script". That will add a te
 can write your R script. Let's copy and paste the taxize example from rOpenSci, with one modeification 
 to create a PNG with the tree.
 
+<!--more-->
+
 {% highlight r %}
 library('taxize')
 taxa <- c("Poa annua", "Phlox diffusa", "Helianthus annuus")
