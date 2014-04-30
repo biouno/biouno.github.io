@@ -8,7 +8,7 @@ author: BioUno team
 ---
 {% include JB/setup %}
 
-[rOpenSci](http://ropensci.org/) is an Open Data project. Its R packages that access to several data repositories. In this post we will demonstrate how to use rOpenSci taxize package with Jenkins and the [R Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin).
+[rOpenSci](http://ropensci.org/) is an Open Data project. It has many R packages that access several data repositories. In this post we will demonstrate how to use rOpenSci taxize package with Jenkins and the [R Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin).
 
 ## Install necessary tools
 
