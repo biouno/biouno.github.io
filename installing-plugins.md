@@ -42,7 +42,7 @@ title: Installing Plug-ins
 <p>
 	In newer versions of Jenkins you can install some plug-ins without
 	having to restart. All you have to do is just click on <em>Install
-		withouth restart</em>.
+		without restart</em>.
 </p>
 
 <p class="center">

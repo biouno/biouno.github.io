@@ -39,7 +39,7 @@ any name you want.
 </center>
 
 Now click the "Add build step" and select "Execute R script". That will add a textarea where you 
-can write your R script. Let's copy and paste the taxize example from rOpenSci, with one modeification 
+can write your R script. Let's copy and paste the taxize example from rOpenSci, with one modification 
 to create a PNG with the tree.
 
 <!--more-->

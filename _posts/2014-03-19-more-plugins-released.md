@@ -15,7 +15,7 @@ first plug-ins released were the Structure and PBS plug-ins.
 Structure Harvester is a Python utility with a web interface. 
 It is useful to extract relevant data from Structure. CLUMPP is used 
 usually after Structure and Structure Harvester. It is able to permute 
-the clusters output by independet runs so that they match up as 
+the clusters output by independent runs so that they match up as 
 closely as possible.
 
 <center><img src='{{ site.baseurl }}assets/posts/SCIENCE.gif' alt="SCIENCE" /></center>

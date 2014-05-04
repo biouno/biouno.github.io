@@ -23,7 +23,7 @@ title: Scheduling your first job
 
 <p>
 	Okay, now you have to find the <em>Build Triggers</em> section and
-	check the box that says <em>Build periodicatlly</em>. There will
+	check the box that says <em>Build periodically</em>. There will
 	appear a box where you can schedule jobs using a CRON-like syntax.
 </p>
 

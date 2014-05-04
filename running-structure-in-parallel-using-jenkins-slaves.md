@@ -38,7 +38,7 @@ title: Running Structure in parallel using Jenkins slaves
 <p>
 	After this you can create a job in Jenkins to run Structure. A simple 
 	FreeStyle job is enough to run Structure in a single machine (local or 
-	remotely). But for running Structure in parallel accross many nodes, 
+	remotely). But for running Structure in parallel across many nodes, 
 	you'll need a Multi-configuration job. Give it any name. We are using 
 	the <a href="http://bodegaphylo.wikispot.org/Structure">Bodega 
 	tutorial on Structure</a> data as example.

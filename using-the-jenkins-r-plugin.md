@@ -59,7 +59,7 @@ title: Using the Jenkins R Plug-in
 
 <p>And here's the output of the R script that you executed in Jenkins.
 	You can use this plug-in for computing statistics, plotting, measuring
-	fuzzyness of sets, among other interesting stuff that you can do with
+	fuzziness of sets, among other interesting stuff that you can do with
 	this plug-in.</p>
 
 <p class="center">
