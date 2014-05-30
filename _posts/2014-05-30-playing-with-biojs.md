@@ -32,7 +32,7 @@ framework agnostic (which is great) and each component may have different depend
 The simplest way to produce artifacts using BioJS in Jenkins, and serve the content 
 from Jenkins is by using CDN's for retrieving the JS files, and the 
 [HTML Publisher](https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin) 
-plug-in to archive and serve the HTML's. 
+plug-in to archive and serve the HTML's. As in [this sample build](http://builds.tupilabs.com/view/BioUno/job/biojs-samples/Sequence_example_1/?).
 
 Some components use Ajax requests to dynamically update the UI. For these components a 
 callback would have to be implemented in a plug-in for Jenkins. So the simplest approach 
