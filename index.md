@@ -5,6 +5,8 @@ title: The BioUno project
 BioUno is a project that applies Continuous Integration tools and techniques in Bioinformatics. 
 It uses tools like Jenkins for creating biology workflows and to manage computer clusters.
 
+<a href='https://pledgie.com/campaigns/25521'><img alt='Click here to lend your support to: BioUno: applying continuous integration techniques and tools to bioinformatics and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/25521.png?skin_name=chrome' border='0' ></a>
+
 <div class='center'>
 <div id="videoplayer" style="display:none;">&nbsp;</div>
 <img src="{{ site.baseurl }}assets/img/video.png" id="videoimage" width="500" />
