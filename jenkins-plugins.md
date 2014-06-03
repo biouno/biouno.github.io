@@ -51,10 +51,17 @@ interface or by running a command in your shell.
 			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/distruct.html">Distruct</a> and Jenkins.</td>
 		</tr>
 		<tr>
+			<th colspan="2" style="background-color: #EEEEEE">Chemical Structures</th>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/biouno/jmol-plugin" title="Jmol Plug-in">Jmol Plug-in</a></td>
+			<td>Renders Jmol molecules in the build page, using Jmol Javascript library</td>
+		</tr>
+		<tr>
 			<th colspan="2" style="background-color: #EEEEEE">UI</th>
 		</tr>
 		<tr>
-			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Distruct Plug-in">Uno-Choice Plug-in</a></td>
+			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Plug-in">Uno-Choice Plug-in</a></td>
 			<td>A proposal for a new Jenkins UI plugin for selecting one or multiple parameters. Attempting to fill the gaps left by current plugin options.</td>
 		</tr>
 		<tr>
