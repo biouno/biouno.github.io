@@ -18,6 +18,8 @@ and monitor jobs from Jenkins to a PBS server. James Hetherington proposed enhan
 [pbs-java-api](https://github.com/biouno/pbs-java-api) and PBS Plug-in, including supporting other 
 batch servers like SGE.
 
+<!--more-->
+
 Our pbs-java-api was implemented to quickly prototype the PBS Plug-in. It was highly influenced by 
 the [pbs4java](https://code.google.com/p/pbs4java/). We didn't use this existing API due to 
 the number of changes required to release it to Maven Central (code format, Object design and Mavenization). 
