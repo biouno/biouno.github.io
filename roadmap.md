@@ -5,15 +5,47 @@ title: Roadmap
 
 The project roadmap includes in no specific order:
 
-- Finish our first paper
-- Write more plug-ins for phylogenetics and other areas
-- Integrate Jenkins and [Galaxy](http://galaxyproject.org/) (we can use a lot of nice UI features from Galaxy)
-- Take a look at how [CellProfiler](http://cellprofiler.org/) handles batch processing
-- Write short tutorials on how to use [R Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin), [Image Gallery Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin) and other tools/plug-ins
-- Write page on how to reproduce pipelines
-- Create automated release notes
-- Add a citation standard for plug-ins (and external tools used as well)
-- Create a cron or Jenkins (or a monitored cron) job to update the [plug-ins update center](http://biouno.org/jenkins-update-site.html)
-- Work on the improvement of capturing and searching analysis of metadata (Thanks for [@imoutsatsos](https://github.com/imoutsatsos) for the suggestion)
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Item</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr>
+    		<td>1</td>
+    		<td>Finish our <strong>first paper</strong> (<i>work in progress</i>).</td>
+    	</tr>
+    	<tr>
+    		<td>2</td>
+    		<td>Write <strong>more plug-ins</strong> for phylogenetics and other areas (<a href="https://groups.google.com/forum/#!forum/biouno-developers">we are open for suggestions</a>).</td>
+    	</tr>
+    	<tr>
+    		<td>3</td>
+    		<td>Integrate **Jenkins and <strong><a href="http://galaxyproject.org">Galaxy</a></strong> (we can use a lot of nice UI features from Galaxy).</td>
+    	</tr>
+    	<tr>
+    		<td>4</td>
+    		<td>Take a look at how <a href="http://cellprofiler.org">CellProfiler</a> handles batch processing. Jenkins can probably be used as an alternative.</td>
+    	</tr>
+    	<tr>
+    		<td>5</td>
+    		<td>Write <strong>page on how to reproduce pipelines</strong> created in Jenkins.</td>
+    	</tr>
+    	<tr>
+    		<td>6</td>
+    		<td>Add a <strong>citation standard for plug-ins</strong> (and external tools used as well). We could probably use GitHub DOI with <a href="https://zenodo.org">Zenodo</a>. Read more about it <a href="https://github.com/blog/1840-improving-github-for-science">here</a>.</td>
+    	</tr>
+    	<tr>
+    		<td>7</td>
+    		<td>Work on the improvement of <strong>capturing and searching analysis of metadata</strong> (Thanks for <a href="https://github.com/imoutsatsos">@imoutsatsos</a> for the suggestion)</td>
+    	</tr>
+    	<tr>
+    		<td>8</td>
+    		<td>Record <strong>videos for some of the documentation pages</strong>, like scheduling your first job or installing plugins.</td>
+    	</tr>
+    </tbody>
+</table>
 
-Would you like to see any other item in the roadmap? [Send us your suggestions](https://github.com/biouno/biouno.github.io/issues/new).
+Would you like to see any other item in the roadmap? [Send us your suggestions](https://groups.google.com/forum/#!forum/biouno-developers).
