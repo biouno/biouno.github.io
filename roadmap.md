@@ -45,6 +45,14 @@ The project roadmap includes in no specific order:
     		<td>8</td>
     		<td>Record <strong>videos for some of the documentation pages</strong>, like scheduling your first job or installing plugins.</td>
     	</tr>
+    	<tr>
+    		<td>9</td>
+    		<td>Investigate if creating an alternative, <strong>pure Java, <a href="http://www.drmaa.org/">DRMAA</a> API</strong>, and a PBS binding would be doable.</td>
+    	</tr>
+    	<tr>
+    		<td>10</td>
+    		<td>Update the <strong><a href="https://github.com/biouno/pbs-plugin">PBS Plug-in</a> to work with different grid servers</strong> (probably depends on #9)</td>
+    	</tr>
     </tbody>
 </table>
 
