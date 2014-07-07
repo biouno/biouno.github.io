@@ -21,9 +21,9 @@ In this this blog entry, I will describe how I have used the [Summary Display](h
 2. You need the groovy code for **writeXMLProperties\_scriptlet**,  available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
 
 ### The Setup
-1. You write a simple configuration file for your report (for details see this blog)
-2. You add a Scriptler build step that uses the **writeXMLProperties\_scriptlet** to generate the XML file that the Summary Display Plugin parses. It uses the configuration file from Step 1.
-3. You add a Summary Display post-build action step to parse the XML file generated in Step 2.
+1. You **write a configuration file** for your report (for details see this blog)
+2. You add a **Scriptler build step** that uses the **writeXMLProperties\_scriptlet** to generate the XML file that the Summary Display Plugin parses. It uses the configuration file from Step 1.
+3. You add a **Summary Display post-build action step** to parse the XML file generated in Step 2.
 
 ## Background
 When you perform some numerical, statistical or bioinformatic data analysis, the typical result can be assigned to one of two broad result categories.
@@ -34,13 +34,16 @@ When you perform some numerical, statistical or bioinformatic data analysis, the
 
 In either case, it is desirable to be able to display this information to our users after the build for immediate feedback and increased understanding of the underlying data.
 
-Making a small leap of faith now, I will assume that a great number of data sets in life sciences are in a tabular, delimited format while many annotations are stored as key-value pairs. Although this may not always be the case, it still covers a great many of cases and it's a good example for the framework I want to demonstrate.
-
 ## Requirements
-I will start this discussion with an illustration of the requirements we are trying to implement. In a follow-up blog I will fully describe the Jenkins project that these reports are generated from. For now, it is suffice to mention that this project simply assists users to upload and annotate a variety of file types (images, annotations, text, tabular data etc) to the Jenkins server. The build generates a multi-tab report where various properties and annotations of the uploaded file are displayed. 
+I will start with an illustration of the reporting requirements we are trying to implement. As an example, I will use a Jenkins project that assists users to upload and annotate a variety of file types (images, annotations, text, tabular data etc). Each build generates a multi-tab report where various properties and annotations of the uploaded file are displayed. In a follow-up entry, I will describe in more detail this FILE_UPLOAD Jenkins project.
 
-The report varies depending on the type of file the user has uploaded. Binary files (such as PDF, images etc.) generate reports with 4 tabs (DESCRIPTION, PROPERTIES, DOWNLOAD, ACTIONS) that each build generates. CSV or TSV files (typical formats for delimited numerical data) generate reports that contains 3 extra tabs with metadata on the numeric and character columns of the table as well as a small sample of the data itself. In addition, The DESCRIPTION tab contains extra fields that provide information about the number of columns, rows and rows of complete data (data rows with no 'NA' values, an R convention for missing data).
+The basic requireement is that build reports **dynamically adapt to display different tabs and file/user-provided metadata** depending on the type of file uploaded. 
 
+Binary file uploads (such as PDF, images, etc.) should generate reports with 4 tabs (DESCRIPTION, PROPERTIES, DOWNLOAD, ACTIONS). 
+
+CSV or TSV file uploads (typical formats for delimited numerical data) generate reports should contains 3 additional tabs (CHARACTER_COLUMNS, NUMERIC_COLUMNS, SAMPLE) with information on the numeric and character columns of the table, as well as, a small sample of the data itself. In addition, the DESCRIPTION tab for CSV/TSV files should display extra fields to provide information about the number of columns, rows and rows of complete data (data rows with no 'NA' values, an R convention for missing data) in the data set.
+
+Below are two report examples.
 
 A successful build for a PDF file upload displays a report with the 4 standard tabs
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_060550_PM.jpg' alt="Summary Display for PDF" /></center>
