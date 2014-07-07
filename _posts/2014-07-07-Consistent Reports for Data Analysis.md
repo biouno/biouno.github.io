@@ -13,6 +13,7 @@ When you use Jenkins for analytics it is important to deliver consistent analysi
 In this this blog entry, I will describe how I have used the [Summary Display](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin) plugin to create a simple but effective framework for displaying consistent but dynamic reports following numerical data analysis using the [R plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin).
 
 <!--more-->
+
 When you perform some numerical, statistical or bioinformatic data analysis, the typical result can be assigned to one of two broad result categories.
 
 1. **Results** representing **new values** derived from the numerical transformations performed by the analysis (reshaped, normalized etc)
