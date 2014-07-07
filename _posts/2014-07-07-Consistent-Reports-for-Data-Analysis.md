@@ -10,15 +10,15 @@ author: Ioannis K. Moutsatsos
 
 When you use Jenkins for analytics it is important to deliver consistent analysis reports from each build. There are a few different ways that you can create graphical, tabular and/or textual analysis reports, but one thing that becomes clear immediately is that you also require a certain level of dynamic behavior. Dynamic behavior is required so that you can easily adapt the reports to the underlying data whose format and content will likely change even when the same type of analysis is performed.
 
-In this this blog entry, I will describe how I have used the [Summary Display](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin) plugin to create a simple but effective framework for displaying consistent but dynamic reports following numerical data analysis using the [R plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin).
+In this this blog entry, I will describe how I have used the [Summary Display](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin) and [Scriptler](https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin) plugins to create a simple but effective framework for displaying consistent but dynamic reports following numerical data analysis using the [R plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin).
 
 <!--more-->
 
 ## How it works
 
 ### What you need:
-1. You need the Summary Display and Scriptler plugins
-2. You need the groovy code for **writeXMLProperties\_scriptlet**,  available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
+1. You need the [Summary Display](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin) and [Scriptler](https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin) plugins
+2. You need to create a new Scriptler Script from the groovy code for **writeXMLProperties\_scriptlet**, available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git). Call it **writeXMLProperties\_scriptlet**.
 
 ### The Setup
 1. You **write a configuration file** for your report (for details see this blog)
@@ -41,30 +41,37 @@ The basic requireement is that build reports **dynamically adapt to display diff
 
 Binary file uploads (such as PDF, images, etc.) should generate reports with 4 tabs (DESCRIPTION, PROPERTIES, DOWNLOAD, ACTIONS). 
 
-CSV or TSV file uploads (typical formats for delimited numerical data) generate reports should contains 3 additional tabs (CHARACTER_COLUMNS, NUMERIC_COLUMNS, SAMPLE) with information on the numeric and character columns of the table, as well as, a small sample of the data itself. In addition, the DESCRIPTION tab for CSV/TSV files should display extra fields to provide information about the number of columns, rows and rows of complete data (data rows with no 'NA' values, an R convention for missing data) in the data set.
+CSV or TSV file uploads (typical formats for delimited numerical data) should generate reports that display an additional 3 tabs (CHARACTER_COLUMNS, NUMERIC_COLUMNS, SAMPLE) with information on the numeric and character columns of the table, as well as, a small sample of the data itself. In addition, the DESCRIPTION tab for CSV/TSV file reports should display extra fields to provide information about the number of columns, rows and rows of complete data (data rows with no 'NA' values, an R convention for missing data) in the data set.
 
 Below are two report examples.
 
-A successful build for a PDF file upload displays a report with the 4 standard tabs
+#### A build report for a PDF file upload 
+The report displays the 4 standard tabs
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_060550_PM.jpg' alt="Summary Display for PDF" /></center>
 
-A successful build for a CSV file upload displays a report that contains an additional 3 tabs 
+#### A build report for a CSV file upload 
+The report displays an additional 3 tabs and extra fields in the DESCRIPTION tab. 
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_061309_PM.jpg' alt="Summary Display for CSV" /></center>
 
 ## Summary Display Plugin
 The Summary Display plugin is a powerful report generator. It uses an XML configuration file to generate a number of different HTML reports on the build page. The available report types and the required XML elements for generating them are described in detail on the [plugin wiki page](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin). The build process is responsible for generating the XML configuration file, while the Summary Display plugin is used in a post-build action for parsing the XML and generating the HTML report that is displayed on the build page. In this blog entry I will focus on the generation of multi-tab reports, as they are capable of reporting in a consistent, compact and familiar way a variety of numerical data and annotations.
 
-Despite its promise, the Summary Display plugin is missing one crucial piece. And that is a prescriptive way for generating the required XML summary display configuration file. Instead, each XML configuration file has to be generated by custom code restricted to the artifacts and environment of each build.
+Despite its promise, **the Summary Display plugin is missing one crucial piece**. And that is a **prescriptive way for generating the required XML** summary display configuration file. Instead, each XML configuration file has to be generated by custom code restricted to the artifacts and environment of each build. **This discussion addresses this limitation** and allows you to build the required XML diplay properties not from code but from a report configuration file.
 
 ## XML generation from Business Rules: What, not How!
 What about if rather than writing custom code each time we wanted to create a new XML configuration file we could just rather write a set of simple rules of what type of report we want and what content we want to include. Basically, we want to tell the build what type of report to generate and let it figure out how to write the XML configuration file for us.
 
 Let's start by defining some basic requirements for such a tool and the types of content it can display.
 
-Initially, the tool will be driven from a simple configuration file where the business rules will be defined. Content data will be provided by two different types of artifacts. Based on my requirements, and the frequency that my builds generate these types of artifacts, we will initially support content from standard key-value configuration files (such as standard Java properties file) and delimited value files (such as CSV or TSV).
+1. A configuration file will maintain the 'business rules' of how and what the report will display 
+2. Report data will be provided by key-value data (such as java properties or typical configuration files) or by delimited value data (such as CSV or TSV).
+3. Report data can reside locally or be accessible via the http protocol
+4. Report configuration should support a basic filtering mechanism
+5. The report generation should not fail on missing data
+6. The report should automatically display hyperlinks for all data values that start with 'http://...'
 
 ## The report configuration file
-The configuration file declares report generation options. The **supported options** for each configuration property are **shown in brackets**.
+Given the requirements above, I will now describe the **syntax of the configuration file** for encoding the report generation options.The **supported options** for each configuration property are **shown in brackets**.
 
 * report.style: [*tabs*] 
   * What type of layout report container we want. Currently only the 'tabs' option is supported but I plan to implement the remaining two Summary Display options [table, accordion] in future improvements
@@ -73,8 +80,10 @@ The configuration file declares report generation options. The **supported optio
   * A comma separated list of the tab names to be displayed. 
   * The tabs will be displayed in the order specified here.
 
-* summary.properties:[fileName,http://URL.to.File]
+* summary.properties:[fileName,http://URL.to.File](required)
    * Path to file containing Key-value properties that will be displayed as fields
+   * If no fields will be displayed from properties set the **summary.properties=none**
+   * Currently we only support a single properties file per report but it can contain multiple sets of properties. Each set can be displayed separately using the **Selector for field content** (see below)
 
 * content.TAB_NAME: [*field,table*]  
   * What content each tab should display.The available options are: field (for key-value pairs) or table for delimited values. Each tab can be specified with a different content option
@@ -138,7 +147,11 @@ The example file **sumReport_test_data_upload.properties** is used to configure 
 ## A Configuration Driven Summary Display Report
 Once a Summary Display report configuration is authored, it is used in a **Scriptler-Script build step** that executes the **writeXMLProperties\_scriptlet** groovy script. 
 
-_Note:_The **writeXMLProperties_scriptlet** takes the configuration file as a parameter and **generates the custom formatted XML report file** that the Summary Display plugin then uses in rendering the build report.
+_Note:_The **writeXMLProperties_scriptlet** takes 2 parameters
+1. The _worskpaceVar_ should be set to the project's workspace. This allows you to refer to files residing in the project's workspace simply by their name
+2. The _configProps_ should be set to the Summary Display report configuration file. The Scriptler plugin allows you to use Jenkins environemnt tokens to refer to the location of this file
+
+This build step **generates the custom formatted XML report file** that the Summary Display plugin then uses in rendering the build report.
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
 
 _NOTE_: The groovy code for **writeXMLProperties\_scriptlet** is available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
