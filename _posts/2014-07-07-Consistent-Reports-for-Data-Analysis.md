@@ -80,7 +80,7 @@ Given the requirements above, I will now describe the **syntax of the configurat
   * A comma separated list of the tab names to be displayed. 
   * The tabs will be displayed in the order specified here.
 
-* summary.properties:[fileName,http://URL.to.File](required)
+* summary.properties:[fileName,http://URL.to.File], (required)
    * Path to file containing Key-value properties that will be displayed as fields
    * If no fields will be displayed from properties set the **summary.properties=none**
    * Currently we only support a single properties file per report but it can contain multiple sets of properties. Each set can be displayed separately using the **Selector for field content** (see below)
