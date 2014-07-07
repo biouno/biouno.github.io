@@ -122,6 +122,12 @@ Once a Summary Display report configuration is authored, it can be used in a **S
 The code for writeXMLProperties\scriptlet is available from the [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
 
 ## Report Examples
-The following figures display examples of reports that are dynamically generated from a single report configuration (the one shown above)
+The following figures display examples of tabs that are dynamically generated from a single report configuration (the one shown above)
 
-We see that the reports **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and improved comprehension of the results of a data analysis. 
+We see that the tabs **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and improved comprehension of the results of a data analysis. 
+
+The PROPERTIES tab content is read from a standard Java properties file that is generated during the build.
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_064719_PM.jpg' alt="Summary Display Properties Tab" /></center>
+
+The CHARACTER_COLUMNS tab content only appears when CSV files are parsed. The content is read from the meta.csv file that is generated during the build
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_061534_PM.jpg' alt="Summary Display CSV Character Columns Metadata" /></center>
