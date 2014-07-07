@@ -3,7 +3,7 @@ layout: post
 title: "Consistent Reports for Data Analysis"
 description: "How to generate dynamic but consistent reports for data analysis"
 category: 
-tags: [jenkins, workflow, life-sciences, analysis, bioinformatics, reporting]
+tags: [Jenkins, workflow, life-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 ---
 {% include JB/setup %}
@@ -118,7 +118,9 @@ The following file is used to configure a tabbed report for each FILE_UPLOAD bui
 Once a Summary Display report configuration is authored, it can be used in a **Scriptler-Script build step** that executes the **writeXMLProperties\_scriptlet** groovy script. The **writeXMLProperties_scriptlet** takes the configuration file as a parameter and generates the custom formatted XML report file that the Summary Display plugin then uses in the rendering of the build report.
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
 
-## Report Examples
-The following figures display examples of reports that are dynamically generated from a single report configration (the one shown above)
+The code for writeXMLProperties\scriptlet is available from the [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
 
-We see that the reports **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and imrpoved comprehension of the results of a data analysis. 
+## Report Examples
+The following figures display examples of reports that are dynamically generated from a single report configuration (the one shown above)
+
+We see that the reports **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and improved comprehension of the results of a data analysis. 
