@@ -147,9 +147,10 @@ The example file **sumReport_test_data_upload.properties** is used to configure 
 ## A Configuration Driven Summary Display Report
 Once a Summary Display report configuration is authored, it is used in a **Scriptler-Script build step** that executes the **writeXMLProperties\_scriptlet** groovy script. 
 
-_Note:_The **writeXMLProperties_scriptlet** takes 2 parameters
+_Note: The **writeXMLProperties\_scriptlet** takes 2 parameters
+
 1. The _worskpaceVar_ should be set to the project's workspace. This allows you to refer to files residing in the project's workspace simply by their name
-2. The _configProps_ should be set to the Summary Display report configuration file. The Scriptler plugin allows you to use Jenkins environemnt tokens to refer to the location of this file
+2. The _configProps_ should be set to the Summary Display report configuration file. The Scriptler plugin allows you to use Jenkins environment tokens to refer to the location of this file.
 
 This build step **generates the custom formatted XML report file** that the Summary Display plugin then uses in rendering the build report.
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
@@ -158,12 +159,12 @@ _NOTE_: The groovy code for **writeXMLProperties\_scriptlet** is available from 
 
 The Scriptler step generates the **writeXMLSummary.xml** file that the Summary Display Plugin will parse.
 
-In the project's **post-build actions** we now add the Summary Display Plugin step, referred to as **'Publish XM Summary Report'**. 
+In the project's **post-build actions** we now add the Summary Display Plugin step, referred to as **'Publish XM Summary Reports'**. 
 The configuration of this action requires thta we provide one or more appropriately formatted XML files. We will provide the XML file (_writeXMLSummary.xml_) that the Scriptler step above generated.
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070714_040251_PM.jpg' alt="Summary Display Report 1" /></center>
 
 ## Report Examples
-The following figures display examples of tabs that are dynamically generated from a single report configuration (the one shown above)
+In addition to the reports displayed under 'Requirements', the following figures display additional Multi-Tab Reportss that are dynamically generated from a single report configuration (the one shown above)
 
 We see that the tabs **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and improved comprehension of the results of a data analysis. 
 
