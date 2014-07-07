@@ -14,6 +14,18 @@ In this this blog entry, I will describe how I have used the [Summary Display](h
 
 <!--more-->
 
+## How it works
+
+### What you need:
+1. You need the Summary Display and Scriptler plugins
+2. You need the groovy code for **writeXMLProperties\_scriptlet**,  available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
+
+### The Setup
+1. You write a simple configuration file for your report (for details see this blog)
+2. You add a Scriptler build step that uses the **writeXMLProperties\_scriptlet** to generate the XML file that the Summary Display Plugin parses. It uses the configuration file from Step 1.
+3. You add a Summary Display post-build action step to parse the XML file generated in Step 2.
+
+## Background
 When you perform some numerical, statistical or bioinformatic data analysis, the typical result can be assigned to one of two broad result categories.
 
 1. **Results** representing **new values** derived from the numerical transformations performed by the analysis (reshaped, normalized etc)
@@ -57,6 +69,9 @@ The configuration file declares report generation options. The **supported optio
 * tab.header:[*TAB1-NAME,TAB2-NAME,TAB3-NAME*...] 
   * A comma separated list of the tab names to be displayed. 
   * The tabs will be displayed in the order specified here.
+
+* summary.properties:[fileName,http://URL.to.File]
+   * Path to file containing Key-value properties that will be displayed as fields
 
 * content.TAB_NAME: [*field,table*]  
   * What content each tab should display.The available options are: field (for key-value pairs) or table for delimited values. Each tab can be specified with a different content option
@@ -118,7 +133,9 @@ The example file **sumReport_test_data_upload.properties** is used to configure 
      separator.ACTIONS==
 
 ## A Configuration Driven Summary Display Report
-Once a Summary Display report configuration is authored, it can be used in a **Scriptler-Script build step** that executes the **writeXMLProperties\_scriptlet** groovy script. The **writeXMLProperties_scriptlet** takes the configuration file as a parameter and generates the custom formatted XML report file that the Summary Display plugin then uses in rendering the build report.
+Once a Summary Display report configuration is authored, it is used in a **Scriptler-Script build step** that executes the **writeXMLProperties\_scriptlet** groovy script. 
+
+_Note:_The **writeXMLProperties_scriptlet** takes the configuration file as a parameter and **generates the custom formatted XML report file** that the Summary Display plugin then uses in rendering the build report.
 <center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
 
 _NOTE_: The groovy code for **writeXMLProperties\_scriptlet** is available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
