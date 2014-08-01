@@ -33,8 +33,8 @@ Once you have the plug-ins configured and Jenkins running, create a FreeStyle jo
 any name you want. 
 
 <center>
-<a href="{{ site.baseurl }}assets/posts/ropensci1.png">
-<img width="500" src='{{ site.baseurl }}assets/posts/ropensci1.png' alt="rOpenSci Jenkins Job" />
+<a href="{{ site.baseurl }}/assets/posts/ropensci1.png">
+<img width="500" src='{{ site.baseurl }}/assets/posts/ropensci1.png' alt="rOpenSci Jenkins Job" />
 </a>
 </center>
 
@@ -54,8 +54,8 @@ dev.off()
 {% endhighlight %}
 
 <center>
-<a href="{{ site.baseurl }}assets/posts/ropensci2.png">
-<img width="500" src='{{ site.baseurl }}assets/posts/ropensci2.png' alt="rOpenSci Jenkins Job" />
+<a href="{{ site.baseurl }}/assets/posts/ropensci2.png">
+<img width="500" src='{{ site.baseurl }}/assets/posts/ropensci2.png' alt="rOpenSci Jenkins Job" />
 </a>
 </center>
 
@@ -68,8 +68,8 @@ that says "Create image gallery" and add an "Archived images gallery", again usi
 regex pattern and give it any name.
 
 <center>
-<a href="{{ site.baseurl }}assets/posts/ropensci3.png">
-<img width="500" src='{{ site.baseurl }}assets/posts/ropensci3.png' alt="rOpenSci Jenkins Job" />
+<a href="{{ site.baseurl }}/assets/posts/ropensci3.png">
+<img width="500" src='{{ site.baseurl }}/assets/posts/ropensci3.png' alt="rOpenSci Jenkins Job" />
 </a>
 </center>
 
@@ -77,8 +77,8 @@ Build your job and check the results in the console log. You will also find the 
 in the build page.
 
 <center>
-<a href="{{ site.baseurl }}assets/posts/ropensci4.png">
-<img width="500" src='{{ site.baseurl }}assets/posts/ropensci4.png' alt="rOpenSci Jenkins Job" />
+<a href="{{ site.baseurl }}/assets/posts/ropensci4.png">
+<img width="500" src='{{ site.baseurl }}/assets/posts/ropensci4.png' alt="rOpenSci Jenkins Job" />
 </a>
 </center>
 
