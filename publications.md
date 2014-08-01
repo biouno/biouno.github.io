@@ -14,4 +14,21 @@ title: Publications
 - Ioannis Moutsatsos (2012). Jenkins-CI: A script execution platform for lab scientists. [Toolbox.com](http://it.toolbox.com/blogs/life-science-dev/jenkinsci-a-script-execution-platform-for-lab-scientists-54237).
 - Bruno P. Kinoshita (2012). Jenkins and Bioinformatics, catch us at BOSC 2012. [Jenkins-CI Blog](http://jenkins-ci.org/content/jenkins-and-bioinformatics-catch-us-bosc-2012)
 
+<h2 id="articles">Videos</h2>
+
+<ul>
+  <li>
+    Ioannis Moutsatsos (2014). JUC- Boston: Jenkins CI, as a Scientific Data and Image Processing Platform.
+    <br/><iframe width="560" height="315" src="//www.youtube.com/embed/nW02VEEXxlk?list=UUKlF3GIFy9KVUefVbycx_vw" frameborder="0" allowfullscreen></iframe>
+  </li>
+  <li>
+    Bruno P. Kinoshita (2013). Meetup- Sao Paulo: Using Jenkins for bioinformatics research. (Brazilian Portuguese. Problem in audio).
+    <br/><iframe width="560" height="315" src="//www.youtube.com/embed/-XDSfarsBPM" frameborder="0" allowfullscreen></iframe>
+  </li>
+  <li>
+  Using the Structure plug-in in Jenkins. 
+    <br/><iframe width="420" height="315" src="//www.youtube.com/embed/4xZh6xxiTv4" frameborder="0" allowfullscreen></iframe>
+  </li>
+</ul>
+
 Did you use BioUno in your paper? [Send us]({{ site.baseurl }}contact.html) your details and we will include your publication to the list.
