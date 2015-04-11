@@ -59,6 +59,13 @@ D+xEs/7Sc3L2bWSsCtk4Lb3O1QIsNS9uRMROhKPbIdRJgsOZyn0=
 	</tbody>
 </table>
 
+In versions greater than 1.480, you may have to add certificates used by third party
+update centers manually in Jenkins. Download [our certificate](biouno.org/jenkins-update-center/biouno-update-center.crt) 
+or execute `wget biouno.org/jenkins-update-center/biouno-update-center.crt`. 
+And copy the certificate to `$JENKINS_ROOT/update-center-rootCAs`. This directory can 
+be located under WEB-INF or in the Jenkins root directory, depending on how you
+installed Jenkins.
+
 Now go back to "Manage Jenkins" > "Plugins" > "Advanced" and click 
 "Check now". That will sync the plug-ins and you will be able to 
 install any plug-in available in our update center.
