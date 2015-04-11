@@ -60,7 +60,7 @@ D+xEs/7Sc3L2bWSsCtk4Lb3O1QIsNS9uRMROhKPbIdRJgsOZyn0=
 </table>
 
 In newer versions of Jenkins you have to add certificates used by third party
-update centers manually in Jenkins. Download [our certificate](biouno.org/jenkins-update-center/biouno-update-center.crt) 
+update centers manually. Download [our certificate](biouno.org/jenkins-update-center/biouno-update-center.crt) 
 or execute `wget http://biouno.org/jenkins-update-center/biouno-update-center.crt`. 
 And copy the certificate to `$JENKINS_ROOT/update-center-rootCAs/`. This directory can 
 will be located in your Jenkins root directory (likely the WEB-INF directory in your
