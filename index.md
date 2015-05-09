@@ -17,8 +17,8 @@ support the project mission
 the use 
 * We promote **​collaboration and reuse​** through contributing to existing open source 
 projects 
-* We **​educate users​** through [blog](/blog.html), [wiki](https://github.com/biouno),
-and [presentations](/presentations.html) on the application of SE best practices in
+* We **​educate users​** through [blog](/blog/), [wiki](https://github.com/biouno),
+and [presentations](/publications.html) on the application of SE best practices in
 scientific applications
 * We **​advocate​** with software engineers for enabling SE tools and frameworks for use 
 by scientists 
