@@ -11,7 +11,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : BioUno
-tagline: Continuous Integration tools and techniques applied in Bioinformatics
+tagline: "Open Source Software for Scientific Application"
 author :
   name : BioUno team
   email : biouno-users@googlegroups.com

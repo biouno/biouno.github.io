@@ -2,8 +2,14 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font: 13px/1.2 Arial, sans-serif;
-    color: #222222;
+    /*
+	font: 13px/1.2 Arial, sans-serif;
+    */
+    font: 300 16px/1.6em arial,"helvetica neue",helvetica,"lucida grande",sans-serif;
+    line-height: 1.6em;
+	letter-spacing: 0px;
+	font-weight: 400;
+    color: #4E5665;
 }
 
 p {
@@ -23,7 +29,7 @@ p {
 
 header h1 {
 	color: #333333;
-	margin: 4px 20px 0px 20px;
+	margin: 20px 40px 20px 20px;
 	padding: 0px 0px;
 	font-family: 'Londrina Solid', cursive;
 	font-size: 60px;
@@ -32,7 +38,7 @@ header h1 {
 
 div.page-header h1 {
 	color: #333333;
-	margin: 4px 0px;
+	margin: 0px 0px 40px 0px;
 	padding: 0px 0px;
 	font-family: 'Londrina Solid', cursive;
 	font-size: 48px;
