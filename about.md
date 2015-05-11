@@ -25,7 +25,7 @@ reproduce computational discoveries has taken center stage in recent years. The 
 computational research** has been coined, and used as an umbrella concept for identifying and proposing
 solutions to issues that affect the reproducibility of computational scientific research.
 
-[Scientific Reproducibility through Computational Workflows and Shared Provenance Representations​](http://www.evernote.com/l/AJ8x2KJTSTlGmbrFDKXSR709G2wRjbN32Tk/)
+[Scientific Reproducibility through Computational Workflows and Shared Provenance Representations](http://www.evernote.com/l/AJ8x2KJTSTlGmbrFDKXSR709G2wRjbN32Tk/)
 (Yolanda Gil, NSF Workshop: 2010)
 
 ###Some Proposed Solutions
@@ -56,7 +56,7 @@ within the community.
 
 ##Project Mission
 
-The ​BioUno​ open­ source project seeks to improve scientific application automation, 
+The BioUno open­ source project seeks to improve scientific application automation, 
 performance, reproducibility, usability, and management by applying and extending software 
 engineering (SE) best practices in the field of scientific research applications. 
 [Deliverables from the project](/publications.html) have found a variety of applications
@@ -64,18 +64,18 @@ in life­science research (bioinformatics, genetics, drug discovery).
 
 ##Project Objectives
 
-* We ​**explore​ and apply​** the application of best practices in software engineering to 
+* We **explore and apply** the application of best practices in software engineering to 
 support the project mission
-* We **​develop extensions​** to established SE tools, frameworks and technologies that directly ​
-**support​** or indirectly **​enhance​** scientific applications.  
-* We **​develop APIs​** and **​integration​** points that empower scientific applications through 
+* We **develop extensions** to established SE tools, frameworks and technologies that directly 
+**support** or indirectly **enhance** scientific applications.  
+* We **develop APIs** and **integration** points that empower scientific applications through 
 the use 
-* We promote **​collaboration and reuse​** through contributing to existing open source 
+* We promote **collaboration and reuse** through contributing to existing open source 
 projects 
-* We **​educate users​** through [blog](/blog.html), [wiki](https://github.com/biouno),
+* We **educate users** through [blog](/blog.html), [wiki](https://github.com/biouno),
 and [presentations](/presentations.html) on the application of SE best practices in
 scientific applications
-* We **​advocate​** with software engineers for enabling SE tools and frameworks for use 
+* We **advocate** with software engineers for enabling SE tools and frameworks for use 
 by scientists 
 
 Check out our [roadmap](/roadmap.html) for a list of short and long term specific objectives.
@@ -87,22 +87,18 @@ computational pipelines and to manage computer clusters in support of scientific
 
 In addition, BioUno has adopted a variety of Software Engineering best practices, to achieve its objectives:
 
-* **[​Revision Control​](http://en.wikipedia.org/wiki/Revision_control​)** (e.g. Git, Subversion, 
+* **[Revision Control](http://en.wikipedia.org/wiki/Revision_control)** (e.g. Git, Subversion, 
 branching strategies),
-* **[Continuous Integration​](http://en.wikipedia.org/wiki/Continuous_integration​)**
-(e.g. Jenkins­CI, SonarQube, code metrics, reproducible builds),  
-* **[​Software Testing​](http://en.wikipedia.org/wiki/Software_testing​)** (e.g. Nestor­QA, 
+* **[Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration)**
+(e.g. Jenkins CI, SonarQube, code metrics, reproducible builds),  
+* **[Software Testing](http://en.wikipedia.org/wiki/Software_testing)** (e.g. Nestor-QA, 
 TestLink, TDD, code coverage),  
-* **Virtualization** (e.g. Docker, Vagrant, VirtualBox)
+* **[Virtualization](https://en.wikipedia.org/wiki/Virtualization)** (e.g. Docker, Vagrant, VirtualBox)
 * It uses SE tools and techniques to create powerful pipelines and to manage 
 computer clusters. 
 
-BioUno strives to **minimize the ​open source proliferation problem**.While the BioUno
-project covers a broad range of technologies and tools, it tries to avoid the
-by first contacting communities and project maintainers before creating new projects.
-
 Finally, BioUno strives to minimize the
-[open source proliferation problem](http://gondwanaland.com/mlog/2013/10/22/open­source­proliferation­problem/​).
+[open source proliferation problem](http://gondwanaland.com/mlog/2013/10/22/open­source­proliferation­problem/).
 While the BioUno project covers a broad range of technologies and tools, it tries to avoid the Open-Source
 proliferation problem by actively contributing to existing open-source projects rather than releasing or
 starting a new project.
