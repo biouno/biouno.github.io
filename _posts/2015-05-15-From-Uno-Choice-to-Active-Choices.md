@@ -12,9 +12,10 @@ More than a year ago I approached Bruno via a series of posts on the BioUno deve
 In this blog entry, I will describe a bit of the Uno-Choice plugin history until its contribution to the Jenkins project with a new name, [Active Choices Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Active+Choices+Plugin).
 
 <!--more-->
+
 ## Motivation
 
-As I started exploring Jenkins for Bioinformatic and other life-sciences applications, some of the dev-ops roots of Jenkins started presenting challenges. Jenkins being an automation tool, did not really have good UI components for creating modern looking, sophisticated interactive user interfaces. The free-form, parameterized project is the most basic form of a life-sciences project, but many of the parameters may need to be dynamically generated, and can vary from build to build. The next important requirements was the ability to select more than one values for a parameter. This feature is also know as multi-select.
+As I started exploring Jenkins for Bioinformatic and other life-sciences applications, some of the dev-ops roots of Jenkins started presenting challenges. Jenkins being an automation tool, did not really have good UI components for creating modern looking, sophisticated interactive user interfaces. The [free-style](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project), parameterized project is the most basic form of a life-sciences project, but many of the parameters may need to be dynamically generated, and can vary from build to build. The next important requirements was the ability to select more than one values for a parameter. This feature is also know as multi-select.
 
 ## Searching but not finding
 
@@ -24,7 +25,7 @@ My initial search for Jenkins plugins that offered these features, lead me to th
 
 As a result, I approached Bruno and the BioUno project with a proposal to develop such a unified plugin that would deliver this functionality, as well as, a true cascade, dynamically updated parameter type whose value could depend on one or more of the current build parameters. We coined the name Uno-Choice for the new plugin, and Bruno started developing and delivering on my main requirements. Over the next year, the Uno-Choice plugin emerged with this and some additional functionality that made it indispensable in most of my analytical and bioinformatic Jenkins based build forms! For a complete description of the functionality you can see the Jenkins wiki.
 
-## Uno-Choice: Your one choice?
+## Uno-Choice: Your one choice for choice selections
 
 In summary, the Uno-Choice plugin supported three new Jenkins parameter types with the following functionality:
 
@@ -43,4 +44,4 @@ Just for reference here are the old and new names of the parameters
 - Uno-Choice Cascade Dynamic: Active Choices Reactive Parameter
 - Uno-Choice Dynamic Reference:Active Choices Reactive Reference Parameter
 
-If you still see some references to the old plugin name or ID please, bear with us! Eventually these will go away, but until then they may still appear in some of our documentation or examples. Please, use the Active Choices plugin and follow our Tweets and blog entries that will describe examples, various alternate configurations and additional use-cases. As always we ask that you submit issues through the plugin Jenkins JIRA system using the component name Active-Choices.
+If you still see some references to the old plugin name or ID please, bear with us! Eventually these will go away, but until then they may still appear in some of our documentation or examples. Please, use the Active Choices plugin and follow our Twitts and blog entries that will describe examples, various alternate configurations and additional use-cases. As always we ask that you submit issues through the plugin Jenkins JIRA system using the component name Active-Choices.
