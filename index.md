@@ -9,7 +9,7 @@ engineering (SE) best practices in the field of scientific research applications
 [Deliverables from the project](/publications.html) have found a variety of applications
 in life­science research (bioinformatics, genetics, drug discovery).
 
-* We ​**explore​ and apply​** the application of best practices in software engineering to 
+* We ​**explore​ and apply​** best practices in software engineering to 
 support the project mission
 * We **​develop extensions​** to established SE tools, frameworks and technologies that directly ​
 **support​** or indirectly **​enhance​** scientific applications.  
