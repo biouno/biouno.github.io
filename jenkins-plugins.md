@@ -61,8 +61,8 @@ interface or by running a command in your shell.
 			<th colspan="2" style="background-color: #EEEEEE">UI</th>
 		</tr>
 		<tr>
-			<td><a href="https://github.com/biouno/uno-choice-plugin" title="Uno-Choice Plug-in">Uno-Choice Plug-in</a></td>
-			<td>A proposal for a new Jenkins UI plugin for selecting one or multiple parameters. Attempting to fill the gaps left by current plugin options.</td>
+			<td><a href="https://github.com/jenkinsci/active-choices-plugin" title="Active Choices Plugin">Active Choices Plugin</a></td>
+			<td>A Jenkins UI plugin for selecting one or multiple options for a job parameter. The UI control can be rendered in a variety of ways including dynamic HTML</td>
 		</tr>
 		<tr>
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin" title="Image Gallery  Plug-in">Image Gallery Plug-in</a></td>
@@ -115,6 +115,10 @@ a brief description.
 		<tr>
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin">Git Plug-in</a></td>
 			<td>For storing biology data in GitHub.</td>
+		</tr>
+		<tr>
+			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin">Summary Display Plugin</a></td>
+			<td>Generates dynamic, rich summary reports on build pages. The reports are written in a consistent XML format.</td>
 		</tr>
 		<tr>
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Timestamper">Timestamper Plug-in</a></td>
