@@ -44,4 +44,4 @@ Just for reference here are the old and new names of the parameters
 - Uno-Choice Cascade Dynamic: Active Choices Reactive Parameter
 - Uno-Choice Dynamic Reference:Active Choices Reactive Reference Parameter
 
-If you still see some references to the old plugin name or ID please, bear with us! Eventually these will go away, but until then they may still appear in some of our documentation or examples. Please, use the Active Choices plugin and follow our Twitts and blog entries that will describe examples, various alternate configurations and additional use-cases. As always we ask that you submit issues through the plugin Jenkins JIRA system using the component name Active-Choices.
+If you still see some references to the old plugin name or ID please, bear with us! Eventually these will go away, but until then they may still appear in some of our documentation or examples. Please, use the Active Choices plugin and follow our tweets and blog entries that will describe examples, various alternate configurations and additional use-cases. As always we ask that you submit issues through the plugin Jenkins JIRA system using the component name Active-Choices.
