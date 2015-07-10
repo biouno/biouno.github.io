@@ -56,11 +56,11 @@ within the community.
 
 ##Project Mission
 
-The BioUno open­ source project seeks to improve scientific application automation, 
+The BioUno open source project seeks to improve scientific application automation, 
 performance, reproducibility, usability, and management by applying and extending software 
 engineering (SE) best practices in the field of scientific research applications. 
 [Deliverables from the project](/publications.html) have found a variety of applications
-in life­science research (bioinformatics, genetics, drug discovery).
+in life science research (bioinformatics, genetics, drug discovery).
 
 ##Project Objectives
 
@@ -98,7 +98,7 @@ TestLink, TDD, code coverage),
 computer clusters. 
 
 Finally, BioUno strives to minimize the
-[open source proliferation problem](http://gondwanaland.com/mlog/2013/10/22/open­source­proliferation­problem/).
+[open source proliferation problem](http://gondwanaland.com/mlog/2013/10/22/open-source-proliferation-problem/).
 While the BioUno project covers a broad range of technologies and tools, it tries to avoid the Open-Source
 proliferation problem by actively contributing to existing open-source projects rather than releasing or
 starting a new project.
