@@ -18,7 +18,7 @@ interface or by running a command in your shell.
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/pbs-plugin" title="Jenkins PBS Plug-in">PBS Plug-in</a></td>
-			<td>This plug-ins lets you use Jenkins to control a <a href="http://www.adaptivecomputing.com/products/open-source/torque/">Torque PBS</a> cluster.</td>
+			<td>This plug-ins lets you use Jenkins to control a <a href="http://www.adaptivecomputing.com/products/open-source/torque/">Torque PBS</a> cluster. More information about it in the <a href="https://github.com/biouno/pbs-plugin/wiki/Home">PBS Plug-in GitHub Wiki</a></td>
 		</tr>
 		<tr>
 			<th colspan="2" style="background-color: #EEEEEE">Phylogenetics</th>
