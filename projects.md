@@ -14,7 +14,11 @@ or to fill in gaps left by other projects.
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/pbs-java-api" title="PBS Java API">PBS Java API</a></td>
-			<td>A simple Java API for interfacing with a PBS cluster.</td>
+			<td>A simple Java API for interfacing with a PBS cluster. Used in the <a href="https://github.com/biouno/pbs-plugin">PBS Plug-in</a>.</td>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/biouno/figshare-java-api" title="figshare Java API">figshare Java API</a></td>
+			<td>A simple Java API to interact with figshare. Used in the <a href="https://github.com/biouno/figshare-plugin">figshare Plug-in</a>.</td>
 		</tr>
 	</tbody>
 </table>

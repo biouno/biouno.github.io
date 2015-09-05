@@ -75,6 +75,10 @@ interface or by running a command in your shell.
 			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin" title="R Plug-in">R Plug-in</a></td>
 			<td>A simple plug-in to invoke R interpreter and execute an R script.</td>
 		</tr>
+		<tr>
+			<td><a href="https://github.com/biouno/figshare-plugin" title="figshare Plug-in">figshare Plug-in</a></td>
+			<td>This plug-in integrates figshare and Jenkins, using figshare API v1 with OAuth 1.0 and the Credentials Plug-in.</td>
+		</tr>
 	</tbody>
 </table>
 
