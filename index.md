@@ -28,11 +28,6 @@ Read more [about the project](/about.html), its mission, objectives, motivations
 ---
 
 <div class=''>
-<div id="videoplayer" style="display:none;">&nbsp;</div>
-<img src="{{ site.baseurl }}assets/img/video.png" id="videoimage" width="500" />
-</div>
-
-<div class=''>
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23biouno+OR+%40biouno" data-widget-id="445763950747979776">Tweets about "#biouno OR @biouno"</a>
 </div>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
