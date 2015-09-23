@@ -6,7 +6,7 @@ title: Using the Jenkins R Plug-in
 <p>
 	The Jenkins R plug-in has been released to the Jenkins community. So
 	you can download it from Jenkins update site directly. Follow the
-	instructions <a href="http://biouno.org/docs/installing-plugins" title="Installing plug-ins">here</a> to install the plug-in.
+	instructions <a href="{{ site.url }}docs/installing-plugins" title="Installing plug-ins">here</a> to install the plug-in.
 </p>
 
 <p>
@@ -17,7 +17,7 @@ title: Using the Jenkins R Plug-in
 </p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_001.png"> <img src="http://biouno.org/assets/img/screenshot_r_001.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_001.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_001.png">
 	</a>
 </p>
 
@@ -29,14 +29,14 @@ title: Using the Jenkins R Plug-in
 </p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_002.png"> <img src="http://biouno.org/assets/img/screenshot_r_002.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_002.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_002.png">
 	</a>
 </p>
 
 <p>Now save and build your project.</p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_003.png"> <img src="http://biouno.org/assets/img/screenshot_r_003.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_003.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_003.png">
 	</a>
 </p>
 
@@ -44,7 +44,7 @@ title: Using the Jenkins R Plug-in
 	similar to the output below.</p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_004.png"> <img src="http://biouno.org/assets/img/screenshot_r_004.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_004.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_004.png">
 	</a>
 </p>
 
@@ -53,7 +53,7 @@ title: Using the Jenkins R Plug-in
 	via a file navigator.</p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_005.png"> <img src="http://biouno.org/assets/img/screenshot_r_005.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_005.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_005.png">
 	</a>
 </p>
 
@@ -63,6 +63,6 @@ title: Using the Jenkins R Plug-in
 	this plug-in.</p>
 
 <p class="center">
-	<a href="http://biouno.org/assets/img/screenshot_r_006.png"> <img src="http://biouno.org/assets/img/screenshot_r_006.png">
+	<a href="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_006.png"> <img src="{{ site.url }}assets/img/using-the-jenkins-r-plugin/screenshot_r_006.png">
 	</a>
 </p>

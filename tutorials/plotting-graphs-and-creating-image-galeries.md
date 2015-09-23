@@ -20,8 +20,8 @@ title: Plotting graphs and creating image galleries
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_ig_001.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_ig_001.png">
+	<a href="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_001.png">
+		<img src="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_001.png">
 	</a>
 </p>
 
@@ -31,14 +31,14 @@ title: Plotting graphs and creating image galleries
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_ig_002.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_ig_002.png">
+	<a href="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_002.png">
+		<img src="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_002.png">
 	</a>
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_ig_003.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_ig_003.png">
+	<a href="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_003.png">
+		<img src="{{ site.url }}assets/img/tutorials/plotting-graphs-and-creating-image-galeries/screenshot_ig_003.png">
 	</a>
 </p>
 
