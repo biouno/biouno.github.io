@@ -5,7 +5,7 @@ title: Publications
 
 <h2 id="presentations">Presentations</h2>
 
-- Bruno P. Kinoshta (2016). BioUno - Building Pipelines for life sciences with Jenkins (slides soon). eResearch NZ 2016, Queenstown, New Zealand.
+- Bruno P. Kinoshta (2016). BioUno - Building Pipelines for life sciences with Jenkins. [eResearch NZ 2016, Queenstown, New Zealand](https://figshare.com/articles/BioUno_Building_Pipelines_for_life_sciences_with_Jenkins/2075401)
 - Ioannis Moutsatsos (2014). Jenkins CI, an Open Source Continuous Integration System, as a Scientific Data and Image Processing Platform. [Jenkins User Conference 2014-Boston](http://www.cloudbees.com/jenkins/juc-2014/boston/sessions#IoannisMoutsatsos)
 - Bruno P. Kinoshita (2013). Using Jenkins for bioinformatics research. [Jenkins Sao Paulo Meetup 2013](http://www.meetup.com/jenkinsmeetup/events/133598002/)
 - Bruno P. Kinoshita (2012). Creating biology pipelines with BioUno. ISMB/[BOSC 2012](http://www.open-bio.org/wiki/BOSC_2012).
