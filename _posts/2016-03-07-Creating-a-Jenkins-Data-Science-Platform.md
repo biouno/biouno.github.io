@@ -20,6 +20,8 @@ Having worked with Jenkins-CI in the life sciences context for the last few year
 
 Here I will briefly describe some of the attributes that make Jenkins-CI a suitable platform for data scientists
 
+<img src='{{ site.baseurl }}/assets/posts/Jenkins_DataSci.png' alt="Jenkins for Data Science" align="right" width="300px" />
+
 ## Data Management 
 A variety of data can be maintained in the Jenkins artifact archives. Builds can upload, access and efficiently process data from a variety of sources to generate and annotate file artifacts. A variety of plugins support typical data management tasks such as copying, archiving, deleting and moving files across file systems and cloud services. Furthermore, Jenkins provides excellent provenance information and tools for file artifacts (such as logs, date-stamps, and  fingerprints). 
 
