@@ -14,8 +14,8 @@ running in a prompt <code>java -jar jenkins.war</code>. This should start Jenkin
 for you at _http://localhost:8080_.
 	
 <p class="center">
-    <a href="{{ site.baseurl }}assets/img/screenshot_jenkins_getting_started.png">
-        <img src="{{ site.baseurl }}assets/img/screenshot_jenkins_getting_started.png">
+    <a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_jenkins_getting_started.png">
+        <img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_jenkins_getting_started.png">
     </a>
 </p>
 	
@@ -31,7 +31,7 @@ there is a book with practical exercises and detailed explanation about Jenkins.
 	
 <p class="center">
     <a href="http://www.wakaleo.com/books/jenkins-the-definitive-guide">
-        <img src="{{ site.baseurl }}assets/img/jenkins-cover-small.png" title="Jenkins Book Cover">
+        <img src="{{site.url}}{{ site.baseurl }}assets/img/jenkins-cover-small.png" title="Jenkins Book Cover">
     </a>
 </p>
 	

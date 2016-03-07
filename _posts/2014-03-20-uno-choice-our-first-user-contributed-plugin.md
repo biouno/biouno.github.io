@@ -13,14 +13,14 @@ plug-in was proposed by Ioannis Moutsatsos, and has been described as a "proposa
 (...) for selecting one or multiple parameters. Attempting to fill the gaps left 
 by current plugin options".
 
-<center><img src='{{ site.baseurl }}/assets/posts/uno-choice-001.png' alt="Uno-Choice Plug-in" /></center>
+<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/uno-choice-001.png' alt="Uno-Choice Plug-in" /></center>
 
 Version 0.1 is able to add dynamic parameters to your Jenkins jobs. You 
 have the ability to create multi selects from Groovy scripts. How cool is that? 
 If you miss anything in Jenkins UI for your research in bioinformatics, please 
 feel free to submit your issues and we will try to help ya.
 
-<center><img src='{{ site.baseurl }}/assets/posts/NICE.gif' alt="NICE" /></center>
+<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/NICE.gif' alt="NICE" /></center>
 
 <p>
 <a href="https://github.com/biouno/uno-choice-plugin">Uno-Choice plug-in</a>

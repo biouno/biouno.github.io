@@ -26,7 +26,7 @@ He started with a history background, that was coincidentally similar to a recen
 He then exposed the problem, GPU architecture and its application in HPC. What was very 
 interesting was that he used several GPUs and MPI too - I didn't know it was possible. 
 
-<center><img width="500" src='{{ site.baseurl }}/assets/posts/usp_2nd_hpc_workshop_01.jpg' alt="USP 2nd HPC Workshop" /></center>
+<center><img width="500" src='{{site.url}}{{ site.baseurl }}assets/posts/usp_2nd_hpc_workshop_01.jpg' alt="USP 2nd HPC Workshop" /></center>
 
 I learned about [Warps](http://stackoverflow.com/questions/11816786/why-bother-to-know-about-cuda-warps), and when/how to use GPU. Here are some of 
 the software that appeared in Tanigushi's talk: Matlab, NVidia libraries, Ansys and 
@@ -40,7 +40,7 @@ excellent talk. He talked about his work with **Genomics and Transcriptomics**. 
 mentioned that his work is of **collaboration** with other groups and **Project Driven**. Ah, and 
 that it is also **Big Data Driven**.
 
-<center><img width="500" src='{{ site.baseurl }}/assets/posts/usp_2nd_hpc_workshop_02.jpg' alt="USP 2nd HPC Workshop" /></center>
+<center><img width="500" src='{{site.url}}{{ site.baseurl }}assets/posts/usp_2nd_hpc_workshop_02.jpg' alt="USP 2nd HPC Workshop" /></center>
 
 He used Blast, MPI-Blast, SOAP Denovo and Abyss for his analysis. And found out that 
 Abyss didn't work well in Bluegene, but on the other hand, using MPI-Blast he was able to 
@@ -66,7 +66,7 @@ talk was interesting, with many examples and real cases of use of the Bluegene
 supercomputer. I felt like I could like learning more about what he was talking 
 about.
 
-<center><img width="500" src='{{ site.baseurl }}/assets/posts/usp_2nd_hpc_workshop_03.jpg' alt="USP 2nd HPC Workshop" /></center>
+<center><img width="500" src='{{site.url}}{{ site.baseurl }}assets/posts/usp_2nd_hpc_workshop_03.jpg' alt="USP 2nd HPC Workshop" /></center>
 
 (pause for coffee break)
 
@@ -79,7 +79,7 @@ The next two talks were probably my favorites after Prof. Setubal's. Prof. Juare
 L. F. da Silva talked about nanoclusters and Prof. Ricardo de Camargo gave great 
 examples of using HPC for weather forecasting processing using HPC. 
 
-<center><img width="500" src='{{ site.baseurl }}/assets/posts/usp_2nd_hpc_workshop_04.jpg' alt="USP 2nd HPC Workshop" /></center>
+<center><img width="500" src='{{site.url}}{{ site.baseurl }}assets/posts/usp_2nd_hpc_workshop_04.jpg' alt="USP 2nd HPC Workshop" /></center>
 
 Last but not least, Prof. Dr. Leonardo Matheus Marion Jorge, presenting the works 
 of his groups with molecules and, yup, more amazing illustrations. Not sure who 

@@ -32,4 +32,4 @@ title: Publications
   </li>
 </ul>
 
-Did you use BioUno in your paper? [Send us]({{ site.baseurl }}contact.html) your details and we will include your publication to the list.
+Did you use BioUno in your paper? [Send us]({{site.url}}{{ site.baseurl }}contact.html) your details and we will include your publication to the list.

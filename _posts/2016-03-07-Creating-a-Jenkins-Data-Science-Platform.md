@@ -14,7 +14,7 @@ Having worked with Jenkins-CI in the life sciences context for the last few year
 
 In daily practice, lab and data scientists require tools that allow them to integrate a variety of data management and data analysis tasks. Scientific data flows from a variety of instruments and in a variety of formats. Frequently, data needs to be transformed and visualized for quality control purposes before an analysis can even begin. Experimental annotation and analysis metadata need to be overlaid with the instrument measurements and presented in context for improved comprehension of the results. Finally, the data needs to be processed with domain specific tools (such as image processing, sequence analysis, database searching, statistical learning etc.) to generate high quality results from the raw data [1].
 
-<img src='{{ site.baseurl }}/assets/posts/Jenkins_DataSci.png' alt="Jenkins for Data Science" align="right" width="400px" />
+<img src='{{site.url}}{{ site.baseurl }}assets/posts/Jenkins_DataSci.png' alt="Jenkins for Data Science" align="right" width="400px" />
 
 In all of these tasks, having easy to use data pipelining tools that scientists can use to progressively manage, visualize, and analyze their data is critical for the efficient, accurate and reproducible processing of scientific data. Various data tasks and tools need to be used and integrated while maintaining an accurate record of their use and intermediate results. Furthermore, in the spirit of team collaboration (another cornerstone of science), raw, intermediate, and final data need to be shared in a transparent and timely way with others.
 
