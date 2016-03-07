@@ -16,8 +16,8 @@ title: Installing Plug-ins
 </p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_001.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_001.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_installing_plugins_001.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_installing_plugins_001.png">
 	</a>
 </p>
 
@@ -28,8 +28,8 @@ title: Installing Plug-ins
 </p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_002.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_002.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_installing_plugins_002.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_installing_plugins_002.png">
 	</a>
 </p>
 
@@ -46,8 +46,8 @@ title: Installing Plug-ins
 </p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_003.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_installing_plugins_003.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_installing_plugins_003.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_installing_plugins_003.png">
 	</a>
 </p>
 
@@ -55,4 +55,4 @@ title: Installing Plug-ins
 	installed your first plug-in.</p>
 
 In order to install BioUno Jenkins Plug-ins, you will have to add our 
-[update site]({{site.url}}{{ site.baseurl }}jenkins-update-site.html).
+[update site]({{ site.baseurl }}jenkins-update-site.html).

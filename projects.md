@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-The BioUno project provides mainly [Jenkins Plug-ins]({{site.url}}{{ site.baseurl }}jenkins-plugins.html) to the 
+The BioUno project provides mainly [Jenkins Plug-ins]({{ site.baseurl }}jenkins-plugins.html) to the 
 community. Here are listed other sub-projects that started in BioUno to be used by these plug-ins 
 or to fill in gaps left by other projects.
 

@@ -27,7 +27,7 @@ However, we did interact with the maintainer and tried to explain our needs.
 
 ## DRMAA spec
 
-<img src='{{site.url}}{{ site.baseurl }}assets/posts/drmaalogo.png' alt="DRMAA Logo" align="right" width="300px" />
+<img src='{{ site.baseurl }}assets/posts/drmaalogo.png' alt="DRMAA Logo" align="right" width="300px" />
 
 The DRMAA (Distributed Resource Management Application API) is a working group that maintains an API 
 specification to enable a standard way to communicate with batch servers like PBS. Supported vendors 
@@ -43,7 +43,7 @@ DRMAA v1 is the stable version, but a v2 is under development. Looking at search
 drmaa returns few entries, all under the *us.levk* group ID. Even though there are documents that 
 mention the Java binding, I couldn't find an official Maven release of it.
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/drmaa_search_maven.png' alt="DRMAA at search.maven.org" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/drmaa_search_maven.png' alt="DRMAA at search.maven.org" /></center>
 
 ## DRMAA v1 and Java
 
@@ -141,7 +141,7 @@ libraries or the PBS client in the client machine.
 Hopefully after all this work we will be able to release a newer version of the Java API and 
 the PBS Plug-ins, and include this work in the [stories section of the DRMAA website](http://www.drmaa.org/stories.php).
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/no-results.gif' alt="Still looking for" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/no-results.gif' alt="Still looking for" /></center>
 
 ## References
 

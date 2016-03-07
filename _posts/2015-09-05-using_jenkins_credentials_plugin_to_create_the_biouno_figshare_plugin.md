@@ -121,7 +121,7 @@ public class FigShareCredentialsNameProvider
 }
 {% endhighlight %}
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/2015-09-05_using_jenkins_credentials_plugin_to_create_the_biouno_figshare_plugin/credentials_screenshot_001.png' alt="Screen shot 001" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/2015-09-05_using_jenkins_credentials_plugin_to_create_the_biouno_figshare_plugin/credentials_screenshot_001.png' alt="Screen shot 001" /></center>
 
 When the user have to pick a credential, the name provider will display the name of the credential in Jenkins (not the display name).
 
@@ -261,7 +261,7 @@ And here is how the `config.jelly` of the notifier looks like.
 
 The `<c:select/>` is a special tag, provided by the Credentials Plug-in, that will call your `doFillCredentialsIdItems` method to fill a combo box with credentials ID's for the user to pick one.
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/2015-09-05_using_jenkins_credentials_plugin_to_create_the_biouno_figshare_plugin/credentials_screenshot_002.png' alt="Screen shot 002" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/2015-09-05_using_jenkins_credentials_plugin_to_create_the_biouno_figshare_plugin/credentials_screenshot_002.png' alt="Screen shot 002" /></center>
 
 That is all for today. We hope you find it useful and will enjoy using the plug-in. It is being released this weekend as 0.1 to [our update center](http://biouno.org/jenkins-update-site.html).
 

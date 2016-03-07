@@ -12,7 +12,7 @@ author: Bruno P. Kinoshita
 London. Luckily they also live transmitted the event via Internet, and it was definitely worth 
 waking up at 5AM (UTC -3) to watch it! 
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/DNADigest.png' alt="DNADigest" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/DNADigest.png' alt="DNADigest" /></center>
 
 DNADigest is a not-for-profit organization that is working on solutions for secure data sharing. 
 This problem involves several fields (metadata, infrastructure, data encryption, genomics, ...) 
@@ -23,9 +23,9 @@ but the audio wasn't so good. From what I could tell the atmosphere was really n
 the whole event a very productive meeting. I hope to be near London to participate in a 
 future DNADigest Hackday.
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/dnahd1.jpg' alt="DNADigest Hackday" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/dnahd1.jpg' alt="DNADigest Hackday" /></center>
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/dnahd2.jpg' alt="DNADigest Hackday" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/dnahd2.jpg' alt="DNADigest Hackday" /></center>
 
 The activities were coordinated by the DNADigest team and while I couldn't listen to 
 the audio very well, the [Twitter #dnahd hashtag](https://twitter.com/search?q=%23dnahd&src=hash) was being 

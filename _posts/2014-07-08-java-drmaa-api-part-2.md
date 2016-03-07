@@ -11,7 +11,7 @@ author: Bruno P. Kinoshita
 This is the first part of a series of posts about a Java API for PBS servers, compliant with 
 the [DRMAA spec](http://www.drmaa.org/documents.php). 
 
-[Java DRMAA API &mdash; part 1]({{site.url}}{{ site.baseurl }}2014/06/21/java-drmaa-api-part-1/)
+[Java DRMAA API &mdash; part 1]({{ site.baseurl }}2014/06/21/java-drmaa-api-part-1/)
 
 This post could also be entitled "Why we won't use DRMAA for our Jenkins plug-in", with spoilers 
 included. After working on a [prototype DRMAA PBS Java library](https://github.com/biouno/drmaa-pbs) 
@@ -42,7 +42,7 @@ seen in DRMAA v1 and read about the DRMAA v2, and extract a general API from our
 Then the next step will be write a sge-java-api and create a new plug-in, that supports both 
 PBS and SGE.
 
-<center><img src='{{site.url}}{{ site.baseurl }}assets/posts/MOTHAFUCKINSCIENCE.gif' alt="SCIENCE!" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/MOTHAFUCKINSCIENCE.gif' alt="SCIENCE!" /></center>
 
 This is an interesting and very challenging task, so if you have interest in helping, drop 
 us a line in our [mailing list](https://groups.google.com/d/forum/biouno-developers).

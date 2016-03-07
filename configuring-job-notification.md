@@ -13,16 +13,16 @@ title: Configuring Job notification
 </p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
 	</a>
 </p>
 
 <p>All you have to do is fill in the e-mail address.</p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
 	</a>
 </p>
 
@@ -38,7 +38,7 @@ title: Configuring Job notification
 	add more options when sending e-mail notifications.</p>
 
 <p class="center">
-	<a href="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
-		<img src="{{site.url}}{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
+	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
+		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
 	</a>
 </p>
