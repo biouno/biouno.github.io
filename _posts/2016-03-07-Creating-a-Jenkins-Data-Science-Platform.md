@@ -29,7 +29,7 @@ A variety of data can be maintained in the Jenkins artifact archives. Builds can
 
 Although Jenkins is not currently backed by a database system this has the advantage of simplicity and flexibility. In addition, Jenkins provides an extensive API for querying build and artifact information across the entire build system thus providing some of the advantages of structured database storage.
 
-## Genera Data Munging and Processing
+## General Data Munging and Processing
 This is one of the areas where Jenkins really shines. Any external process or tool can be easily integrated as a build step. Data 'wrangling and munging' are important data science competencies that can be carried out with ease on Jenkins. Support for the Groovy dynamic scripting language and Python, which is popular with data scientists, provides an unlimited way of integrating custom scripts and external programs into Jenkins workflows without the need to write custom plugins.  Support for ssh allows remote execution of commands and can be easily adapted for high performance parallel computing tasks. Scientific software packages may be available only on certain  compute servers. Using ssh build steps you can easily execute these packages on the remote servers and then manage the output using Jenkins. The open source BioUno project has pioneered the implementation of scientific software packages as Jenkins plugins [2].
 
 ## Integration with Domain specific Software Packages
