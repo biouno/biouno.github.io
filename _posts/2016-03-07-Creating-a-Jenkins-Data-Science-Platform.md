@@ -42,13 +42,13 @@ Finally, results can be easily communicated  between data and laboratory scienti
 ## Summary
 In summary, I feel that Jenkins makes an excellent platform for data science experimentation and for providing practical and easy access to data science algorithms and visualizations to lab scientists. Although several challenges remain for making Jenkins a mainstream platform for data scientists (many are currently experimenting with the concept of analysis 'notebooks', such as iPython, Apache Jupiter, Beaker etc.), I content that an even more significant challenge stems from the historical user base of Jenkins. I have found that many DevOp engineers are ambivalent about the life/data-science uses of Jenkins that I and my colleagues at the BioUno project are proposing.  Although many appreciate the demonstrable power that Jenkins can inject into computational life/data sciences, many worry about the complexities required to support Jenkins in these challenging, demanding and less understood (from a DevOp engineer's view point) research areas. Many DevOp shops want to have control over the Jenkins configuration, plugins and environment, and rightly so, don't want a data scientist to dictate additional complexity. Even so, I have found that the ease with which one can deploy a working instance of Jenkins and effectively use it outside the DevOp Jenkins environment makes Jenkins a relatively easy addition to the toolset that data scientists can deploy and maintain on their own. Of course, it would be great if the DevOps community was to accept and contribute to these new and open research areas, and I hope that the BioUno project will become one of many  connecting nodes between DevOp engineers and life/data scientists.
 
-[1] http://blog.udacity.com/2014/11/data-science-job-skills.html
-[2] http://biouno.org/
-[3] http://biouno.org/jenkins-plugins.html
-[4] https://figshare.com/articles/Jenkins_as_a_Scientific_Data_and_Image_Processing_Platform/1098763
-[5] https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin
-[6] https://wiki.jenkins-ci.org/display/JENKINS/Python+Plugin
-[7] https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin
-[8] https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin
+1. [http://blog.udacity.com/2014/11/data-science-job-skills.html](http://blog.udacity.com/2014/11/data-science-job-skills.html)
+2. [http://biouno.org/](http://biouno.org/)
+3. [http://biouno.org/jenkins-plugins.html](http://biouno.org/jenkins-plugins.html)
+4. [https://figshare.com/articles/Jenkins_as_a_Scientific_Data_and_Image_Processing_Platform/1098763](https://figshare.com/articles/Jenkins_as_a_Scientific_Data_and_Image_Processing_Platform/1098763)
+5. [https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin)
+6. [https://wiki.jenkins-ci.org/display/JENKINS/Python+Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Python+Plugin)
+7. [https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin)
+8. [https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin)
 
 
