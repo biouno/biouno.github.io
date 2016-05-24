@@ -47,11 +47,11 @@ Below are two report examples.
 
 #### A build report for a PDF file upload 
 The report displays the 4 standard tabs
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070414_060550_PM.jpg' alt="Summary Display for PDF" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_060550_PM.jpg' alt="Summary Display for PDF" /></center>
 
 #### A build report for a CSV file upload 
 The report displays an additional 3 tabs and extra fields in the DESCRIPTION tab. 
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070414_061309_PM.jpg' alt="Summary Display for CSV" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_061309_PM.jpg' alt="Summary Display for CSV" /></center>
 
 ## Summary Display Plugin
 The Summary Display plugin is a powerful report generator. It uses an XML configuration file to generate a number of different HTML reports on the build page. The available report types and the required XML elements for generating them are described in detail on the [plugin wiki page](https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin). The build process is responsible for generating the XML configuration file, while the Summary Display plugin is used in a post-build action for parsing the XML and generating the HTML report that is displayed on the build page. In this blog entry I will focus on the generation of multi-tab reports, as they are capable of reporting in a consistent, compact and familiar way a variety of numerical data and annotations.
@@ -153,7 +153,7 @@ _Note: The **writeXMLProperties\_scriptlet** takes 2 parameters
 2. The _configProps_ should be set to the Summary Display report configuration file. The Scriptler plugin allows you to use Jenkins environment tokens to refer to the location of this file.
 
 This build step **generates the custom formatted XML report file** that the Summary Display plugin then uses in rendering the build report.
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070514_113654_AM.jpg' alt="Summary Display Configuration Sriptlet" /></center>
 
 _NOTE_: The groovy code for **writeXMLProperties\_scriptlet** is available from my [github repository](https://github.com/imoutsatsos/jenkins-scriptlets.git)
 
@@ -161,7 +161,7 @@ The Scriptler step generates the **writeXMLSummary.xml** file that the Summary D
 
 In the project's **post-build actions** we now add the Summary Display Plugin step, referred to as **'Publish XM Summary Reports'**. 
 The configuration of this action requires thta we provide one or more appropriately formatted XML files. We will provide the XML file (_writeXMLSummary.xml_) that the Scriptler step above generated.
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070714_040251_PM.jpg' alt="Summary Display Report 1" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070714_040251_PM.jpg' alt="Summary Display Report 1" /></center>
 
 ## Report Examples
 In addition to the reports displayed under 'Requirements', the following figures display additional Multi-Tab Reportss that are dynamically generated from a single report configuration (the one shown above)
@@ -169,7 +169,7 @@ In addition to the reports displayed under 'Requirements', the following figures
 We see that the tabs **dynamically adjust** to the availability of properties and content data but importantly, maintain a **consistent 'look and feel'** that aids users in data review and improved comprehension of the results of a data analysis. 
 
 The PROPERTIES tab content is read from a standard Java properties file that is generated during the build.
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070414_064719_PM.jpg' alt="Summary Display Properties Tab" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_064719_PM.jpg' alt="Summary Display Properties Tab" /></center>
 
 The CHARACTER_COLUMNS tab content only appears when CSV files are parsed. The content is read from the meta.csv file that is generated during the build
-<center><img src='{{ site.baseurl }}/assets/posts/IKM_Clipping_070414_061534_PM.jpg' alt="Summary Display CSV Character Columns Metadata" /></center>
+<center><img src='{{ site.baseurl }}assets/posts/IKM_Clipping_070414_061534_PM.jpg' alt="Summary Display CSV Character Columns Metadata" /></center>
