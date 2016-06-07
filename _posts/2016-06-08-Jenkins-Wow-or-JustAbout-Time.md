@@ -56,7 +56,6 @@ Figure 6: Workflow editor in Knime and Galaxy
 All of these tools provide interactive configuration and exploration of scientific workflows with well organized libraries of components that can be used to construct and enhance the data pipelines. I think that Jenkins would benefit from a similar approach to the exploration and construction of jobs and job pipelines. In the mean time, I welcome the Blue Ocean Jenkins project and hope that it will truly form the basis of a more interactive, modern and comprehensive framework for building future life and data science applications.
 
 
-
 1. [Orchestrating your Delivery Pipelines with Jenkins](https://www.infoq.com/articles/orch-pipelines-jenkins)
 2. [What's the future of the Job-DSL plugin RE: Jenkins 2.0](https://groups.google.com/forum/#!topic/job-dsl-plugin/lpWYkE1ILao)
 3. [Introducing Blue Ocean: a new user experience for Jenkins](https://jenkins.io/blog/2016/05/26/introducing-blue-ocean/)
