@@ -136,5 +136,5 @@ paginate_path: /blog/page:num
 baseurl: /
 
 gems: [jekyll-paginate]
-
+encoding: UTF-8
 
