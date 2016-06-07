@@ -38,7 +38,7 @@ One of the problems encountered with chained job pipelines is the fact that the 
 Figure 3: Visualization for a scripted Pipeline 
 
 ## Standing on my Soap Box 
-The observations I just described make me a little more pragmatic and reserved for the new Blue Ocean UI of Jenkins introduced this past week. Twitter was on fire with comments and kudos for the project! Obviously, the perceived functionality/usability of a software is largely attributed to a modern and responsive user interface. A couple tweets that made me smile said 'Wow, the new Jenkins UI finally looks usable!' and another 'Oh wow, a Jenkins UI that not only doesn’t suck but actually looks *really* awesome.' 
+The observations I just described make me a little more pragmatic and reserved for the new Blue Ocean UI of Jenkins introduced this past week. Twitter was on fire with comments and kudos for the project! Obviously, the perceived functionality/usability of a software is largely attributed to a modern and responsive user interface. A couple tweets that made me smile said 'Wow, the new Jenkins UI finally looks usable!' and another 'Oh wow, a Jenkins UI that not only doesn't suck but actually looks *really* awesome.' 
 
 <img src='{{ site.baseurl }}assets/posts/assets/posts/2016-06-8-Jenkins-Wow-or-JustAbout-Time/BlueOcean.png' alt="BlueOcean.png" align="left" width="400px" />
 Figure 4: The new Blue Ocean Jenkins scripted pipeline view
