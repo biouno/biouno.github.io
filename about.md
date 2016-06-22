@@ -3,9 +3,9 @@ layout: page
 title: About the project
 ---
 
-##Project Motivation
+## Project Motivation
 
-###Complexity vs Quality: The Bumpy Relation of Scientific Software
+### Complexity vs Quality: The Bumpy Relation of Scientific Software
 
 Scientific software is used in physical, environmental, earth and life sciences on a daily
 basis to make important discoveries. Due to its highly specialized nature, scientific
@@ -18,7 +18,7 @@ and even less maintained in the long run
 [Computational science: Error... why scientific programming does not compute](http://www.nature.com/news/2010/101013/full/467775a.html)
 (Zeeya Merali, Nature: 2010)
  
-###Reproducible Computational Research
+### Reproducible Computational Research
 
 Many issues plaguing scientific software have been discussed in the literature, but the ability to
 reproduce computational discoveries has taken center stage in recent years. The term **reproducible
@@ -28,7 +28,7 @@ solutions to issues that affect the reproducibility of computational scientific 
 [Scientific Reproducibility through Computational Workflows and Shared Provenance Representations](http://www.evernote.com/l/AJ8x2KJTSTlGmbrFDKXSR709G2wRjbN32Tk/)
 (Yolanda Gil, NSF Workshop: 2010)
 
-###Some Proposed Solutions
+### Some Proposed Solutions
 
 Although the challenge of reproducible computational research is multi-dimensional, some of
 the proposed solutions are rooted in existing, **well established and robust software
@@ -54,7 +54,7 @@ under the umbrella of the **open-source community**. Open-source code is meant t
 collaborative effort, where programmers improve upon the source code and share the changes
 within the community.
 
-##Project Mission
+## Project Mission
 
 The BioUno open source project seeks to improve scientific application automation, 
 performance, reproducibility, usability, and management by applying and extending software 
@@ -62,7 +62,7 @@ engineering (SE) best practices in the field of scientific research applications
 [Deliverables from the project](/publications.html) have found a variety of applications
 in life science research (bioinformatics, genetics, drug discovery).
 
-##Project Objectives
+## Project Objectives
 
 * We **explore and apply** the application of best practices in software engineering to 
 support the project mission
@@ -80,7 +80,7 @@ by scientists
 
 Check out our [roadmap](/roadmap.html) for a list of short and long term specific objectives.
 
-##Project Strategy
+## Project Strategy
 
 BioUno has pioneered the use of continuous integration tools and techniques to create reproducible
 computational pipelines and to manage computer clusters in support of scientific research applications.

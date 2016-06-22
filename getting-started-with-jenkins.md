@@ -19,7 +19,7 @@ for you at _http://localhost:8080_.
     </a>
 </p>
 	
-###Other resources for learning the basics of Jenkins
+### Other resources for learning the basics of Jenkins
 	
 Now you can play with your Jenkins instance, creating jobs, installing 
 plug-ins and investigating other features available. Take some time to get 
