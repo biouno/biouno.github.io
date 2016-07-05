@@ -2,7 +2,6 @@
 layout: page
 title: Tutorial 1 Integrating Jenkins with R-script
 ---
-# Tutorial 1: Integrating Jenkins with R-script
 
 ## Passing Jenkins environment and job/ build parameters to R
 
@@ -131,11 +130,11 @@ These primary skills provide the basis for parametrizing R scripts from Jenkins.
 
 ## R-functions used in this tutorial
 
-Here we reference the R fucntions that are used in this tutorial. You may want to review them for further details on how these functions are used.
+Here we reference the R functions that are used in this tutorial. You may want to review them for further details on how these functions are used.
 
-Reference | Function | Reference|
----- | ---- | ---- |
-1| Sys.getenv | https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html |
-2 | sprintf | https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html |
-3 | read.table | https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html|
+| Reference | Function | Details|
+| ---- | ---- | ---- |
+| 1| Sys.getenv | https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html |
+| 2 | sprintf | https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html |
+| 3 | read.table | https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html|
 
