@@ -132,6 +132,7 @@ These primary skills provide the basis for parametrizing R scripts from Jenkins.
 
 Here we reference the R functions that are used in this tutorial. You may want to review them for further details on how these functions are used.
 
+{:.pure-table}
 | Reference | Function | Details|
 | ---- | ---- | ---- |
 | 1| Sys.getenv | https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html |
