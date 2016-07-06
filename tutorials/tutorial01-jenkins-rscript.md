@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tutorial 1: Integrating Jenkins with R-script
+title: Tutorial 1 - Integrating Jenkins with R-script
 ---
 
 ## Passing Jenkins environment and job/ build parameters to R
