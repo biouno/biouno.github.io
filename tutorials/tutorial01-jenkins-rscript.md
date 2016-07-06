@@ -128,7 +128,7 @@ You may want to review the R manual for further details on how these functions a
 | Reference | Function | Details|
 | ---- | ---- | ---- |
 | 1| Sys.getenv | [https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html) |
-| 2 | sprintf | (https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html) |
-| 3 | read.table | (https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html)|
-| 4 | data.frame | (https://stat.ethz.ch/R-manual/R-devel/library/base/html/data.frame.html)|
+| 2 | sprintf | [https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html](https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html) |
+| 3 | read.table | [https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html)|
+| 4 | data.frame | [https://stat.ethz.ch/R-manual/R-devel/library/base/html/data.frame.html](https://stat.ethz.ch/R-manual/R-devel/library/base/html/data.frame.html)|
 
