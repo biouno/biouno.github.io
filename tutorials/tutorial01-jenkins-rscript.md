@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Tutorial 1 Integrating Jenkins with R-script
+title: Tutorial 1: Integrating Jenkins with R-script
 ---
 
 ## Passing Jenkins environment and job/ build parameters to R
 
-This tutorial will demonstrate how to pass build parameters and other useful Jenkins configuration metadata to the  R script. Strategies demonstrated in  this tutorial allow the parametrization of the R-Script via the Jenkins configuration and build parameters.
+This tutorial will demonstrate how to pass Jenkins build parameters and configuration metadata to the  R script. Strategies demonstrated in  this tutorial allow the parametrization of the R-Script via the Jenkins configuration and build parameters.
 
-## Tutorial 1 Jenkins Project
+## Tutorial 1: Jenkins Project
 
 The Jenkins example project is a freestyle project that captures two parameters from the build user interface.
 
@@ -16,13 +16,13 @@ The Jenkins example project is a freestyle project that captures two parameters 
 
 The project has a single build step 'Execute R script'
 
-## Tutorial 1 Configuration file
+## Tutorial 1: Configuration file
 
 You can download the Jenkins project configuration from here:
 
-## The 'Execute R script' Step: What is happening
+## The 'Execute R script' Build Step
 
-Here is the R code that will be executed.
+The R-plugin will execute the following R code.
 
 ```R
 j<-Sys.getenv(c("JENKINS_URL"))
@@ -44,11 +44,9 @@ message<-sprintf("%s was born in the decade of %s, the %s",bparam.name, bparam.d
 print(message)
 ```
 
-Let's see step by step what is happening here:
+Let's have a step by step walk through this code:
 
-### R-script reads Jenkins parameters and environment variables
-
-The **Jenkins environment and build parameters are exported as environment variables** and can be made available to the R-script using the R function `Sys.getenv` [1].
+### Passing Jenkins parameters and environment variables to R
 
 ```R
 j<-Sys.getenv(c("JENKINS_URL"))
@@ -58,40 +56,32 @@ p<-Sys.getenv(c("YOUR_FIRSTNAME","DECADE_OF_BIRTH"))
 bparam.name<-p['YOUR_FIRSTNAME']
 bparam.decade<-p['DECADE_OF_BIRTH']
 ```
+The **Jenkins environment and build parameters are exported as environment variables** and can be made available to the R-script using the R function `Sys.getenv` [1]. We read the ``` JENKINS_URL ``` and ```YOUR_FIRSTNAME,DECADE_OF_BIRTH``` build parameters from the environment and assign them to the corresponding ```jenkins.url, bparam.name, bparam.decade``` R-script variables.
 
-We read the ``` JENKINS_URL ``` and ```YOUR_FIRSTNAME,DECADE_OF_BIRTH``` build parameters from the environment and store them in the corresponding ```jenkins.url, bparam.name, bparam.decade``` R-script local variables
-
-### R-script reads an external configuration (properties) file
+### Reading an external configuration (properties) file in R
 
 *Note*: **Enable anonymous read access** in Jenkins global security! This will allow the R-script to read the configuration file
-
-An important  input source for many R analyses are various configuration files that Jenkins can access and serve from a URL. 
-To start, we will assume that these configuration files are **simple Java properties** since they can be easily read and created using the native scripting language of Jenkins, Groovy.
-
-The URL of the configuration file to be read by the R-script will typically be known or can be derived using environment variables, such as the Jenkins URL.
-For example to read the `decade.properties` file stored in the `JENKINS_HOME/userContent/tutorials/properties` folder we can use the R `sprintf` [2] function to generate the Jenkins URL serving this file.
-
-```R
-propUrl<-sprintf("%suserContent/tutorials/properties/decade.properties",jenkins.url)
-```
-
-Note that the `jenkins.url` variable was assigned earlier by reading the corresponding environment variable into the R `jenkins.url` variable using the expression:
-
-`jenkins.url<-e['JENKINS_URL']`
-
-Now we are ready to read the configuration file using the R function `read.table`. The arguments to this function treat the java style configuration file as a simple `=` delimited file.
 
 ```R
 # Read an external configuration/properties file from Jenkins
 propUrl<-sprintf("%suserContent/tutorials/properties/decade.properties",jenkins.url)
 decade.props<-read.table(propUrl, header=FALSE, sep="=", row.names=1, strip.white=TRUE, na.strings="NA", stringsAsFactors=FALSE)
 ```
+Input for many R analyses comes from configuration and data files served from a Jenkins URL. 
+To start, we assume that configuration files are **simple Java properties**. Java properties files can be easily read and created using Groovy, the native scripting language of Jenkins, but it's not that more difficult to do the same with R.
+In our example project, custom messages for each decade are read from the `decade.properties` file in the `JENKINS_HOME/userContent/tutorials/properties` folder. I make use of the R `sprintf` [2] function and the `jenkins.url` variable to generate the Jenkins URL serving this file.
 
-This R script reads the `decade.properties` file into the `decade.props` **R data frame**.
+```R
+propUrl<-sprintf("%suserContent/tutorials/properties/decade.properties",jenkins.url)
+```
 
-### Getting configuration properties from the R table
+Note that the `jenkins.url` variable was assigned earlier by reading the corresponding environment variable into the R `jenkins.url` variable using the expression: `jenkins.url<-e['JENKINS_URL']`
 
-In the step above we've read the configuration properties into an R `data frame. 
+Once we have the file URL we can read the configuration file using the `read.table`[3] R function. The `sep="="` argument to this function splits the java key-value pairs into separate columns. The `read.table`return type is an R `data frame`[4], so the `decade.properties` file is now assigned to the `decade.props` **R data frame**.
+
+### Reading configuration properties from the R data frame
+
+In the step above we've read the configuration properties into an R `data frame`. 
 How do we now access these properties so that we can use them in our code? 
 
 The next part of the R-code demonstrates exactly that.
@@ -119,23 +109,26 @@ print(message)
 
 We format a message and `print` it to the console
 
-## What have we learned  in this tutorial
+## What have we learned?
 
-1. How to use the Jenkins environment variables to create corresponding R variables
+In this tutorial we have developed some primary skill for parametrizing R scripts from Jenkins. We have demonstrated:
+
+1. How to read and create R variables from **Jenkins environment** variables and **build parameters**
 2. How to use a static configuration Java-style properties files to create a corresponding R data frame
 3. How to read properties from an R data frame with named rows
 4. How to assign variables from an R data frame with named rows
 
-These primary skills provide the basis for parametrizing R scripts from Jenkins. In a future tutorial we will discuss strategies for passing R script results and graphics back to Jenkins. 
+In a future tutorial we will discuss strategies for passing R script results and graphics back to Jenkins. 
 
 ## R-functions used in this tutorial
 
-Here we reference the R functions that are used in this tutorial. You may want to review them for further details on how these functions are used.
+You may want to review the R manual for further details on how these functions are used.
 
 {:.pure-table}
 | Reference | Function | Details|
 | ---- | ---- | ---- |
-| 1| Sys.getenv | https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html |
-| 2 | sprintf | https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html |
-| 3 | read.table | https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html|
+| 1| Sys.getenv | (https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.getenv.html) |
+| 2 | sprintf | (https://stat.ethz.ch/R-manual/R-devel/library/base/html/sprintf.html) |
+| 3 | read.table | (https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html)|
+| 4 | data.frame | (https://stat.ethz.ch/R-manual/R-devel/library/base/html/data.frame.html)|
 
