@@ -24,7 +24,7 @@ In this build step, the R-Script will execute using the R-plugin. The R-script o
 
 ## Tutorial 1: Configuration file
 
-You can download the Jenkins project [configuration](({{ site.baseurl }}assets/jobs/TUTOR_RJENKINS_001/confi.xml)) and [decade.properties]({{ site.baseurl }}assets/userContent/tutorials/properties/decade.properties).
+You can download the Jenkins project [configuration]({{ site.baseurl }}assets/jobs/TUTOR_RJENKINS_001/confi.xml) and [decade.properties]({{ site.baseurl }}assets/userContent/tutorials/properties/decade.properties).
 
 The ```decade.properties``` file looks like this:
 
