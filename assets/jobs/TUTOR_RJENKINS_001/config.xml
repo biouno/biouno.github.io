@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Introduction to R with Jenkins tutorial. Simple use of Jenkins parameters in R</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>YOUR_FIRSTNAME</name>
+          <description>Enter your first name</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>DECADE_OF_BIRTH</name>
+          <description>Select you bith-decade</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>1950</string>
+              <string>1960</string>
+              <string>1970</string>
+              <string>1980</string>
+              <string>1990</string>
+              <string>2000</string>
+              <string>2010</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.biouno.r.R plugin="r@0.2">
+      <command>j&lt;-Sys.getenv(c(&quot;JENKINS_URL&quot;))
+jenkins.url&lt;-j[&apos;JENKINS_URL&apos;]
+
+p&lt;-Sys.getenv(c(&quot;YOUR_FIRSTNAME&quot;,&quot;DECADE_OF_BIRTH&quot;))
+bparam.name&lt;-p[&apos;YOUR_FIRSTNAME&apos;]
+bparam.decade&lt;-p[&apos;DECADE_OF_BIRTH&apos;]
+# Read an external configuration file from Jenkins
+# Read static dataType properties from properties file
+propUrl=sprintf(&quot;%suserContent/tutorials/properties/decade.properties&quot;,&apos;http://illuminationpc:8080/&apos;)
+decade.props&lt;-read.table(propUrl, header=FALSE, sep=&quot;=&quot;, row.names=1, strip.white=TRUE, na.strings=&quot;NA&quot;, stringsAsFactors=FALSE)
+
+decadePropKey&lt;-sprintf(&quot;d%s&quot;,bparam.decade)
+decade.message=decade.props[decadePropKey,1]
+
+message&lt;-sprintf(&quot;%s was born in the decade of %s, the %s&quot;,bparam.name, bparam.decade, decade.message)
+print(message)
+</command>
+    </org.biouno.r.R>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
