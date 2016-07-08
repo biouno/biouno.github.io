@@ -13,8 +13,14 @@ The Jenkins example project is a freestyle project that captures two parameters 
 
 - We will show how the R-script can access and use these parameters. In addition,
 - We will demonstrate how the R-script can access two other types of parameters that are useful for many types of analysis. These parameters originate in the Jenkins environment or an external configuration file
-
+<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
 The project has a single build step 'Execute R script'
+
+<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_buildStep.png' alt="Tutorial project build step" /></center>
+
+In this build step, the R-Script will execute using the R-plugin. The R-script output  (the contents of the ```message```  variable) is printed to the Jenkins console.
+
+<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_output.png' alt="Tutorial project output" /></center>
 
 ## Tutorial 1: Configuration file
 
@@ -100,7 +106,7 @@ This is the value of the indicated property. So decade.props['dNNNN',1] should r
 
 ### R-output to Jenkins console
 
-The R-plugin captures R-script output to the Jenkins console. So the output of any print statements is dispyed there
+The R-plugin captures R-script output to the Jenkins console. So the output of any print statements is displayed there
 
 ```R 
 message<-sprintf("%s was born in the decade of %s, the %s",bparam.name, bparam.decade, decade.message)
