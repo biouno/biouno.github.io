@@ -3,7 +3,7 @@ layout: page
 title: Sponsors
 ---
 
-##TupiLabs
+## TupiLabs
 
 <img src="{{ site.baseurl }}assets/img/tupilabs-logo.png" title="TupiLabs" width="300px" />
 

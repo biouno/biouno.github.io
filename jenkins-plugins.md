@@ -82,7 +82,7 @@ interface or by running a command in your shell.
 	</tbody>
 </table>
 
-###Other recommended Jenkins plug-ins
+### Other recommended Jenkins plug-ins
 
 Jenkins already has several plug-ins that you can find useful for your lab. We have listed a few plug-ins below with 
 a brief description.

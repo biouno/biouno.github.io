@@ -6,7 +6,7 @@ title: Using the Jenkins R Plug-in
 <p>
 	The Jenkins R plug-in has been released to the Jenkins community. So
 	you can download it from Jenkins update site directly. Follow the
-	instructions <a href="{{ site.baseurl }}docs/installing-plugins" title="Installing plug-ins">here</a> to install the plug-in.
+	instructions <a href="{{ site.baseurl }}installing-plugins.html" title="Installing plug-ins">here</a> to install the plug-in.
 </p>
 
 <p>
