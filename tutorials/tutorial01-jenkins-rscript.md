@@ -35,21 +35,17 @@ The ```decade.properties``` file looks like this:
 The R-plugin will execute the following R code.
 
 ```R
-j<-Sys.getenv(c("JENKINS_URL"))
-jenkins.url<-j['JENKINS_URL']
-
+jenkins.url<-Sys.getenv(c("JENKINS_URL"))
 p<-Sys.getenv(c("YOUR_FIRSTNAME","DECADE_OF_BIRTH"))
+# assign R variables from p array
 bparam.name<-p['YOUR_FIRSTNAME']
 bparam.decade<-p['DECADE_OF_BIRTH']
-
 # Read an external configuration file from Jenkins
 # Read static dataType properties from properties file
-propUrl=sprintf("%suserContent/tutorials/properties/decade.properties",'http://illuminationpc:8080/')
+propUrl=sprintf("%suserContent/tutorials/properties/decade.properties",jenkins.url)
 decade.props<-read.table(propUrl, header=FALSE, sep="=", row.names=1, strip.white=TRUE, na.strings="NA", stringsAsFactors=FALSE)
-
 decadePropKey<-sprintf("d%s",bparam.decade)
 decade.message=decade.props[decadePropKey,1]
-
 message<-sprintf("%s was born in the decade of %s, the %s",bparam.name, bparam.decade, decade.message)
 print(message)
 ```
