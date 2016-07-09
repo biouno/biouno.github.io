@@ -10,10 +10,11 @@ This tutorial will demonstrate how to pass Jenkins build parameters and configur
 ## Tutorial 1: Jenkins Project
 
 The Jenkins example project is a freestyle project that captures two parameters from the build user interface.
+<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
 
 - We will show how the R-script can access and use these parameters. In addition,
 - We will demonstrate how the R-script can access two other types of parameters that are useful for many types of analysis. These parameters originate in the Jenkins environment or an external configuration file
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
+
 The project has a single build step 'Execute R script'
 
 <center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_buildStep.png' alt="Tutorial project build step" /></center>
