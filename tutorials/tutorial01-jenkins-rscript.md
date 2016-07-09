@@ -10,10 +10,11 @@ This tutorial will demonstrate how to pass Jenkins build parameters and configur
 ## Tutorial 1: Jenkins Project
 
 The Jenkins example project is a freestyle project that captures two parameters from the build user interface.
+<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
 
 - We will show how the R-script can access and use these parameters. In addition,
 - We will demonstrate how the R-script can access two other types of parameters that are useful for many types of analysis. These parameters originate in the Jenkins environment or an external configuration file
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
+
 The project has a single build step 'Execute R script'
 
 <center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_buildStep.png' alt="Tutorial project build step" /></center>
@@ -35,21 +36,17 @@ The ```decade.properties``` file looks like this:
 The R-plugin will execute the following R code.
 
 ```R
-j<-Sys.getenv(c("JENKINS_URL"))
-jenkins.url<-j['JENKINS_URL']
-
+jenkins.url<-Sys.getenv(c("JENKINS_URL"))
 p<-Sys.getenv(c("YOUR_FIRSTNAME","DECADE_OF_BIRTH"))
+# assign R variables from p array
 bparam.name<-p['YOUR_FIRSTNAME']
 bparam.decade<-p['DECADE_OF_BIRTH']
-
 # Read an external configuration file from Jenkins
 # Read static dataType properties from properties file
-propUrl=sprintf("%suserContent/tutorials/properties/decade.properties",'http://illuminationpc:8080/')
+propUrl=sprintf("%suserContent/tutorials/properties/decade.properties",jenkins.url)
 decade.props<-read.table(propUrl, header=FALSE, sep="=", row.names=1, strip.white=TRUE, na.strings="NA", stringsAsFactors=FALSE)
-
 decadePropKey<-sprintf("d%s",bparam.decade)
 decade.message=decade.props[decadePropKey,1]
-
 message<-sprintf("%s was born in the decade of %s, the %s",bparam.name, bparam.decade, decade.message)
 print(message)
 ```
