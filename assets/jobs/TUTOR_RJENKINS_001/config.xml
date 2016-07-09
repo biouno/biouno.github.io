@@ -12,6 +12,10 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
@@ -30,7 +34,6 @@
               <string>1980</string>
               <string>1990</string>
               <string>2000</string>
-              <string>2010</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -46,20 +49,17 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <org.biouno.r.R plugin="r@0.2">
-      <command>j&lt;-Sys.getenv(c(&quot;JENKINS_URL&quot;))
-jenkins.url&lt;-j[&apos;JENKINS_URL&apos;]
-
+      <command>jenkins.url&lt;-Sys.getenv(c(&quot;JENKINS_URL&quot;))
 p&lt;-Sys.getenv(c(&quot;YOUR_FIRSTNAME&quot;,&quot;DECADE_OF_BIRTH&quot;))
+# assign R variables from p array
 bparam.name&lt;-p[&apos;YOUR_FIRSTNAME&apos;]
 bparam.decade&lt;-p[&apos;DECADE_OF_BIRTH&apos;]
 # Read an external configuration file from Jenkins
 # Read static dataType properties from properties file
-propUrl=sprintf(&quot;%suserContent/tutorials/properties/decade.properties&quot;,&apos;http://illuminationpc:8080/&apos;)
+propUrl=sprintf(&quot;%suserContent/tutorials/properties/decade.properties&quot;,jenkins.url)
 decade.props&lt;-read.table(propUrl, header=FALSE, sep=&quot;=&quot;, row.names=1, strip.white=TRUE, na.strings=&quot;NA&quot;, stringsAsFactors=FALSE)
-
 decadePropKey&lt;-sprintf(&quot;d%s&quot;,bparam.decade)
 decade.message=decade.props[decadePropKey,1]
-
 message&lt;-sprintf(&quot;%s was born in the decade of %s, the %s&quot;,bparam.name, bparam.decade, decade.message)
 print(message)
 </command>
