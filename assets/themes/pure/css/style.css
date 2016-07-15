@@ -184,3 +184,13 @@ From: https://gist.github.com/edwardhotchkiss/2005058
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
+
+.pure-g-r [class*="pure-u"] {
+    font: 13px/1.2 Arial, sans-serif;
+    font-family: georgia,"palatino linotype",palatino,"times new roman",times,serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: #202020;
+    text-rendering: optimizelegibility;
+}
