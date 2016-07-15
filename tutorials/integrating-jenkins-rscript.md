@@ -22,7 +22,7 @@ We will introduce each of these topics in separate tutorials and we will demonst
 ## Tutorials Index
 
 ### [Using the Jenkins R-Plugin]({{ site.baseurl }}tutorials/using-the-jenkins-r-plugin.html)
-- [Install the R-Plugin]({{ site.baseurl }}/installing-plugins.html)
+- [Install the R-Plugin]({{ site.baseurl }}installing-plugins.html)
 - Writing a Jenkins build step that uses the R-Plugin
 - Reviewing graphical output from R
 
