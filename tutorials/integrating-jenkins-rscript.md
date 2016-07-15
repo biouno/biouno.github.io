@@ -19,14 +19,14 @@ For example, typical requirements include:
 
 We will introduce each of these topics in separate tutorials and we will demonstrate some effective design strategies. We will try to keep the R code in these tutorials simple as to focus primarily on issues of Jenkins-R-Script integration rather than the analytical power of the R language.
 
-##Links to Tutorials
+## Tutorials Index
 
-### Using the Jenkins R-Plugin
-- Install the R-Plugin
+### [Using the Jenkins R-Plugin]({{ site.baseurl }}tutorials/using-the-jenkins-r-plugin.html)
+- [Install the R-Plugin]({{ site.baseurl }}/installing-plugins.html)
 - Writing a Jenkins build step that uses the R-Plugin
 - Reviewing graphical output from R
 
-### Tutorial 1 - Integrating Jenkins with R-script
+### Tutorial 1 - [Integrating Jenkins with R-script]({{ site.baseurl }}tutorials/tutorial01-jenkins-rscript.html)
 - Passing Jenkins environment and job/ build parameters to R
 - Creating R variables from configuration files
   - Reading Java property files into R data frames
