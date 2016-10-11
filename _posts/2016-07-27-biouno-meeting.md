@@ -20,7 +20,7 @@ Hangouts.
 * Control number of items shown in Active Choice Options.
     * note: There is already a ticket for that in JIRA
 * Allow an HTML select element to be displayed like a multi-select, but the user must choose just one
-    * action: @ioannis: create ticket
+    * action: @ioannis: ~~create ticket~~ [JENKINS-38889](https://issues.jenkins-ci.org/browse/JENKINS-38889)
 * AC-Reactive-Reference: Easier way to pass an 'input' value to the build-New return type option?
     * action: To think
 * Improve 'trigger' control of a 'self-referential' active reference.
