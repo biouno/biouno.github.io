@@ -45,7 +45,7 @@ Hangouts.
     * note: related to: Bug [JENKINS-34188](https://issues.jenkins-ci.org/browse/JENKINS-34188): jenkins.log noise: "script parameter ... is not an instance of Java.util.Map."
     * action: @bruno will work on this issue in this development cycle
 * Bug [JENKINS-36158](https://issues.jenkins-ci.org/browse/JENKINS-36158): Active choice reactive reference parameter not working on checkbox reference
-    * action: @ioannis will reproduce and comment on the ticket
+    * action: @ioannis ~~will reproduce and comment on the ticket~~ Can't reproduce. See CheckBoxValue_Propagation project on test server. Left comment on JIRA (10/11/2016)
 * [JENKINS-35101](https://issues.jenkins-ci.org/browse/JENKINS-35101) The selected values of checkbox reactive parameter are not available in Scriptler groovy script
     * note: I think I've also experienced this
     * note: Need examples to test with
