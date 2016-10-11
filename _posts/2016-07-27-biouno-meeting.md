@@ -51,7 +51,7 @@ Hangouts.
     * note: Need examples to test with
     * note: @bruno pinged the user. If there's no answer, close as Not able to Reproduce or similar status
 * Value of file type Active Choice React Reference is not cascaded. Want to cascade name of user selected file
-    * action: @ioannis will file an issue in JIRA
+    * action: @ioannis ~~will file an issue in JIRA~~ [JIRA-38893](https://issues.jenkins-ci.org/browse/JENKINS-38893)
     * action: @bruno will work this ticket, given that the file parameter works and should be easy to fix
 
 ## Future Directions
