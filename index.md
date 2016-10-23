@@ -2,6 +2,7 @@
 layout: page
 title: The BioUno project
 ---
+{% include JB/setup %}
 
 The ​BioUno​ open­ source project seeks to improve scientific application automation, 
 performance, reproducibility, usability, and management by applying and extending software 
@@ -25,7 +26,19 @@ by scientists
 
 Read more [about the project](/about.html), its mission, objectives, motivations and strategy.
 
----
+## Latest from our Blog
+
+<div class="">
+    <ul class="">
+{% for post in site.posts limit: 5 %}
+        <li class=""><a href="{{ post.url }}" class="">{{ post.title }}</a> &mdash; <small><em>{{ post.date | date: "%-d %B %Y" }} by {{ post.author }}</em></small></li>
+{% endfor %}
+    </ul>
+</div>
+
+[>> more from our blog](/blog/).
+
+## BioUno on social media
 
 <div class=''>
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23biouno+OR+%40biouno" data-widget-id="445763950747979776">Tweets about "#biouno OR @biouno"</a>
@@ -41,3 +54,5 @@ $(function() {
 	});
 });
 </script>
+
+[>> follow us on Twitter!](https://twitter.com/biouno)

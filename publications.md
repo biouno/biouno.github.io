@@ -4,7 +4,7 @@ title: Publications
 ---
 
 <h2 id="presentations">Presentations</h2>
-
+- Ioannis Moutsatsos (2016) [Groovy in Jenkins](https://figshare.com/articles/Groovy_in_Jenkins/3494723) : [Boston Groovy-Grails Meetup](http://www.meetup.com/Grails-Boston/)
 - Bruno P. Kinoshta (2016). BioUno - Building Pipelines for life sciences with Jenkins. [eResearch NZ 2016, Queenstown, New Zealand](https://figshare.com/articles/BioUno_Building_Pipelines_for_life_sciences_with_Jenkins/2075401)
 - Ioannis Moutsatsos (2014). Jenkins CI, an Open Source Continuous Integration System, as a Scientific Data and Image Processing Platform. [Jenkins User Conference 2014-Boston](http://www.cloudbees.com/jenkins/juc-2014/boston/sessions#IoannisMoutsatsos)
 - Bruno P. Kinoshita (2013). Using Jenkins for bioinformatics research. [Jenkins Sao Paulo Meetup 2013](http://www.meetup.com/jenkinsmeetup/events/133598002/)
@@ -18,6 +18,10 @@ title: Publications
 <h2 id="videos">Videos</h2>
 
 <ul>
+ <li>
+ Ioannis Moutsatsos (2016) Boston Groovy-Grails Meetup
+ <br/><iframe width="560" height="315" src="https://www.youtube.com/embed/ajj1s0TBBnM" frameborder="0" allowfullscreen></iframe>
+ </li>
   <li>
     Ioannis Moutsatsos (2014). JUC- Boston: Jenkins CI, as a Scientific Data and Image Processing Platform.
     <br/><iframe width="560" height="315" src="//www.youtube.com/embed/nW02VEEXxlk?list=UUKlF3GIFy9KVUefVbycx_vw" frameborder="0" allowfullscreen></iframe>
