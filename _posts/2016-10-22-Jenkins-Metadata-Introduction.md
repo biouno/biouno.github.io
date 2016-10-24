@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins Special Considerations for Metadata"
+title: "Jenkins: Documenting Data with Metadata"
 description: "Civilizing Data Artifacts in Jenkins"
 category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, metadata]
@@ -10,7 +10,9 @@ author: Ioannis K. Moutsatsos
 
 Data without associated annotation and metadata (documentation describing the data) is of little lasting value [1]. It is imperative that each ,
 dataset used for processing and analysis includes sufficient metadata so that its origin, content, and processing state are clearly understood. It is only then that data becomes truly useful and trustworthy. 
+
 >A friend of mine has called well-annotated data 'civilized data', others have called it  'tidy data' [2]. 
+
 Here I establish some metadata vocabulary for Jenkins data science applications, so we can continue future blogs with a common vocabulary.
 
 <!--more-->
@@ -71,7 +73,7 @@ Metadata-only builds create artifacts that are not stored in the same build (or 
 
 These questions do not frequently arise in the context of Dev-Op Jenkins pipelines. In these pipelines, artifacts are related by  'upstream and downstream' job relationships established in pipeline designs that are typically serial and immutable in nature. In contrast, for research and data science Jenkins applications, we must establish artifact data and metadata relationships and maintain them as users analyze data in a non-linear and predictable fashion.
 
-We need to address these issues using custom designs that still takes advantage of the Jenkins application model and capabilities. We wil address this in a follow up blog.
+We need to address these issues using custom designs that still takes advantage of the Jenkins application model and capabilities. We will address this in a follow up blog.
  
 ### References
 1. [Metadata and describing data](http://data.research.cornell.edu/content/writing-metadata)
