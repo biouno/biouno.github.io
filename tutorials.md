@@ -10,7 +10,7 @@ bioinformaticians with Jenkins.
 
 - [Using masked passwords with the Active Choices Plug-in]({{ site.baseurl}}tutorials/active-choices/using-masked-passwords-with-the-active-choices-plugin)
 
-## Image Gallery plug-in
+## Image Gallery Plug-in
 
 - [Plotting graphs and creating image galleries]({{ site.baseurl }}tutorials/plotting-graphs-and-creating-image-galeries.html)
 
