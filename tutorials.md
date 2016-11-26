@@ -6,6 +6,10 @@ title: Tutorials
 This page contains a list of tutorials for using tools used by 
 bioinformaticians with Jenkins.
 
+## Active Choices Plug-in
+
+- [Using masked passwords with the Active Choices Plug-in]({{ site.baseurl}}tutorials/active-choices/using-masked-passwords-with-the-active-choices-plugin)
+
 ## R Plug-in
 
 - [Integrating Jenkins with R]({{ site.baseurl }}tutorials/integrating-jenkins-rscript.html)
