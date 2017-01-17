@@ -12,6 +12,7 @@ title: Publications
 
 <h2 id="articles">Articles</h2>
 
+- Ioannis Moutsatsos K., et al. "Jenkins-CI, an Open-Source Continuous Integration System, as a Scientific Data and Image-Processing Platform." Journal of Biomolecular Screening (2016): [1087057116679993.](http://journals.sagepub.com/doi/abs/10.1177/1087057116679993)
 - Ioannis Moutsatsos (2012). Jenkins-CI: A script execution platform for lab scientists. [Toolbox.com](http://it.toolbox.com/blogs/life-science-dev/jenkinsci-a-script-execution-platform-for-lab-scientists-54237).
 - Bruno P. Kinoshita (2012). Jenkins and Bioinformatics, catch us at BOSC 2012. [Jenkins-CI Blog](http://jenkins-ci.org/content/jenkins-and-bioinformatics-catch-us-bosc-2012)
 
