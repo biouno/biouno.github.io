@@ -66,3 +66,30 @@ or execute `wget http://biouno.org/jenkins-update-center/biouno-update-center.cr
 Now go back to "Manage Jenkins" > "Plugins" > "Advanced" and click 
 "Check now". That will sync the plug-ins and you will be able to 
 install any plug-in available in our update center.
+
+## Generating update center
+
+When generating the update center, there are two repositories to clone.
+
+* https://github.com/biouno/jenkins-update-center
+* https://github.com/biouno/backend-update-center2
+
+The jenkins-update-center project contains the update center HTML and JSON files. This is server as GitHub
+Pages, from the `gh-pages` branch. When our certificate expires, using the original key we can generate
+a new certificate with a new expiration date. Then put the `.crt` file in the jenkins-update-center root directory.
+
+The backend-update-center2 is used to update the JSON and HTML files, with a command such as.
+
+```
+mvn -X -e exec:java -Dexec.args="-id biouno-update-center \
+    -h /dev/null \
+    -o /home/kinow/Development/java/biouno/jenkins-update-center/update-center.json \
+    -r /home/kinow/Development/java/biouno/jenkins-update-center/release-history.json \
+    -repository http://biouno.org/jenkins-update-center/ \
+    -hpiDirectory /home/kinow/Development/java/biouno/jenkins-update-center \
+    -nowiki \
+    -key biouno-update-center.key \
+    -certificate biouno-update-center.crt \
+    -root-certificate biouno-update-center.crt \
+    -pretty"
+```
