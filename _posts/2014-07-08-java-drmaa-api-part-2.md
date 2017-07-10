@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Java DRMAA API &mdash; part 2"
 description: "Second part of series of posts about a Java API for PBS, compliant with DRMAA spec"
 category: 
 tags: [jenkins, pbs, java, api, drmaa]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 This is the first part of a series of posts about a Java API for PBS servers, compliant with 
 the [DRMAA spec](http://www.drmaa.org/documents.php). 

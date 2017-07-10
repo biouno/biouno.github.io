@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Using Jenkins Credentials Plug-in to create the BioUno figshare Plug-in"
 description: "This post details how we used the Credentials Plug-in to store figshare OAuth credentials"
 category: 
 tags: [jenkins","plugins"]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 figshare is a platform where users can upload and share images, graphs, presentations and other documents. These artifacts can be generated using different tools - including Jenkins. The [BioUno figshare Plug-in](https://github.com/biouno/figshare-plugin) integrates Jenkins and figshare. The figshare API uses OAuth 1.0, and requires data such as client key, client secret, token key and token secret stored in Jenkins.
 

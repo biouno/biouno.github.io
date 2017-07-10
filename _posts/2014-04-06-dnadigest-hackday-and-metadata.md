@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "DNADigest Hackday and Metadata"
 description: "We participated in the DNADigest Hackday this Saturday and learned a lot of cool things about Metadata"
 category: 
 tags: ["news","dnadigest","hackday","metadata"]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 [DNADigest](http://dnadigest.com) held a free **Hackday** this past Saturday, April 5th, in 
 London. Luckily they also live transmitted the event via Internet, and it was definitely worth 

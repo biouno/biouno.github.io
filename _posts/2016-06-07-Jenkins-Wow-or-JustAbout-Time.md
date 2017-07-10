@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Is it Wow or Just about Time?"
 description: "Jenkins workflow visualization is a must have. But is it enough?"
 category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 We all know and love Jenkins despite some of its historical quirks. The community is now on a march to introduce some new concepts and a more modern UI that includes support for visualizing build pipelines. I'm very happy with this project direction! Since 2012 I have been  waiting anxiously to see some graphical support for workflow configuration and review in Jenkins. Similar features are standard in other workflow tools, but did not seem to find their way into the Jenkins core. Now every tweet seems to be a 'Wow!' for the new UI improvements of Jenkins. In this exciting moment do we really think that Jenkins has caught-up with the graphical workflow world?
 

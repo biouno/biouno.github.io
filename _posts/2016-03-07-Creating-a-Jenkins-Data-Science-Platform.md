@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Creating a Jenkins Data Science Platform"
 description: "Why Jenkins makes a good platform for data science tasks"
 category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 Having worked with Jenkins-CI in the life sciences context for the last few years, I am finding that Jenkins satisfies key requirements of a robust framework for efficient data pipelining integration, and analysis. Here I will briefly describe the attributes that make Jenkins-CI a suitable platform for data scientists
 

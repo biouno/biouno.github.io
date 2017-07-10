@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Meeting the creator of my favorite automation server"
 description: "How I spend 2 hours talking about Jenkins in Life/Data Sciences with the Kohsuke-Jesse duo dynamo!"
 category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, CloudBees, Kohsuke Kawaguchi, Jesse Glick]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 What do you do when you see a tweet announcing that Kohsuke Kawaguchi (the creator of Jenkins CI) is looking to meet in your area with 'real-world developers outside the Silicon Valley echo chamber'?  Do you think twice before replying, or do you instantly say 'Yes. Let's meet'! What about the fact that you are not even doing 'classical' software development? Can you expect to help Kohsuke regain his confidence that he is in 'continuous touch' to Jenkins practitioners' as in the early days of the project?
 

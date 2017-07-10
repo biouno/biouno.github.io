@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Consistent Reports for Data Analysis"
 description: "How to generate dynamic but consistent reports for data analysis"
 category: 
 tags: [Jenkins, workflow, life-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 When you use Jenkins for analytics it is important to deliver consistent analysis reports from each build. There are a few different ways that you can create graphical, tabular and/or textual analysis reports, but one thing that becomes clear immediately is that you also require a certain level of dynamic behavior. Dynamic behavior is required so that you can easily adapt the reports to the underlying data whose format and content will likely change even when the same type of analysis is performed.
 

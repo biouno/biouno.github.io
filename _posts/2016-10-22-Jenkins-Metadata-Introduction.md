@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Jenkins: Documenting Data with Metadata"
 description: "Civilizing Data Artifacts in Jenkins"
 category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, metadata]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 Data without associated annotation and metadata (documentation describing the data) is of little lasting value [1](http://data.research.cornell.edu/content/writing-metadata). It is imperative that each dataset used for processing and analysis includes sufficient metadata so that its origin, content, and processing state are clearly understood. It is only then that data becomes truly useful and trustworthy. 
 

@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "The BioUno blog is live"
 description: "Our first post in our brand new blog in our re-designed web site"
 category: 
 tags: ["news", "announce"]
 author: BioUno team
 ---
-{% include JB/setup %}
 
 We are migrating our old web site to GitHub pages. We expect that it will make typos, new docs 
 and suggestions easier to get fixed, merged and released. Feel free to submit your pull requests 

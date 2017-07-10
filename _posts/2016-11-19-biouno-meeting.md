@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "BioUno meeting 2016-11-18"
 description: "BioUno meeting 2016-11-18"
 category:
 tags: [project-meeting]
 author: Ioannis K. Moutsatsos, Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 Participants: Bruno P. Kinoshita and Ioannis K. Moutsatsos. 2016-11-18 08:00 PM UTC using Google
 Hangouts.

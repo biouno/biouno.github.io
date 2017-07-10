@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: default
 title: "Changing the type of an attribute serialized by XStream in Jenkins Plug-ins"
 description: "In this post, we describe how you can change the type of an attribute that has already been serialized by XStream in your Jenkins Plug-in source code. All that you need is some Java code, and understand what you can and cannot change, and why."
 tags: [jenkins","plugins"]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 This post was written while fixing [JENKINS-23772](https://issues.jenkins-ci.org/browse/JENKINS-23772) for the [Image Gallery Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin). This plug-in can be used to create image galleries for artifacts found in the workspace in Jenkins. 
 

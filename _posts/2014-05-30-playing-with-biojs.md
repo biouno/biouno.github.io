@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Playing with BioJS"
 description: "BioJS and Jenkins"
 category: 
 tags: [jenkins, biojs]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 In the post entitled [The Secret of Building a scientific community](http://manuelcorpas.com/2014/05/25/the-secret-of-building-a-scientific-community/), 
 Manuel Corpas describe his experiences coordinating the [BiosJS](http://biojs.net) 

@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "USP 2nd High Performance Computing Workshop and Bioinformatics pipelines"
 description: "Attended this workshop to learn more about bioinformatics pipelines"
 category: 
 tags: ["news","pipelines"]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 <p>I have just returned from Universidade de Sao Paulo, where I attended the 
 [2&ordm; High Performance Computing Workshop](http://2whpc.lcca.usp.br/). Unfortunately I couldn't go in the morning, so I 

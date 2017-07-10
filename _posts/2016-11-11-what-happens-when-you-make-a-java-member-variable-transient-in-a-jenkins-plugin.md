@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "What happens when you make a Java member variable transient in a Jenkins plug-in"
 description: "What happens when you make a Java member variable transient in a Jenkins plug-in"
 category: 
 tags: [jenkins, post-mortem]
 author: Bruno P. Kinoshita
 ---
-{% include JB/setup %}
 
 This blog post is a post mortem. Even though it is not exactly about an outage in a system,
 as it is common to be announced in [post mortems](https://github.com/danluu/post-mortems),

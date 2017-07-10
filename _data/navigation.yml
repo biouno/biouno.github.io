@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "Getting started"
+    url: /getting-started/
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
+
+docs:
+  - title: Principal
+    children:
+      - title: "Home"
+        url: /
+      - title: "Test"
+        url: /test/

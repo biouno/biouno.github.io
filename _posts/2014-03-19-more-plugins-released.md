@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "More plug-ins released"
 description: "Two more plug-ins were released in the past days"
 category: 
 tags: ["news","announce","jenkins","update-center","plugins"]
 author: BioUno team
 ---
-{% include JB/setup %}
 
 In the past days two more plug-ins were released to our update center. The 
 plug-ins are CLUMPP plug-in and Structure Harvester plug-in. Before that the 

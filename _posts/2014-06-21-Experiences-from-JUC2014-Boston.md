@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Experiences from JUC 2014 Boston"
 description: "My personal impressions from the JUC 2014 Boston Meeting"
 category: 
 tags: [jenkins, workflow, life-sciences, imaging]
 author: Ioannis K. Moutsatsos
 ---
-{% include JB/setup %}
 
 On June 18th, I attended my first ever [Jenkins User Conference in Boston](http://www.cloudbees.com/jenkins/juc-2014/boston/sessions), USA. 
 
