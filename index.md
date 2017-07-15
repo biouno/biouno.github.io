@@ -1,7 +1,6 @@
 ---
-layout: single
-author_profile: false
-type: docs
+layout: page
+title: Open Source Software for Scientific Applications
 ---
 
 The ​BioUno​ open­ source project seeks to improve scientific application automation, 

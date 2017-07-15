@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Getting started"
-    url: /getting-started/
   - title: "Projects"
     url: /projects/
+  - title: "Blog"
+    url: /blog/
   - title: "About"
     url: /about/
 
@@ -12,5 +12,39 @@ docs:
     children:
       - title: "Home"
         url: /
-      - title: "Test"
-        url: /test/
+      - title: "Jenkins Plug-ins"
+        url: /jenkins-plugins.html
+      - title: "Jenkins Update Site"
+        url: /jenkins-update-site.html
+      - title: "Projects"
+        url: /projects.html
+  - title: Documentation
+    children:
+      - title: "Getting started with Jenkins"
+        url: /getting-started-with-jenkins.html
+      - title: "Scheduling your first job"
+        url: /scheduling-your-first-job.html
+      - title: "Configuring job notification"
+        url: /configuring-job-notification.html
+      - title: "Installing plug-ins"
+        url: /installing-plugins.html
+      - title: "Tutorials"
+        url: /tutorials.html
+  - title: Project Information
+    children:
+      - title: "About"
+        url: /about.html
+      - title: "Roadmap"
+        url: /roadmap.html
+      - title: "Team"
+        url: /team.html
+      - title: "Publications"
+        url: /publications.html
+      - title: "Sponsors"
+        url: /sponsors.html
+      - title: "Blog"
+        url: /blog/
+      - title: "License"
+        url: /license.html
+      - title: "Contact"
+        url: /contact.html
