@@ -75,7 +75,7 @@ is not using Java traditional serialization to persist objects as XML. But since
 complaining about it, and it was Friday night, I fixed that warning by
 making that field as transient...
 
-<center><img src='{{ site.baseurl }}assets/posts/hmmmm.png' alt="Hmmmm" /></center>
+<center><img src='{{ site.url }}/assets/posts/hmmmm.png' alt="Hmmmm" /></center>
 
 ## Removing version 1.5.0
 
