@@ -12,12 +12,12 @@ docs:
     children:
       - title: "Home"
         url: /
+      - title: "Projects"
+        url: /projects.html
       - title: "Jenkins Plug-ins"
         url: /jenkins-plugins.html
       - title: "Jenkins Update Site"
         url: /jenkins-update-site.html
-      - title: "Projects"
-        url: /projects.html
   - title: Documentation
     children:
       - title: "Getting started with Jenkins"
