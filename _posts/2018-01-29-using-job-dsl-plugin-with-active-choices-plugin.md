@@ -124,7 +124,7 @@ It might still be hard to track if you have several scripts and you want to re-u
 different projects. In that case, you may want to look into using Scriptler plugin as well.
 
 As per the Perl motto [TIMTOWTDI](https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it),
-this is just one way of achieving it. Hope you will find it interesting and useful!
+this is just one way of achieving it. Hope you find it interesting and useful!
 
 Happy hacking!
 
