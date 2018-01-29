@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "More plug-ins released"
 description: "Two more plug-ins were released in the past days"
 category: 

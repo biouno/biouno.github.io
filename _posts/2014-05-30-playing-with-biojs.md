@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Playing with BioJS"
 description: "BioJS and Jenkins"
 category: 

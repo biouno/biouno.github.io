@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "BioUno meeting 2016-11-18"
 description: "BioUno meeting 2016-11-18"
 category:

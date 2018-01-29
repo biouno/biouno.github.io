@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "rOpenSci in Jenkins"
 description: "Running rOpenSci examples in Jenkins"
 category: 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Jenkins: Documenting Data with Metadata"
 description: "Civilizing Data Artifacts in Jenkins"
 category: 

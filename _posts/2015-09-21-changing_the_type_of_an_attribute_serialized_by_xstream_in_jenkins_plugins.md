@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Changing the type of an attribute serialized by XStream in Jenkins Plug-ins"
 description: "In this post, we describe how you can change the type of an attribute that has already been serialized by XStream in your Jenkins Plug-in source code. All that you need is some Java code, and understand what you can and cannot change, and why."
 tags: [jenkins","plugins"]

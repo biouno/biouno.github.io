@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Is it Wow or Just about Time?"
 description: "Jenkins workflow visualization is a must have. But is it enough?"
 category: 

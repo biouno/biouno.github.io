@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Consistent Reports for Data Analysis"
 description: "How to generate dynamic but consistent reports for data analysis"
 category: 

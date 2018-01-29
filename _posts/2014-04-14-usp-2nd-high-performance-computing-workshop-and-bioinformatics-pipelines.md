@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "USP 2nd High Performance Computing Workshop and Bioinformatics pipelines"
 description: "Attended this workshop to learn more about bioinformatics pipelines"
 category: 

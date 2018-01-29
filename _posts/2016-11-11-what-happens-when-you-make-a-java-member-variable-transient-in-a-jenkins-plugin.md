@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "What happens when you make a Java member variable transient in a Jenkins plug-in"
 description: "What happens when you make a Java member variable transient in a Jenkins plug-in"
 category: 
