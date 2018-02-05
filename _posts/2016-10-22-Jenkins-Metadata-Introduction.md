@@ -21,14 +21,14 @@ Research application metadata is either **automatically**  or **manually**  crea
 
 A familiar example of these two classes of metadata can be found in stored digital images. A digital camera records along with each digital image a wealth of acquisition metadata such as an auto-generated file name, the  camera model, a time-stamp, exposure, f-stop and even geocoding information. However, only a human can annotate the image with metadata  that are really useful for other humans to search and find a picture in a collection. In this situation a human would have to annotate pictures with metadata such as people's names, occasion, etc.
 
-Measurements from a well-conducted scientific study should generated  data and associated metadata that is relevant and if possible standardized [1](http://data.research.cornell.edu/content/writing-metadata). ![Figure 1](/assets/posts/Jenkins-Metadata-Introduction/PrimaryData_Meta.png) 
+Measurements from a well-conducted scientific study should generated  data and associated metadata that is relevant and if possible standardized [1](http://data.research.cornell.edu/content/writing-metadata). ![Figure 1]({{ site.url }}/assets/posts/Jenkins-Metadata-Introduction/PrimaryData_Meta.png) 
 
 **Figure 1** : Scientific datasets should be annotated with relevant metadata that documents and describes the data.
  
 In life sciences, there are many cases, where data annotation is left to an expert data curator (and more recently to machines with artificial intelligence), but that is typically a last ditch effort to salvage a dataset that was improperly annotated in the first place. I will not discuss these issues here, but I will introduce you to some of the strategies that we can use with Jenkins and R to generate 'civilized data'.
  
 ## Jenkins, Builds, Data and Metadata
-The BioUno project is championing the use of [Jenkins as a platform for data-science](/2016/03/07/Creating-a-Jenkins-Data-Science-Platform) and research computing.  In this context this blog series will focus on how we deal with datasets and their metadata  when they are processed by Jenkins projects and stored as Jenkins artifacts.
+The BioUno project is championing the use of [Jenkins as a platform for data-science]({{ site.url }}/2016/03/07/Creating-a-Jenkins-Data-Science-Platform) and research computing.  In this context this blog series will focus on how we deal with datasets and their metadata  when they are processed by Jenkins projects and stored as Jenkins artifacts.
 
 ### Data Source Builds
 When a Jenkins build generates one or more dataset artifacts we call it a **data source build**. Data source build artifacts are typically used by downstream builds as input artifacts for downstream analysis and procesing. Data source builds themselves can vary, but in general they act to **import, process or transform**  data. 
@@ -49,7 +49,7 @@ Finally, a data source build can dynamically generate new metadata about the str
 ### Metadata-Only Builds
 Not every build generates a data source artifact. Some builds process the input data with the goal of deriving new information from it. I'll refer to these as **metadata-only builds** .
 
-To illustrate, suppose you are analyzing trends in the price of a company stock [3](http://stockcharts.com/school/doku.php?id=chart_school:overview:technical_analysis). The data source artifact may consist of a dataset of a company's stock performance (daily open,close high low stock price) over the past year. The first step is to identify the overall trend. We perform this using a trend-analysis Jenkins job, then we use a second high-low analysis Jenkins job to analyze the 52-week high/low market stock price. The trend and  calculated 52-week high/low prices from these build are just additional metadata to be associated with the input data source.  ![Figure 2](/assets/posts/Jenkins-Metadata-Introduction/Example_MetaBuilds.png)
+To illustrate, suppose you are analyzing trends in the price of a company stock [3](http://stockcharts.com/school/doku.php?id=chart_school:overview:technical_analysis). The data source artifact may consist of a dataset of a company's stock performance (daily open,close high low stock price) over the past year. The first step is to identify the overall trend. We perform this using a trend-analysis Jenkins job, then we use a second high-low analysis Jenkins job to analyze the 52-week high/low market stock price. The trend and  calculated 52-week high/low prices from these build are just additional metadata to be associated with the input data source.  ![Figure 2]({{ site.url }}/assets/posts/Jenkins-Metadata-Introduction/Example_MetaBuilds.png)
 **Figure 2** : An example illustrating data source and metadata-only builds. Data source builds generate dataset(s) and metadata. Metadata-only builds generate metadata related to their input dataset(s).
 
 #### Maintaining Data-Metadata Relationships in Jenkins 
