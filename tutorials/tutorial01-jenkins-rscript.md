@@ -10,26 +10,26 @@ This tutorial will demonstrate how to pass Jenkins build parameters and configur
 ## Tutorial 1: Jenkins Project
 
 The Jenkins example project is a freestyle project that captures two parameters from the build user interface.
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
+<center><img src='/assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_001.png' alt="Tutorial project build form" /></center>
 
 - We will show how the R-script can access and use these parameters. In addition,
 - We will demonstrate how the R-script can access two other types of parameters that are useful for many types of analysis. These parameters originate in the Jenkins environment or an external configuration file
 
 The project has a single build step 'Execute R script'
 
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_buildStep.png' alt="Tutorial project build step" /></center>
+<center><img src='/assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_buildStep.png' alt="Tutorial project build step" /></center>
 
 In this build step, the R-Script will execute using the R-plugin. The R-script output  (the contents of the ```message```  variable) is printed to the Jenkins console.
 
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_output.png' alt="Tutorial project output" /></center>
+<center><img src='/assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_output.png' alt="Tutorial project output" /></center>
 
 ## Tutorial 1: Configuration file
 
-You can download the Jenkins project [configuration]({{ site.baseurl }}assets/jobs/TUTOR_RJENKINS_001/config.xml) and [decade.properties]({{ site.baseurl }}assets/userContent/tutorials/properties/decade.properties).
+You can download the Jenkins project [configuration](/assets/jobs/TUTOR_RJENKINS_001/config.xml) and [decade.properties](/assets/userContent/tutorials/properties/decade.properties).
 
 The ```decade.properties``` file looks like this:
 
-<center><img src='{{ site.baseurl }}assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_props.png' alt="Tutorial project decade.properties" /></center>
+<center><img src='/assets/img/tutorials/integrating-jenkins-rscript/tutor_rjenkins_props.png' alt="Tutorial project decade.properties" /></center>
 
 ## The 'Execute R script' Build Step
 
