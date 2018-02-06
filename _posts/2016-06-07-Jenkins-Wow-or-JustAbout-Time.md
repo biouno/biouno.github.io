@@ -21,13 +21,13 @@ Well...not exactly! But still great! Having build workflows with Ant, I was alre
 
 Visualization of build pipelines (job instances) seem to have received more attention. Several Jenkins plugins exist that provide graphical visualization of in progress and build pipelines from build history. One of my favorites (and with over 18K installations apparently a favorite of many others) is the [Build Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin). The Build Pipeline plugin provides a Build Pipeline View of upstream and downstream connected jobs that typically form a build pipeline.
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/bpp1.png' alt="bpp1.png" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/bpp1.png' alt="bpp1.png" align="center" width="600px" />
 
 Figure 1: Build Pipeline visualization using the Build Pipeline plugin
 
 The [Delivery Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Delivery+Pipeline+Plugin) provides a similar visual representation but jobs can be further grouped to form stages.
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/delivery_pipeline.png' alt="delivery_pipeline.png" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/delivery_pipeline.png' alt="delivery_pipeline.png" align="center" width="600px" />
 
 Figure 2: Visualization of a pipeline with several stages using the Delivery Pipeline Plugin
 
@@ -37,7 +37,7 @@ In both the Build Pipeline and Delivery Pipeline visual representations, the ind
 
 One of the problems encountered with chained job pipelines is the fact that the entire pipeline is not captured in a single place (file) but it is distributed in the individual contributing job configurations. In addition, although the concept of a 'downstream build' is well established and captured as such in the build log, an 'upstream build' is not recorded in the build log. Both of these issues contribute to challenges when the pipeline and its versions need to be documented and maintained. As a result, the Jenkins community and CloudBees (the company providing commercial support for Jenkins) have come with the concept of scripted pipelines a.k.a [pipeline as code](https://jenkins.io/solutions/pipeline/). Now the entire pipeline can be scripted usign Groovy based DSL and the [Job-DSL plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin), or the [Pipeline plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin). These plugins do solve their intended issue, but they now further complicate job comprehension as multiple job configurations are captured in a single script. Unfortunately, these plugins do not offer any additional graphical tools for the detailed comprehension of a pipeline project's structure. Similarly to the Build Pipeline plugin, they provide graphical views of a running pipeline and build history but no visibility into the detail configuration of each job.
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/StageView_pac.png' alt="StageView_pac.png" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/StageView_pac.png' alt="StageView_pac.png" align="center" width="600px" />
 
 Figure 3: Visualization for a scripted Pipeline 
 
@@ -45,17 +45,17 @@ Figure 3: Visualization for a scripted Pipeline
 
 The observations I just described make me a little more pragmatic and reserved for the new Blue Ocean UI of Jenkins introduced this past week. Twitter was on fire with comments and kudos for the project! Obviously, the perceived functionality/usability of a software is largely attributed to a modern and responsive user interface. A couple tweets that made me smile said 'Wow, the new Jenkins UI finally looks usable!' and another 'Oh wow, a Jenkins UI that not only doesn't suck but actually looks *really* awesome.' 
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/BlueOcean.png' alt="BlueOcean.png" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/BlueOcean.png' alt="BlueOcean.png" align="center" width="600px" />
 
 Figure 4: The new Blue Ocean Jenkins scripted pipeline view
 
 I'm looking forward to testing the new [Blue Ocean plugin](https://jenkins.io/blog/2016/05/26/introducing-blue-ocean/) to see if it improves on the job comprehension issues that I have described in this post. But somehow, I think that it will just provide a more visually pleasing backdrop for the existing graphical visualizations. In promoting Jenkins for life and data science duty, I'm obliged to compare it with existing tools in the field such as [Knime](https://www.knime.org/) the [Galaxy Project ](https://galaxyproject.org/)and the commercial [Pipeline Pilot](http://accelrys.com/products/collaborative-science/biovia-pipeline-pilot/) tool. 
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/biovia_pipeline_pilot.jpg' alt="biovia_pipeline_pilot.jpg" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/biovia_pipeline_pilot.jpg' alt="biovia_pipeline_pilot.jpg" align="center" width="600px" />
 
 Figure 5: The Pipeline Pilot Workflow Editor
 
-<img src='{{ site.baseurl }}assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/WorkflowEditing_Knime_Galaxy.jpg' alt="WorkflowEditing_Knime_Galaxy.jpg" align="center" width="600px" />
+<img src='{{ site.url }}/assets/posts/2016-06-07-Jenkins-Wow-or-JustAbout-Time/WorkflowEditing_Knime_Galaxy.jpg' alt="WorkflowEditing_Knime_Galaxy.jpg" align="center" width="600px" />
 
 Figure 6: Workflow editor in Knime and Galaxy
 

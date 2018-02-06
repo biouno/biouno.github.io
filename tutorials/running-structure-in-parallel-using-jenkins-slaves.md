@@ -16,7 +16,7 @@ title: Running Structure in parallel using Jenkins slaves
 
 <div class='center'>
 <div id="videoplayer" style="display:none;">&nbsp;</div>
-<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/video2.png" id="videoimage" width="500" />
+<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/video2.png" id="videoimage" width="500" />
 </div>
 
 <p>
@@ -30,8 +30,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
 	</a>
 </p>
 
@@ -45,8 +45,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
 	</a>
 </p>
 
@@ -57,8 +57,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
 	</a>
 </p>
 
@@ -70,14 +70,14 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
 	</a>
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
 	</a>
 </p>
 
@@ -89,8 +89,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
 	</a>
 </p>
 
@@ -103,8 +103,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
 	</a>
 </p>
 
@@ -115,14 +115,14 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
 	</a>
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
 	</a>
 </p>
 
@@ -133,8 +133,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
 	</a>
 </p>
 
@@ -145,8 +145,8 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
 	</a>
 </p>
 
@@ -160,20 +160,20 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
 	</a>
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
 	</a>
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
-		<img src="{{ site.baseurl }}assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
+	<a href="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
+		<img src="{{ site.url }}/assets/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
 	</a>
 </p>
 

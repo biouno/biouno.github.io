@@ -14,7 +14,7 @@ interface in Jenkins.
 It means that you won't need to manually install plug-ins anymore. Now you will 
 be able to use Jenkins interface (or scripts) to download plug-ins. 
 
-Follow the instructions in the page [Jenkins Update Site]({{site.baseurl}}jenkins-update-site.html) 
+Follow the instructions in the page [Jenkins Update Site]({{site.url }}/jenkins-update-site.html) 
 to add the new update center and have fun hacking your Jenkins.
 
 ps. Thanks to the [@ikedam](https://github.com/ikedam) for the perfect 

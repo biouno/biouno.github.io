@@ -5,7 +5,7 @@ title: Jenkins Plug-ins
 
 Using Jenkins gives us not only the possibility to use its job
 scheduling, monitoring and triggering, and notifications. We can also
-extend Jenkins with plug-ins. There is a [Jenkins update site]({{site.baseurl}}jenkins-update-site.html) for BioUno which
+extend Jenkins with plug-ins. There is a [Jenkins update site]({{site.url }}/jenkins-update-site.html) for BioUno which
 stores all bio-plugins, like MrBayes and FigTree.
 
 You can install any plug-in automatically using the Web user

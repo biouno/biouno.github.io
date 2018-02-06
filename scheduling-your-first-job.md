@@ -7,7 +7,7 @@ title: Scheduling your first job
 	let's create a simple job. Go to the main screen.</p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_scheduling_001.png"> <img src="{{ site.baseurl }}assets/img/screenshot_scheduling_001.png">
+	<a href="{{ site.url }}/assets/img/screenshot_scheduling_001.png"> <img src="{{ site.url }}/assets/img/screenshot_scheduling_001.png">
 	</a>
 </p>
 
@@ -17,7 +17,7 @@ title: Scheduling your first job
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_scheduling_002.png"> <img src="{{ site.baseurl }}assets/img/screenshot_scheduling_002.png">
+	<a href="{{ site.url }}/assets/img/screenshot_scheduling_002.png"> <img src="{{ site.url }}/assets/img/screenshot_scheduling_002.png">
 	</a>
 </p>
 
@@ -36,7 +36,7 @@ title: Scheduling your first job
 </p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_scheduling_003.png"> <img src="{{ site.baseurl }}assets/img/screenshot_scheduling_003.png">
+	<a href="{{ site.url }}/assets/img/screenshot_scheduling_003.png"> <img src="{{ site.url }}/assets/img/screenshot_scheduling_003.png">
 	</a>
 </p>
 
@@ -44,7 +44,7 @@ title: Scheduling your first job
 	builds are being executed every 5 minutes, just like you scheduled.</p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_scheduling_004.png"> <img src="{{ site.baseurl }}assets/img/screenshot_scheduling_004.png">
+	<a href="{{ site.url }}/assets/img/screenshot_scheduling_004.png"> <img src="{{ site.url }}/assets/img/screenshot_scheduling_004.png">
 	</a>
 </p>
 
@@ -52,7 +52,7 @@ title: Scheduling your first job
 	and who/when triggered its execution.</p>
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_scheduling_005.png"> <img src="{{ site.baseurl }}assets/img/screenshot_scheduling_005.png">
+	<a href="{{ site.url }}/assets/img/screenshot_scheduling_005.png"> <img src="{{ site.url }}/assets/img/screenshot_scheduling_005.png">
 	</a>
 </p>
 

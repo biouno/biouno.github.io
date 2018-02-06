@@ -13,6 +13,6 @@ or suggestions.
 
 Right now, our focus is in completing our initial paper and releasing more plug-ins. But for that 
 we also have to finish deploying the update site. As you can see, there is a lot of work to do, 
-so if you have some spare time and want to join us, just [drop us a note]({{ site.baseurl }}contact.html).
+so if you have some spare time and want to join us, just [drop us a note]({{ site.url }}/contact.html).
 
 We hope you enjoy the new web site, and have fun automating your work with Jenkins!

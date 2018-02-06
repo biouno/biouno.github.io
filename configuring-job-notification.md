@@ -11,16 +11,16 @@ You'll find an option, <em>E-mail Notification</em> that allows you to
 send an e-mail when the build is broken.
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_001.png">
+	<a href="{{ site.url }}/assets/img/screenshot_notifications_001.png">
+		<img src="{{ site.url }}/assets/img/screenshot_notifications_001.png">
 	</a>
 </p>
 
 All you have to do is fill in the e-mail address.
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_002.png">
+	<a href="{{ site.url }}/assets/img/screenshot_notifications_002.png">
+		<img src="{{ site.url }}/assets/img/screenshot_notifications_002.png">
 	</a>
 </p>
 
@@ -36,7 +36,7 @@ Below is an example picture of email-ext plug-in, that lets you to
 add more options when sending e-mail notifications.
 
 <p class="center">
-	<a href="{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
-		<img src="{{ site.baseurl }}assets/img/screenshot_notifications_003.png">
+	<a href="{{ site.url }}/assets/img/screenshot_notifications_003.png">
+		<img src="{{ site.url }}/assets/img/screenshot_notifications_003.png">
 	</a>
 </p>

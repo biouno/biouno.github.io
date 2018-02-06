@@ -17,7 +17,7 @@ usually after Structure and Structure Harvester. It is able to permute
 the clusters output by independent runs so that they match up as 
 closely as possible.
 
-<center><img src='{{ site.baseurl }}assets/posts/SCIENCE.gif' alt="SCIENCE" /></center>
+<center><img src='{{ site.url }}/assets/posts/SCIENCE.gif' alt="SCIENCE" /></center>
 
 Both plug-ins use Builders, similar to the wrappers in Galaxy, and let 
 you add build steps to call the tools.

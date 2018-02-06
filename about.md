@@ -107,7 +107,7 @@ starting a new project.
 
 <div class=''>
 <div id="videoplayer" style="display:none;">&nbsp;</div>
-<img src="{{ site.baseurl }}assets/img/video.png" id="videoimage" width="500" />
+<img src="{{ site.url }}/assets/img/video.png" id="videoimage" width="500" />
 </div>
 
 <div class=''>
