@@ -10,7 +10,7 @@ author: Bruno P. Kinoshita
 This is the first part of a series of posts about a Java API for PBS servers, compliant with 
 the [DRMAA spec](http://www.drmaa.org/documents.php). 
 
-[Java DRMAA API &mdash; part 1]({{ site.url }}2014/06/21/java-drmaa-api-part-1/)
+[Java DRMAA API &mdash; part 1]({{ site.url }}/2014/06/21/java-drmaa-api-part-1/)
 
 This post could also be entitled "Why we won't use DRMAA for our Jenkins plug-in", with spoilers 
 included. After working on a [prototype DRMAA PBS Java library](https://github.com/biouno/drmaa-pbs) 

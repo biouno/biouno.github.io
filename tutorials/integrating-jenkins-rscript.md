@@ -5,7 +5,7 @@ title: Integrating Jenkins with R
 
 # Motivation
 
-The primary motivation of this series of tutorials is to provide a step by step guide of basic skills required for setting up Jenkins for data analyses and graphing using the power of the R language. The Jenkins [R-plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin) provides the primary way for executing R scripts on Jenkins. However, there are a number of design strategies that can make this simple, but powerful programming interface, more standardized and easier to work with. We hope that these tutorials will encouarge others to experiment with [Jenkins as a data science platform]({{ site.url }}2016/03/07/Creating-a-Jenkins-Data-Science-Platform) that can enhance the power of R.
+The primary motivation of this series of tutorials is to provide a step by step guide of basic skills required for setting up Jenkins for data analyses and graphing using the power of the R language. The Jenkins [R-plugin](https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin) provides the primary way for executing R scripts on Jenkins. However, there are a number of design strategies that can make this simple, but powerful programming interface, more standardized and easier to work with. We hope that these tutorials will encouarge others to experiment with [Jenkins as a data science platform]({{ site.url }}/2016/03/07/Creating-a-Jenkins-Data-Science-Platform) that can enhance the power of R.
 
 For example, typical requirements include:
 
