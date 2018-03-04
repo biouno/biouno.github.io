@@ -25,7 +25,7 @@ Now you can play with your Jenkins instance, creating jobs, installing
 plug-ins and investigating other features available. Take some time to get 
 used to the page names and Jenkins UI.
 	
-Then proceed to the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins" title="Jenkins Wiki">Jenkins Wiki</a>. There are several introductory articles and a lot of information about the plug-ins, how to extend Jenkins and 
+Then proceed to the <a href="https://wiki.jenkins.io/display/JENKINS/Meet+Jenkins" title="Jenkins Wiki">Jenkins Wiki</a>. There are several introductory articles and a lot of information about the plug-ins, how to extend Jenkins and 
 other useful information. But should you are hungry for more information, 
 there is a book with practical exercises and detailed explanation about Jenkins.
 	

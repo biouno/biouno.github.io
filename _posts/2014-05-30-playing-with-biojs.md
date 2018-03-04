@@ -23,14 +23,14 @@ trees. A few things that I learned:
 
 ## Using Jenkins to serve BioJS artifacts
 
-The [JQuery Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin) simply adds 
+The [JQuery Plug-in](https://wiki.jenkins.io/display/JENKINS/jQuery+Plugin) simply adds 
 JQuery into Jenkins web page, but the same approach won't work with BioJS since it is 
 framework agnostic (which is great) and each component may have different dependencies 
 (YUI, JQuery UI, ...).
 
 The simplest way to produce artifacts using BioJS in Jenkins, and serve the content 
 from Jenkins is by using CDN's for retrieving the JS files, and the 
-[HTML Publisher](https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin) 
+[HTML Publisher](https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin) 
 plug-in to archive and serve the HTML's. As in [this sample build](http://builds.tupilabs.com/view/BioUno/job/biojs-samples/Sequence_example_1/?).
 
 Some components use Ajax requests to dynamically update the UI. For these components a 

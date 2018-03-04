@@ -22,7 +22,7 @@ On the other hand I was a bit disappointed when Kohsuke Kawaguchi (CloudBees) in
 
 ## The [Workflow Plugin](https://github.com/jenkinsci/workflow-plugin) Beta
 One of the major announcements from the meeting was the new Workflow Plugin that uses a groovy DSL to script Jenkins workflows.
-This is an open source project incubated by the 'CloudBees' company but it is clearly inspired by the [Build Flow Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Build+Flow+Plugin). The main difference between the new Workflow and the original Build Flow plugins will be the ability to restart a build pipeline after a failure. This will be made possible through the inclusion of new *workflow checkpoints*.
+This is an open source project incubated by the 'CloudBees' company but it is clearly inspired by the [Build Flow Plugin](https://wiki.jenkins.io/display/JENKINS/Build+Flow+Plugin). The main difference between the new Workflow and the original Build Flow plugins will be the ability to restart a build pipeline after a failure. This will be made possible through the inclusion of new *workflow checkpoints*.
 
 The Workflow plugin is **still in beta** with a 1.0 version release expected by the end of the year. The DSL is still evolving as are some of the ideas on how to visualize the potentially very complex workflows that this plugin is supposed to address. Gesse Glick (CloudBees) suggested that some visualization will be initially supported for executed builds, but not for the build configuration. I questioned both him and Kohsuke on this strategy that continues the Jenkins tradition of poor comprehension of project configuration due to the lack of appropriate visualization tools. I got no satisfactory answer as to why they do not see the need!
 

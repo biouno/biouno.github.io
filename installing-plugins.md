@@ -6,7 +6,7 @@ title: Installing Plug-ins
 <p>
 	There are different ways to install plug-ins. BioUno has some Jenkins
 	plug-ins that have to be installed manually. You can find the complete
-	documentation for installing plug-ins in the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Plugins#Plugins-Howtoinstallplugins" title="Plug-ins Wiki
+	documentation for installing plug-ins in the <a href="https://wiki.jenkins.io/display/JENKINS/Plugins#Plugins-Howtoinstallplugins" title="Plug-ins Wiki
 	page">Plug-ins Wiki page</a> from Jenkins project.
 </p>
 

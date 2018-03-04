@@ -6,7 +6,7 @@ tags: [jenkins","plugins"]
 author: Bruno P. Kinoshita
 ---
 
-This post was written while fixing [JENKINS-23772](https://issues.jenkins-ci.org/browse/JENKINS-23772) for the [Image Gallery Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin). This plug-in can be used to create image galleries for artifacts found in the workspace in Jenkins. 
+This post was written while fixing [JENKINS-23772](https://issues.jenkins-ci.org/browse/JENKINS-23772) for the [Image Gallery Plug-in](https://wiki.jenkins.io/display/JENKINS/Image+Gallery+Plugin). This plug-in can be used to create image galleries for artifacts found in the workspace in Jenkins. 
 
 What was suggested in JENKINS-23772, was that instead of accepting only integers for the width, that the plug-in started to accept text values as well. This way `10`, `10px` or `10%` as valid values. The challenge in user requests like this, is how to maintain backward compatibility in your plug-in, while releasing a new version that changes objects and attributes.
 
@@ -14,7 +14,7 @@ What was suggested in JENKINS-23772, was that instead of accepting only integers
 
 An [ImageGallery](https://github.com/jenkinsci/image-gallery-plugin/blob/9199c2ac7c42ea19d05f20dd7de588f94408ab75/src/main/java/org/jenkinsci/plugins/imagegallery/ImageGallery.java#L47) implements the Descriptor/Describable pattern for Jenkins, and users can choose an implementation in the job configuration. The ImageGallery abstract class contains an `imageWidth` Integer attribute, which is persisted on the disk by Jenkins, using XStream.
 
-You can read more about retaining backward compatibility in this [Jenkins Wiki page](https://wiki.jenkins-ci.org/display/JENKINS/Hint+on+retaining+backward+compatibility).
+You can read more about retaining backward compatibility in this [Jenkins Wiki page](https://wiki.jenkins.io/display/JENKINS/Hint+on+retaining+backward+compatibility).
 
 ## Changing the code
 

@@ -45,5 +45,5 @@ title: Plotting graphs and creating image galleries
 <hr>
 
 <p>The work on BioUno resulted in 
-<a href="https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin">Jenkins Image Gallery plug-in</a>, 
+<a href="https://wiki.jenkins.io/display/JENKINS/Image+Gallery+Plugin">Jenkins Image Gallery plug-in</a>, 
 released to the whole Jenkins community.</p>

@@ -4,7 +4,7 @@ title: Using masked passwords with the Active Choices Plug-in
 author: Bruno P. Kinoshita
 ---
 
-The [Mask Passwords Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Mask+Passwords+Plugin) allow users to automatically
+The [Mask Passwords Plug-in](https://wiki.jenkins.io/display/JENKINS/Mask+Passwords+Plugin) allow users to automatically
 mask passwords in the console. You can also create global passwords, which is similar to what you can do in other plug-ins such
 as the EnvInject Plug-in.
 

@@ -26,7 +26,7 @@ We made some fields transient in Active Choices Plug-in, which caused users to
 lose the Groovy scripts used in their jobs parameters.
 
 So sit back and relax, while I tell you what happened to the release 1.5 of our
-[Active Choices Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Active+Choices+Plugin),
+[Active Choices Plug-in](https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin),
 which was dropped and never made the update center, 
 why we had to remove release 1.5.0 from Jenkins update center. And finally, how we fixed it
 in release 1.5.1.
@@ -63,7 +63,7 @@ was skipped.
 This is important because it plays part in the issue. After the plug-in was ready to be
 released as 1.5.0, it was just a matter of running `mvn clean release:prepare release:perform`.
 However, during the execution of the release, besides running tests,
-[Jenkins is now also running FindBugs](https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+in+plugins).
+[Jenkins is now also running FindBugs](https://wiki.jenkins.io/display/JENKINS/FindBugs+in+plugins).
 
 It means that every plug-in released recently, has been scanned by FindBugs, which is great.
 

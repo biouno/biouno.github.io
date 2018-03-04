@@ -9,7 +9,7 @@ center.
 
 # Install UpdateSites Manager plugin
 
-The first step is install the [UpdateSites Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/UpdateSites+Manager+plugin). 
+The first step is install the [UpdateSites Manager plugin](https://wiki.jenkins.io/display/JENKINS/UpdateSites+Manager+plugin). 
 You don't need to restart Jenkins after you have installed this plug-in.
 
 # Add BioUno Update Center

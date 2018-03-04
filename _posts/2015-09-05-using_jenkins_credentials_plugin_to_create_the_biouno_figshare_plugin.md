@@ -9,7 +9,7 @@ author: Bruno P. Kinoshita
 
 figshare is a platform where users can upload and share images, graphs, presentations and other documents. These artifacts can be generated using different tools - including Jenkins. The [BioUno figshare Plug-in](https://github.com/biouno/figshare-plugin) integrates Jenkins and figshare. The figshare API uses OAuth 1.0, and requires data such as client key, client secret, token key and token secret stored in Jenkins.
 
-What the [Jenkins Credentials Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Credentials+Plugin) does, basically, is store these credentials in a way that it is both safer and easier to maintain in Jenkins. Before that, users would add passwords as parameters in jobs or store credentials globally in Jenkins via plug-ins. This resulted in security problems, and was also difficult to maintain with a high number of jobs with different credentials.
+What the [Jenkins Credentials Plug-in](https://wiki.jenkins.io/display/JENKINS/Credentials+Plugin) does, basically, is store these credentials in a way that it is both safer and easier to maintain in Jenkins. Before that, users would add passwords as parameters in jobs or store credentials globally in Jenkins via plug-ins. This resulted in security problems, and was also difficult to maintain with a high number of jobs with different credentials.
 
 <!--more-->
 
@@ -105,7 +105,7 @@ The `@NameWith` annotation defines a name provider for this credential. This nam
 
 The `@DataBoundConstructor` annotation is used by Stapler to bind the user interface parameters to the Java properties.
 
-And finally `@Extension` is for the [descriptor](https://wiki.jenkins-ci.org/display/JENKINS/Defining+a+new+extension+point) of our credential. The display name of the descriptor of a credential is used as the **kind** of credentials.
+And finally `@Extension` is for the [descriptor](https://wiki.jenkins.io/display/JENKINS/Defining+a+new+extension+point) of our credential. The display name of the descriptor of a credential is used as the **kind** of credentials.
 
 The name provider used in the first is quite simple.
 
