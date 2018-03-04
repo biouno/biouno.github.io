@@ -30,10 +30,10 @@ other useful information. But should you are hungry for more information,
 there is a book with practical exercises and detailed explanation about Jenkins.
 	
 <p class="center">
-    <a href="http://www.wakaleo.com/books/jenkins-the-definitive-guide">
+    <a href="https://github.com/wakaleo/jenkins-the-definitive-guide-book">
         <img src="{{ site.url }}/assets/img/jenkins-cover-small.png" title="Jenkins Book Cover">
     </a>
 </p>
 	
-[Jenkins: The definitive guide](http://www.wakaleo.com/books/jenkins-the-definitive-guide), by John Ferguson Smart.
+[Jenkins: The definitive guide](https://github.com/wakaleo/jenkins-the-definitive-guide-book), by John Ferguson Smart.
 	
