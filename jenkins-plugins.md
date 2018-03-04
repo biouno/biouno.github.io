@@ -65,7 +65,7 @@ interface or by running a command in your shell.
 			<td>A Jenkins UI plugin for selecting one or multiple options for a job parameter. The UI control can be rendered in a variety of ways including dynamic HTML</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Image+Gallery+Plugin" title="Jenkins Image Gallery  Plug-in">Image Gallery Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Image+Gallery+Plugin" title="Jenkins Image Gallery  Plug-in">Image Gallery Plug-in</a></td>
 			<td>This plug-in reads a job workspace and collects images to produce an image gallery using colorbox lightbox Javascript library.</td>
 		</tr>
 		<tr>
@@ -76,7 +76,7 @@ interface or by running a command in your shell.
 			<td>This plug-in integrates figshare and Jenkins, using figshare API v1 with OAuth 1.0 and the Credentials Plug-in.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/R+Plugin" title="Jenkins R Plug-in">R Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/R+Plugin" title="Jenkins R Plug-in">R Plug-in</a></td>
 			<td>A simple plug-in to invoke R interpreter and execute an R script.</td>
 		</tr>
 	</tbody>
@@ -96,36 +96,36 @@ a brief description.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin">Build Pipeline Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Build+Pipeline+Plugin">Build Pipeline Plug-in</a></td>
 			<td>For managing your build pipelines.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin">JobConfigHistory Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/JobConfigHistory+Plugin">JobConfigHistory Plug-in</a></td>
 			<td>To keep a history of your job configuration changes.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Build-timeout+Plugin">Build Timeout Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Build-timeout+Plugin">Build Timeout Plug-in</a></td>
 			<td>To limit the time of your jobs.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Backup+Plugin">Backup Plugin</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Backup+Plugin">Backup Plugin</a></td>
 			<td>For creating back ups for your Jenkins instance and jobs.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin">E-mail-ext Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Email-ext+plugin">E-mail-ext Plug-in</a></td>
 			<td>Lets you easily configure e-mail notifications for different
 				actions in Jenkins.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin">Git Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Git+Plugin">Git Plug-in</a></td>
 			<td>For storing biology data in GitHub.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Summary+Display+Plugin">Summary Display Plugin</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Summary+Display+Plugin">Summary Display Plugin</a></td>
 			<td>Generates dynamic, rich summary reports on build pages. The reports are written in a consistent XML format.</td>
 		</tr>
 		<tr>
-			<td><a href="https://wiki.jenkins-ci.org/display/JENKINS/Timestamper">Timestamper Plug-in</a></td>
+			<td><a href="https://wiki.jenkins.io/display/JENKINS/Timestamper">Timestamper Plug-in</a></td>
 			<td>Adds timestamps to the Console Output.</td>
 		</tr>
 	</tbody>
