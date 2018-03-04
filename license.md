@@ -3,7 +3,7 @@ layout: page
 title: License
 ---
 
-All the code written for BioUno (Jenkins plug-ins, R scripts, programs, ...) is licensed under the permissive [MIT License](http://opensource.org/licenses/MIT).
+All the code written for BioUno (Jenkins plug-ins, R scripts, programs, ...) is licensed under the permissive [MIT License](https://opensource.org/licenses/MIT).
 
 <pre class='pure-u-14-24'>
 The MIT License (MIT)

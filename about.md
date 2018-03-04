@@ -15,7 +15,7 @@ developers that build more mainstream applications. As a result, scientific soft
 tends to be highly customized, less flexible, complex, poorly tested, less documented
 and even less maintained in the long run
 
-[Computational science: Error... why scientific programming does not compute](http://www.nature.com/news/2010/101013/full/467775a.html)
+[Computational science: Error... why scientific programming does not compute](https://www.nature.com/news/2010/101013/full/467775a.html)
 (Zeeya Merali, Nature: 2010)
  
 ### Reproducible Computational Research
@@ -72,8 +72,8 @@ support the project mission
 the use 
 * We promote **collaboration and reuse** through contributing to existing open source 
 projects 
-* We **educate users** through [blog](/blog.html), [wiki](https://github.com/biouno),
-and [presentations](/presentations.html) on the application of SE best practices in
+* We **educate users** through [blog](/blog/), [wiki](https://github.com/biouno),
+and [presentations](/publications/) on the application of SE best practices in
 scientific applications
 * We **advocate** with software engineers for enabling SE tools and frameworks for use 
 by scientists 
@@ -87,11 +87,11 @@ computational pipelines and to manage computer clusters in support of scientific
 
 In addition, BioUno has adopted a variety of Software Engineering best practices, to achieve its objectives:
 
-* **[Revision Control](http://en.wikipedia.org/wiki/Revision_control)** (e.g. Git, Subversion, 
+* **[Revision Control](https://en.wikipedia.org/wiki/Revision_control)** (e.g. Git, Subversion, 
 branching strategies),
-* **[Continuous Integration](http://en.wikipedia.org/wiki/Continuous_integration)**
+* **[Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)**
 (e.g. Jenkins CI, SonarQube, code metrics, reproducible builds),  
-* **[Software Testing](http://en.wikipedia.org/wiki/Software_testing)** (e.g. Nestor-QA, 
+* **[Software Testing](https://en.wikipedia.org/wiki/Software_testing)** (e.g. Nestor-QA, 
 TestLink, TDD, code coverage),  
 * **[Virtualization](https://en.wikipedia.org/wiki/Virtualization)** (e.g. Docker, Vagrant, VirtualBox)
 * It uses SE tools and techniques to create powerful pipelines and to manage 
