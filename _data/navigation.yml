@@ -28,8 +28,16 @@ docs:
         url: /configuring-job-notification.html
       - title: "Installing plug-ins"
         url: /installing-plugins.html
-      - title: "Tutorials"
-        url: /tutorials.html
+  - title: Tutorials
+    children:
+      - title: "Active Choices Plug-in"
+        url: /tutorials/active-choices-plugin/
+      - title: "Image Gallery Plug-in"
+        url: /tutorials/image-gallery-plugin
+      - title: "Misc"
+        url: /tutorials/misc
+      - title: "R Plug-in"
+        url: /tutorials/r-plugin
   - title: Project Information
     children:
       - title: "About"
