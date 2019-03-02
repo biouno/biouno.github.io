@@ -10,6 +10,8 @@ bioinformaticians with Jenkins.
 
 - [Using masked passwords with the Active Choices Plug-in]({{ site.url }}/tutorials/active-choices/using-masked-passwords-with-the-active-choices-plugin)
 
+- [Using Job DSL Plugin with Active Choices Plugin ]({{site.url}}/2018/01/29/using-job-dsl-plugin-with-active-choices-plugin)
+
 ## Image Gallery Plug-in
 
 - [Plotting graphs and creating image galleries]({{ site.url }}/tutorials/plotting-graphs-and-creating-image-galeries.html)
