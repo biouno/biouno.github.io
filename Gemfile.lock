@@ -38,8 +38,6 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-archives (2.2.1)
-      jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
@@ -95,7 +93,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-archives
   jekyll-feed
   jekyll-gist
   jekyll-paginate
