@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Getting Started with Jenkins
 ---
 Jenkins is an Open Source leading build server. It is used by many companies 
