@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Uno-Choice: Our first user contributed plug-in"
 description: "Uno-Choice was proposed to BioUno project by Ioannis Moutsatsos"
 category: 

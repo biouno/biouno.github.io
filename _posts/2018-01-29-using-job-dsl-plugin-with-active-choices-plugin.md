@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Using Job DSL Plugin with Active Choices Plugin"
 description: "How to use Job DSL Plugin to automate the creation the jobs with Active Choices parameters"
 category:

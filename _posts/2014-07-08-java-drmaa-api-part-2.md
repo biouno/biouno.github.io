@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Java DRMAA API &mdash; part 2"
 description: "Second part of series of posts about a Java API for PBS, compliant with DRMAA spec"
 category: 

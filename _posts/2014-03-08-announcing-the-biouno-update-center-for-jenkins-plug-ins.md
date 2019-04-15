@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Announcing the BioUno Update Center for Jenkins plug-ins"
 description: "Our Jenkins plug-ins will be available online for all Jenkins instances"
 category: 

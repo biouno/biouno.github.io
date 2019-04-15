@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "DNADigest Hackday and Metadata"
 description: "We participated in the DNADigest Hackday this Saturday and learned a lot of cool things about Metadata"
 category: 
