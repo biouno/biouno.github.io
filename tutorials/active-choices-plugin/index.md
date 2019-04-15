@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Active Choices Plugin Tutorials
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Using masked passwords with the Active Choices Plug-in
 author: Bruno P. Kinoshita
 ---

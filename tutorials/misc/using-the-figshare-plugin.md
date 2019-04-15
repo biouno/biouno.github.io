@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Using the figshare Plug-in
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Running Structure in parallel using Jenkins slaves
 ---
 
