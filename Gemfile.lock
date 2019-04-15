@@ -106,6 +106,12 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.5)
+  jekyll-feed
+  jekyll-gist
+  jekyll-include-cache
+  jekyll-paginate
+  jekyll-sitemap
+  jemoji
   minimal-mistakes-jekyll
 
 BUNDLED WITH
