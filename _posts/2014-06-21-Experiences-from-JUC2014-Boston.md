@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Experiences from JUC 2014 Boston"
 description: "My personal impressions from the JUC 2014 Boston Meeting"
 category: 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Creating a Jenkins Data Science Platform"
 description: "Why Jenkins makes a good platform for data science tasks"
 category: 

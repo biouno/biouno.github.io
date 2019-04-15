@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: home
 title: Open Source Software for Scientific Applications
 ---
 
