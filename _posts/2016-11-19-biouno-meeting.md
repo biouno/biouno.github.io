@@ -14,7 +14,7 @@ Hangouts.
 
 - Regressions in Active Choices Plug-in
   * Action: Bruno to try to write unit tests to prevent it from happening again
-
+<!--more-->
 ## BioUno Project Developer and User Engagement
 
 - Do we have any statistics?

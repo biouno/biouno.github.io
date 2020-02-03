@@ -1,0 +1,236 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="Segoe UI" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/308816 (en-US, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="application-data:mg-post-tier" content="1"/>
+  <style>
+    body, td {
+      font-family: Segoe UI;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="30182"/>
+
+<div>
+<span>
+<div>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<div>
+<div>
+<div>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:20.0pt;font-family:&quot;Arial&quot;,sans-serif">V2: Metadata</span></p>
+</div>
+<div style="margin-top:2.75pt">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:gray">Monday, January 6, 2020</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:gray">5:03 PM</span></p>
+</div>
+<div style="margin-top:33.05pt">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:16.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1E4E79">Introduction</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">We have previously discussed the
+<b>Jenkins &quot;operational&quot; challenge </b> of relating different Jenkins builds and artifacts. See
+<a href="http://biouno.org/2016/10/22/Jenkins-Metadata-Introduction.html" shape="rect">http://biouno.org/2016/10/22/Jenkins-Metadata-Introduction.html</a></span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Jenkins build configuration, parameters and input output artifacts are stored separately on the file system of  a Jenkins server. When Jenkins starts, it builds an in-memory Jenkins model from the
+ XML configuration and build files of every project, as well as from the jobs file structure. However, there is no dedicated RDBMS (relational database management system) backing up this Jenkins model and no attempt is made to formally relate builds to each
+ other. Once the server is shutdown, the model is lost and needs to be rebuild from scratch on the next restart.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">So, given these limitations, how can we introduce build relationships that are so important for research applications and data science use of Jenkins?</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Let's summarize some vocabulary from the
+<a href="http://biouno.org/2016/10/22/Jenkins-Metadata-Introduction.html" shape="rect">previous post</a>:</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<div>
+<table border="1" cellpadding="0" cellspacing="0" style="margin-left:51.0pt;border-collapse:collapse;border:none"><tr><td colspan="1" rowspan="1" style="width:101.5pt;border:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="137">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5">Build Type</span></p>
+</td><td colspan="1" rowspan="1" style="width:85.2pt;border:solid #A3A3A3 1.0pt;border-left:none;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="114">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5">Artifact Type</span></p>
+</td></tr><tr><td colspan="1" rowspan="1" style="width:101.5pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="137">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Data-source build</span></p>
+</td><td colspan="1" rowspan="1" style="width:80.2pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="114">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Data<br clear="none"/>
+Metadata</span></p>
+</td></tr><tr><td colspan="1" rowspan="1" style="width:101.5pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="137">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Analysis build</span></p>
+</td><td colspan="1" rowspan="1" style="width:80.2pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="114">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Data<br clear="none"/>
+Metadata</span></p>
+</td></tr><tr><td colspan="1" rowspan="1" style="width:102.9pt;border:solid #A3A3A3 1.0pt;border-top:none;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="137">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Metadata only build</span></p>
+</td><td colspan="1" rowspan="1" style="width:78.85pt;border-top:none;border-left:none;border-bottom:solid #A3A3A3 1.0pt;border-right:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="114">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Metadata</span></p>
+</td></tr></table>
+</div>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">For this discussion the format of the artifacts is of no concern (it can be binary, CSV, java properties, XML or JSON). We want to
+<b>focus on the relationship</b>s between the different build types.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:16.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1E4E79">Build Relationships</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Let's discover the possible relationships between as we try to answer the question posed in the first part of this blog</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="margin-left:27.0pt;text-indent:-.25in;mso-list:l0 level1 lfo2;vertical-align:middle">
+<span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">    
+</span></span></span><span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5">How can we relate artifacts generated from metadata-only builds to their input data?</span></p>
+<p style="margin-left:.75in;text-indent:-.25in;mso-list:l0 level2 lfo3;vertical-align:middle">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><span style="mso-list:Ignore">a.<span style="font:7.0pt &quot;Times New Roman&quot;">    
+</span></span></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">In this case the relationship we are establishing is a
+<b>one-to-many </b>as the same input data can be used multiple times to generate metadata from multiple builds</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Remember that </span>
+</b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo4;vertical-align:middle">
+<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times New Roman&quot;">   
+</span></span></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Metadata is generated from manual annotation (i.e. build) by a user. For example the user could define experimental controls, replicates and groups associated with
+ a data-source</span></p>
+<p style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo4;vertical-align:middle">
+<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times New Roman&quot;">   
+</span></span></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Metadata is generated from an analysis (i.e. build) performed on the data-source. Such builds can analyze the structure of the data, identify outliers, or identify
+ samples of interest</span></p>
+<p style="margin-left:.75in;text-indent:-.25in;mso-list:l1 level1 lfo4;vertical-align:middle">
+<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"><span style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times New Roman&quot;">   
+</span></span></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Metadata is generated from a visualization analysis performed on the data-source. Such builds can produce interactive graphs that can help users interactively explore
+ the data-source</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:16.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1E4E79">Relational builds in Jenkins</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Note, we are now limiting our discussion to freestyle, parametrized Jenkins projects, as they provide interactive build forms suitable for Jenkins research and data-science applications.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">As is the case for a RDBMS, we
+<b>need a common key to establish a relationship</b> between two builds (entities) in the Jenkins model. Luckily the Jenkins model already provides a unique sequential key for each build, the BUILD_NUMBER.
+</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Jenkins also includes a
+<b>run parameter type,</b> for <a href="https://wiki.jenkins.io/display/JENKINS/Parameterized+Build" shape="rect">
+parametrized builds</a> that can be used to reference (relate) a build of another project. The
+<b>value of a run parameter</b> is the <b>absolute URL</b> to the job build. 
+</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">A composite key (the JOB_NAME appended with the BUILD_NUMBER) is even more useful and creates a unique reference to a job build. We will call such a composite key a BUILD_KEY, and conveniently format
+ it as:</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">BUILD_KEY=JOB_NAME#BUILD_NUMBER.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Using build keys as build parameters, we can relate one project build to another build (from the same or other project).  Later we will talk about how we can implement and enhance BUILD_KEYs using
+ Active Choices parameters. </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<div>
+<table border="1" cellpadding="0" cellspacing="0" style="margin-left:24.0pt;border-collapse:collapse;border:none"><tr><td colspan="1" rowspan="1" style="width:518.7pt;border:solid #A3A3A3 1.0pt;padding:2.0pt 3.0pt 2.0pt 3.0pt" valign="top" width="675">
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Note: When one uses  pipeline compatible steps the
+<b>Run Selector Plugin</b> (<a href="https://jenkins.io/doc/pipeline/steps/run-selector/" shape="rect">https://jenkins.io/doc/pipeline/steps/run-selector/</a>)</span></p>
+</td></tr></table>
+</div>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:16.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1E4E79">A build reference example</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Let's assume that we have two data-source Jenkins projects (jobs),
+<b>DSR_A</b> and <b>DSR_B</b>, and a third analysis project <b>ANL</b> that uses as input artifacts from either of the two data-source projects</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Now, a user that configures the ANL build will
+<b>select the INPUT parameter value</b> from the available builds of one of the data-sources. The available artifacts are shown on the left and  a schematic of the ANL build form on the right.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><img src="JenkinsMetadata_files/image001.jpg" type="image/jpeg" data-filename="image001.jpg" alt="DSR A DSR DSR DSR DSR DSR DSR DSR DSR DSR DSR B BUILD KEY DSR DSR DSR Run Parameter ANL Job Build Form Select Analysis Input INPUT BUILD KEY (DSR A, DSR B) DSR" border="0" height="203" style="width:5.552in;height:2.1145in" width="533"/></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Using a BUILD_KEY for the ANL INPUT parameter, introduces a DSR build unique reference that can be used to relate the ANL builds with the corresponding data-source input build.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Note that each of the analysis builds, ANL, includes additional parameters (INPUT_DATA,PARAM01,PARAM02) and generates a new ARTIFACT as output.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Let's now review the Jenkins model after a few more ANL builds.
+</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><img src="JenkinsMetadata_files/image002.jpg" type="image/jpeg" data-filename="image002.jpg" alt="DSR A DSR DSR DSR DSR DSR B DSR BUILD KEY DSR DSR DSR BUILD KEY DSR DSR DSR ARTIFACT DSRAOI DSRA02 DSRA03 ARTIFACT DSRBOI DSRB02 DSRB03 ANL INPUT INPUT DATA DSRA03 DSRA03 DSRA02 DSRBOI DSRBOI PARAMOI 5 50 5 20 2 PARAM02 100 5 100 7 80 ARTIFACT ARTOI ART02 ART03 ART04 ART05" border="0" height="182" style="width:7.0in;height:1.8958in" width="672"/></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">We have successfully established a
+<b>relational model</b> between the DSR project builds (used as input) and the ANL analysis builds that reference them. The DSR and ANL projects can be easily joined via the
+<b>KEY=INPUT</b> relation. </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">This model directly addresses the first question on 'how we can associate metadata-only build artifacts to their input data'. The second question we posed, was whether
+</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="margin-left:27.0pt;text-indent:-.25in;mso-list:l2 level1 lfo6;vertical-align:middle">
+<span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">    
+</span></span></span><span style="font-size:14.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#2E75B5">Can we reference previous metadata artifacts when re-using the data source from another project?</span></p>
+<p style="margin:0in;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Given our model above, the question can be rephrased as follows:</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">If a second analysis project, ANL_X, uses the same data-sources as ANL can the ANL artifacts be referenced (before or after) the ANL_X build starts?</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">The <b>before </b>option is of interest for data-science applications where the outcome of ANL analysis can provide feedback on the input data or guide the selection of parameters for ANL_X analysis.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><img src="JenkinsMetadata_files/image003.jpg" type="image/jpeg" data-filename="image003.jpg" alt="ANL X Job Build Form DSR Select Analysis Input DSR DSR DSR DSR DSR DSR DSR DSR DSR DSR INPUT BUILD KEY (DSR A, DSR B) DSR REFERENCE PARAM ANL-ARTIFACT ARTOI ART02 ANL Job INPUT INPUT DATA DSRA03 DSRA03 DSRA02 DSRBOI DS PARAMOI 5 50 5 2 PARAM02 100 5 100 7 80 ARTIFACT ARTO ARTO ART03 ART04 ART05" border="0" height="244" style="width:7.1354in;height:2.5416in" width="685"/></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">Again the <b>relational model
+</b>that we established supports the discovery and reuse of previous metadata artifacts for the same data source.
+</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif">We can now easily imagine an Active Choice parameter displaying a visualization or group statistics for each of the ART01 or ART02 artifacts.</span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><img src="JenkinsMetadata_files/image004.jpg" type="image/jpeg" data-filename="image004.jpg" alt="Machine generated alternative text: ANL X Job Build Form DSR DSR DSR DSR DSR DSR DSR DSR DSR INPUT BUILD KEY (DSR A, DSR B) ANL Job INPUT INPUT DATA DSRA03 DSRA03 DSRA02 DSRBOI DS PARAMOI 5 50 5 2 PARAM02 ARTIFACT 100 5 100 7 80 ARTO ARTO ART03 ART04 ART05 Select Analysis DSR DSR Input A#l DSR REFERENCE PA ANL-ARTIFA QC GRAPH" border="0" height="488" style="width:7.0104in;height:5.0833in" width="673"/></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<p style="mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:27.0pt;margin-bottom:.0001pt">
+<span style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> </span></p>
+</div>
+</div>
+</div>
+</div>
+</span>
+</div></body></html> 

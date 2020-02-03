@@ -12,6 +12,7 @@ as it is common to be announced in [post mortems](https://github.com/danluu/post
 it is still a big mess that happened due to a field in one of our Jenkins plug-ins
 being made transient.
 
+<!--more-->
 Before anything, here is a TL;DR on transient fields in Java. When you have a field such as
 
 ```
