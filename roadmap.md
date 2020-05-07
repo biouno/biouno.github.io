@@ -23,7 +23,7 @@ The project roadmap includes in no specific order:
     	</tr>
     	<tr>
     		<td>3</td>
-    		<td>Integrate **Jenkins and <strong><a href="http://galaxyproject.org">Galaxy</a></strong> (we can use a lot of nice UI features from Galaxy).</td>
+    		<td>Integrate <strong>Jenkins</strong> and <strong><a href="http://galaxyproject.org">Galaxy</a></strong> (we can use a lot of nice UI features from Galaxy).</td>
     	</tr>
     	<tr>
     		<td>4</td>
