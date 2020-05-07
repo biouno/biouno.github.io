@@ -13,6 +13,31 @@ markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.19.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+locale                   : "en-US"
+
+# Site Author
+author:
+  name             : "BioUno"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "OSS for Scientific Applications"
+  location         :
+  email            :
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/biouno"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/biouno/"
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+
 include:
   - "_pages"
   - "favicon.ico"
