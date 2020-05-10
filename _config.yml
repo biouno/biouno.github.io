@@ -3,7 +3,7 @@ title: BioUno
 description: >- # this means to ignore newlines until "baseurl:"
   Open Source Software for Scientific Applications
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://biouno.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://biouno.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: biouno
 github_username:  biouno
 
