@@ -124,13 +124,13 @@ ready, and the same goes for a Java binding.
 
 Building a Java API on top of the C API is a viable alternative. But it breaks the portability of the 
 code, and can be hard to debug. Jenkins [has plug-ins](http://jenkins-ci.361315.n4.nabble.com/use-JGit-in-git-plugin-td4655488.html) 
-that are in similar situation, using native/executable calls but considering pure java API's. 
+that are in a similar situation, using native/executable calls but considering pure java API's. 
 
 After reading about the DRMAA specification and playing with the existing Java bindings, 
 I will continue investigating ways to control PBS clusters with Java, but I also downloaded 
-the Torque PBS Open Srouce code. I want to find the *qsub* C code, and check **how hard would it 
+the Torque PBS Open Source code. I want to find the *qsub* C code, and check **how hard would it 
 be to create a pure Java PBS API**. If that is doable, we could write such API, and create the 
-DRMAA Java API that would uses it as dependency. 
+DRMAA Java API that would use it as dependency. 
 
 We could then use the drmaa-common, our drmaa-pbs, without the need of installing DRMAA 
 libraries or the PBS client in the client machine.

@@ -31,7 +31,7 @@ In life sciences, there are many cases, where data annotation is left to an expe
 The BioUno project is championing the use of [Jenkins as a platform for data-science]({{ site.url }}/2016/03/07/Creating-a-Jenkins-Data-Science-Platform) and research computing.  In this context this blog series will focus on how we deal with datasets and their metadata  when they are processed by Jenkins projects and stored as Jenkins artifacts.
 
 ### Data Source Builds
-When a Jenkins build generates one or more dataset artifacts we call it a **data source build**. Data source build artifacts are typically used by downstream builds as input artifacts for downstream analysis and procesing. Data source builds themselves can vary, but in general they act to **import, process or transform**  data. 
+When a Jenkins build generates one or more dataset artifacts we call it a **data source build**. Data source build artifacts are typically used by downstream builds as input artifacts for downstream analysis and processing. Data source builds themselves can vary, but in general they act to **import, process or transform**  data. 
 
 >The files produced by a data source build are primary datasets that we can use as input for additional processing algorithms
 

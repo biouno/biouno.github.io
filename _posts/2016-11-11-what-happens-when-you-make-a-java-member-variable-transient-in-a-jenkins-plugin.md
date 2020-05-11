@@ -87,7 +87,7 @@ it could be such a blocker issue (active-choices-plugin does not support the pip
 It took Ioannis reporting the same issue, and some coffee, until I realized what had happened.
 Anyone who installed the 1.5.0 release, and saved the job, or had a plug-in saving the job, or
 if Jenkins decided to save the job, would get all the GroovyScript instances removed from the
-job XML. Meanining that the next time someone tried to execute the job, the parameters would probably
+job XML. Meaning that the next time someone tried to execute the job, the parameters would probably
 be empty.
 
 Another issue reported that the same happened to him, and suggested to remove that release, so that
@@ -108,7 +108,7 @@ but even then we still had to test the change, before releasing 1.5.1.
 
 ## Confirming the regression is gone
 
-So I arrived earlier from work today, and decided to thorougly test that the fix would work, before
+So I arrived earlier from work today, and decided to thoroughly test that the fix would work, before
 releasing 1.5.1.
 
 - Download Jenkins LTS 2.19.2

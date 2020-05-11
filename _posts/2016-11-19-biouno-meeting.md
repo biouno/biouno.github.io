@@ -28,7 +28,7 @@ Hangouts.
 ## Ioannis's Playground Explorations
 
 - Interactive UIs with Active Choices and JavaScript
-- International Image Interoperability Framework (iiif) [Cantaloupe](https://github.com/medusa-project/cantaloupe) (project owner is very collaborative and responsive! Cudos!)
+- International Image Interoperability Framework (iiif) [Cantaloupe](https://github.com/medusa-project/cantaloupe) (project owner is very collaborative and responsive! Kudos!)
 
 # Future Directions
 

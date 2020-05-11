@@ -62,7 +62,7 @@ Links between data-sources and their metadata are modeled by a **one-to-many** r
  
 ## A build reference example
  
-We willl demonstrate linking a data-source build with a metadata build using an example. 
+We will demonstrate linking a data-source build with a metadata build using an example. 
 
 Let's assume that we have two data-source Jenkins projects (jobs), DSR_A and DSR_B, and a ANL analysis parametrized project that uses as inputs the artifacts generated from DSR_A and DSR_B.
 
@@ -108,6 +108,6 @@ As a result, during the configuration of an ANL_X build a user can **retrieve an
 
 # Implementation: What's next
 
-In a follow-up blog entry I will give implementation details on the generation of BUILD_KEYS and their use in retrieving and displaying artifacts across Jenkins project builds. If you would like a head-start, become familiar with the [Active Choices Jenkins Plugin](https://github.com/jenkinsci/active-choices-plugin). The power of Groovy, Jenkins Java API, javascript and dynamic HTML come together when we use this plugin to form a framework for dynamic, fully ineractive UI that links and displays Jenkins artifacts across builds.
+In a follow-up blog entry I will give implementation details on the generation of BUILD_KEYS and their use in retrieving and displaying artifacts across Jenkins project builds. If you would like a head-start, become familiar with the [Active Choices Jenkins Plugin](https://github.com/jenkinsci/active-choices-plugin). The power of Groovy, Jenkins Java API, javascript and dynamic HTML come together when we use this plugin to form a framework for dynamic, fully interactive UI that links and displays Jenkins artifacts across builds.
 
  
