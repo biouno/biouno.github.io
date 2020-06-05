@@ -15,6 +15,11 @@ title: Publications
 - Ioannis Moutsatsos K., et al. "Jenkins-CI, an Open-Source Continuous Integration System, as a Scientific Data and Image-Processing Platform." Journal of Biomolecular Screening (2016): [1087057116679993.](http://journals.sagepub.com/doi/abs/10.1177/1087057116679993)
 - Ioannis Moutsatsos (2012). Jenkins-CI: A script execution platform for lab scientists. [Toolbox.com](http://it.toolbox.com/blogs/life-science-dev/jenkinsci-a-script-execution-platform-for-lab-scientists-54237).
 - Bruno P. Kinoshita (2012). Jenkins and Bioinformatics, catch us at BOSC 2012. [Jenkins-CI Blog](http://jenkins-ci.org/content/jenkins-and-bioinformatics-catch-us-bosc-2012)
+- [Fourth Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE4)](https://www.osti.gov/biblio/1503266) (project mention)
+- [Use of Continuous Integration Tools for Application Performance Monitoring](https://cug.org/proceedings/cug2015_proceedings/includes/files/pap147-file2.pdf) (PBS Plug-in mention)
+- [Continuous integration in a Cray multiuser environment](https://cug.org/proceedings/cug2018_proceedings/includes/files/pap171s2-file1.pdf) (PBS Plug-in mention)
+- [Jenkins Continuous Integration Cookbook - Second Edition](https://www.amazon.com/Jenkins-Continuous-Integration-Cookbook-Second/dp/1784390089) (R Plug-in mention)
+- [A real example of how to implement Agile Testing](https://upcommons.upc.edu/bitstream/handle/2117/77376/memoria.pdf?sequence=1&isAllowed=y) (Image Gallery Plug-in)
 
 <h2 id="videos">Videos</h2>
 
