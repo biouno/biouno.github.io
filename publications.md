@@ -19,7 +19,7 @@ title: Publications
 - [Use of Continuous Integration Tools for Application Performance Monitoring](https://cug.org/proceedings/cug2015_proceedings/includes/files/pap147-file2.pdf) (PBS Plug-in mention)
 - [Continuous integration in a Cray multiuser environment](https://cug.org/proceedings/cug2018_proceedings/includes/files/pap171s2-file1.pdf) (PBS Plug-in mention)
 - [Jenkins Continuous Integration Cookbook - Second Edition](https://www.amazon.com/Jenkins-Continuous-Integration-Cookbook-Second/dp/1784390089) (R Plug-in mention)
-- [A real example of how to implement Agile Testing](https://upcommons.upc.edu/bitstream/handle/2117/77376/memoria.pdf?sequence=1&isAllowed=y) (Image Gallery Plug-in)
+- [A real example of how to implement Agile Testing](https://upcommons.upc.edu/bitstream/handle/2117/77376/memoria.pdf?sequence=1&isAllowed=y) (Image Gallery Plug-in mention)
 
 <h2 id="videos">Videos</h2>
 
