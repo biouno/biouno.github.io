@@ -94,7 +94,7 @@ from [http://gridscheduler.sourceforge.net/howto/drmaa_java.html](http://gridsch
 What this code does, is initialize a session, create a job template and submit it to the 
 DRM. 
 
-If you try the code in a newly created Ubuntu machine, <code>apt-get install gridengine-drma-dev</code>, and run your 
+If you try the code in a newly created Ubuntu machine, <code>apt-get install gridengine-drmaa-dev</code>, and run your 
 code with <code>-Djava.library.path=/usr/lib/gridengine-drmaa/lib/</code>, you'll likely get an error like below.
 
 <pre>

@@ -118,7 +118,7 @@ We format a message and `print` it to the console
 
 ## What have we learned?
 
-In this tutorial we have developed some primary skill for parametrizing R scripts from Jenkins. We have demonstrated:
+In this tutorial we have developed some primary skill for parameterizing R scripts from Jenkins. We have demonstrated:
 
 1. How to read and create R variables from **Jenkins environment** variables and **build parameters**
 2. How to use a static configuration Java-style properties files to create a corresponding R data frame

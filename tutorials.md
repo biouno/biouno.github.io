@@ -14,7 +14,7 @@ bioinformaticians with Jenkins.
 
 ## Image Gallery Plug-in
 
-- [Plotting graphs and creating image galleries]({{ site.url }}/tutorials/plotting-graphs-and-creating-image-galeries.html)
+- [Plotting graphs and creating image galleries]({{ site.url }}/tutorials/plotting-graphs-and-creating-image-galleries.html)
 
 ## Misc
 
