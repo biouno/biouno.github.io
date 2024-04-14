@@ -2,3 +2,24 @@ _site
 .sass-cache
 .jekyll-metadata
 
+.env
+movies.json
+
+.idea/
+venv
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+__pycache__
+
+build
+
+.bundle
+vendor
+
+data/fuseki
+
+# Hugo
+
+/public/
+/resources/_gen/
