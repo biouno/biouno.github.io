@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Documentation
 weight: 200
 ---

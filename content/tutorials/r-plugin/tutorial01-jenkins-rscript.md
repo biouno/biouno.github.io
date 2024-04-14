@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Tutorial 1 - Integrating Jenkins with R-script
 ---
 

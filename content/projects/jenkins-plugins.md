@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Jenkins Plug-ins
 aliases:
   - /jenkins-plugins.html

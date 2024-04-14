@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Active Choices Plugin Tutorials
 url: /tutorials/active-choices-plugin/
 ---

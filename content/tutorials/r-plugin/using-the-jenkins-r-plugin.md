@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Using the Jenkins R Plug-in
 ---
 

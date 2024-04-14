@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Jenkins Update Site
 aliases:
   - /jenkins-update-site.html
