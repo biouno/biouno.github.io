@@ -4,6 +4,8 @@ cascade:
   type: docs
 ---
 
+![](/img/logo.png)
+
 The BioUno open source project seeks to improve scientific application automation, 
 performance, reproducibility, usability, and management by applying and extending software 
 engineering (SE) best practices in the field of scientific research applications. 
