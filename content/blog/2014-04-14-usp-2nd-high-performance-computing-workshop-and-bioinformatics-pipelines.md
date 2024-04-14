@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "USP 2nd High Performance Computing Workshop and Bioinformatics pipelines"
 description: "Attended this workshop to learn more about bioinformatics pipelines"
-category: 
 tags: ["news","pipelines"]
 author: Bruno P. Kinoshita
 date: 2014-04-14

@@ -1,22 +1,20 @@
 ---
-layout: single
 title: "What happens when you make a Java member variable transient in a Jenkins plug-in"
 description: "What happens when you make a Java member variable transient in a Jenkins plug-in"
-category: 
 tags: [jenkins, post-mortem]
 author: Bruno P. Kinoshita
 date: 2016-11-11
 ---
 
-This blog post is a post mortem. Even though it is not exactly about an outage in a system,
-as it is common to be announced in [post mortems](https://github.com/danluu/post-mortems),
+This blog post is a postmortem. Even though it is not exactly about an outage in a system,
+as it is common to be announced in [postmortems](https://github.com/danluu/post-mortems),
 it is still a big mess that happened due to a field in one of our Jenkins plug-ins
 being made transient.
 
 <!--more-->
 Before anything, here is a TL;DR on transient fields in Java. When you have a field such as
 
-```
+```java {linenos=table,filename=SomeClass.java}
 public class SomeClass {
     private transient String someVariable;
 }
@@ -121,7 +119,7 @@ releasing 1.5.1.
 
 Now here's the job XML.
 
-```
+```xml {linenoes=table,filename=pom.xml}
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
@@ -176,7 +174,7 @@ Notice the **&lt;script class="org.biouno.unochoice.model.GroovyScript"&gt;**.
 
 Here's the job XML.
 
-```
+```xml {linenos=table,filename=pom.xml}
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
@@ -227,7 +225,7 @@ Noticed anything?
 - So let's update to 1.5.1
 - Save the job
 
-```
+```xml {linenos=table,filename=pom.xml}
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
@@ -294,7 +292,7 @@ to users that have not upgraded to 1.5.0. Again, the script was not correctly re
 But this time it is not exactly an issue in the plug-in code. Maybe a usability, an UX, issue.
 What I got in the logs after upgrading from 1.4 to 1.5.1 was the following exception.
 
-```
+```java {linenos=table}
 SEVERE: Error executing script for dynamic parameter
 java.lang.RuntimeException: Failed to evaluate fallback script: script not yet approved for use
     at org.biouno.unochoice.model.GroovyScript.eval(GroovyScript.java:178)

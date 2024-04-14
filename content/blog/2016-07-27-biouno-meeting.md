@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "BioUno meeting 2016-07-27"
 description: "BioUno meeting 2016-07-27"
-category:
 tags: [project-meeting]
 author: Ioannis K. Moutsatsos, Bruno P. Kinoshita
 date: 2016-07-27

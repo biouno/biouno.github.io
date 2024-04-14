@@ -1,8 +1,7 @@
 ---
-layout: single
 title: "Changing the type of an attribute serialized by XStream in Jenkins Plug-ins"
 description: "In this post, we describe how you can change the type of an attribute that has already been serialized by XStream in your Jenkins Plug-in source code. All that you need is some Java code, and understand what you can and cannot change, and why."
-tags: [jenkins","plugins"]
+tags: [jenkins,plugins]
 author: Bruno P. Kinoshita
 date: 2015-09-21
 ---
@@ -29,7 +28,8 @@ The solution in this case, is add the `@Deprecated` annotation to the existing I
 
 Remember to also move the `@DataBoundConstructor` to your new constructors, and add `@Deprecated` to the right fields, methods, classes, and so it goes.
 
-{% highlight java %}
+```java {linenos=table,filename=Example.java}
+// ...
 /**
  * Images width.
  */
@@ -65,14 +65,14 @@ public ComparativeArchivedImagesGallery(String title, String baseRootFolder, Str
     this.baseRootFolder = baseRootFolder;
     this.imageInnerWidthText = imageInnerWidth;
 }
-{% endhighlight %}
+// ...
+```
 
 Good. So now our code already supports our changes.
 
 There are at least two places where the integer image width was being saved in our previous jobs: the ImageGallery implementation object, and the Action being saved for each build.
 
-{% highlight xml %}
-# config.xml
+```xml {linenos=table,filename=config.xml}
 <publishers>
 <hudson.tasks.ArtifactArchiver>
   <artifacts>**/*.png</artifacts>
@@ -89,10 +89,9 @@ There are at least two places where the integer image width was being saved in o
   </imageGalleries>
 </org.jenkinsci.plugins.imagegallery.ImageGalleryRecorder>
 </publishers>
-{% endhighlight %}
+```
 
-{% highlight xml %}
-# build.xml
+```xml {linenos=table,filename=config.xml}
 <org.jenkinsci.plugins.imagegallery.imagegallery.ArchivedImagesGalleryBuildAction>
   <title>test gallery</title>
   <images>
@@ -102,12 +101,11 @@ There are at least two places where the integer image width was being saved in o
   </images>
   <imageWidth>100</imageWidth>
 </org.jenkinsci.plugins.imagegallery.imagegallery.ArchivedImagesGalleryBuildAction>
-{% endhighlight %}
+```
 
 Now that we have made our changes in the code, and left the old fields deprecated, we have to tell XStream to use the new field when reading old entries like these.
 
-{% highlight java %}
-# ComparativeImagesGalleryBuildAction.java
+```java {linenos=table,filename=ComparativeImagesGalleryBuildAction.java}
 public Object readResolve() {
     String width = (imageWidth != null && imageWidth > 0) ? Integer.toString(imageWidth) : "0";
     String innerWidth = (imageInnerWidth != null && imageInnerWidth > 0) ? Integer.toString(imageInnerWidth) : "0";
@@ -117,7 +115,7 @@ public Object readResolve() {
             width /*imageWidthText*/,
             innerWidth /*imageInnerWidthText*/);
 }
-{% endhighlight %}
+```
 
 What it does, basically, it tell our program to use the value of the Integer fields to create a new object, with the String fields that we just created. This way, old instances serialized onto the disk, will be deserialized and filled with the old values.
 

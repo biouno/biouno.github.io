@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Meeting the creator of my favorite automation server"
 description: "How I spend 2 hours talking about Jenkins in Life/Data Sciences with the Kohsuke-Jesse duo dynamo!"
-category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, CloudBees, Kohsuke Kawaguchi, Jesse Glick]
 author: Ioannis K. Moutsatsos
 date: 2016-05-14

@@ -1,8 +1,6 @@
 ---
-layout: single
-title: "Java DRMAA API &mdash; part 1"
+title: "Java DRMAA API — part 1"
 description: "First part of series of posts about a Java API for PBS, compliant with DRMAA spec"
-category: 
 tags: [jenkins, pbs, java, api, drmaa]
 author: Bruno P. Kinoshita
 date: 2014-06-21

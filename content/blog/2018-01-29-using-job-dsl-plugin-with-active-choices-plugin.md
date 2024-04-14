@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Using Job DSL Plugin with Active Choices Plugin"
 description: "How to use Job DSL Plugin to automate the creation the jobs with Active Choices parameters"
-category:
 tags: [jenkins]
 author: Bruno P. Kinoshita
 excerpt_separator: <!--more-->
@@ -52,7 +50,7 @@ This means that you can even store your DSLs in a repository somewhere like GitH
 
 Here's what the example from our Wiki looks like in the Job DSL syntax.
 
-```
+```groovy {linenos=table,filename=job-dsl.groovy}
 job ("$NEW_PROJECT_NAME") {
     parameters {
         activeChoiceParam('States') {
@@ -90,26 +88,26 @@ if (States.equals('Sao Paulo')) {
 }
 ```
 
-<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc02.png' /></center>
+<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc02.png' alt="Screenshot" /></center>
 
 When you build your seed project, it will ask you for any parameters you may have configured your project
 with.
 
-<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc03.png' /></center>
+<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc03.png' alt="Screenshot" /></center>
 
 And then once executed you will have your new project created! What's even better, you are able to track the
 projects created from the seed project page in Jenkins. As in the following figure.
 
-<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc04.png' /></center>
+<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc04.png' alt="Screenshot" /></center>
 
 And likewise, you can also find the seed project from your created project's page.
 
-<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc05.png' /></center>
+<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc05.png' alt="Screenshot" /></center>
 
 Finally, here's the result. Same as if you had manually created the project. But now you can create as many
 projects like this as you would like.
 
-<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc06.png' /></center>
+<center><img src='/posts/2018-01-29-using-job-dsl-plugin-with-active-choices-plugin/sc06.png' alt="Screenshot" /></center>
 
 ## Conclusion
 
@@ -121,7 +119,7 @@ You will probably use parameters in your project seeds, to further customise you
 can even use Active Choices parameters for that :-) And you can version control your parameters
 within your project configuration.
 
-It might still be hard to track if you have several scripts and you want to re-use them in
+It might still be hard to track if you have several scripts, and you want to re-use them in
 different projects. In that case, you may want to look into using Scriptler plugin as well.
 
 As per the Perl motto [TIMTOWTDI](https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it),

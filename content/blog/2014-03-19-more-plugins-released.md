@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "More plug-ins released"
 description: "Two more plug-ins were released in the past days"
-category: 
 tags: ["news","announce","jenkins","update-center","plugins"]
 author: BioUno team
 date: 2014-03-19

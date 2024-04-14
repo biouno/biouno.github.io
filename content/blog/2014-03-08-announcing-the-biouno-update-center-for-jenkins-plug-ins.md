@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Announcing the BioUno Update Center for Jenkins plug-ins"
 description: "Our Jenkins plug-ins will be available online for all Jenkins instances"
-category: 
 tags: ["news","announce","jenkins","update-center","plugins"]
 author: BioUno team
 date: 2014-03-08

@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Using Jenkins Credentials Plug-in to create the BioUno figshare Plug-in"
 description: "This post details how we used the Credentials Plug-in to store figshare OAuth credentials"
-category: 
 tags: [jenkins","plugins"]
 author: Bruno P. Kinoshita
 date: 2015-09-05
@@ -26,13 +24,13 @@ For the figshare Plug-in, we have used the [Rally Plug-in](https://github.com/je
 
 The first step is to add the credentials-plugin to our `pom.xml`, so that we can use the API.
 
-{% highlight xml %}
+```xml {linenos=table,filename=pom.xml}
 <dependency>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>credentials</artifactId>
     <version>1.22</version>
 </dependency>
-{% endhighlight %}
+```
 
 We are using the latest and greatest version.
 
@@ -40,7 +38,7 @@ We are using the latest and greatest version.
 
 The Credentials interface defines the basic contract for the credentials. It defines what kind of information the credentials hold. In our case, it will have a client key, a client secret, a token key and a token secret.
 
-{% highlight java %}
+```java {linenos=table,filename=FigShareOauthCredentials.java}
 public interface FigShareOauthCredentials extends Credentials {
 
     String getName();
@@ -56,11 +54,11 @@ public interface FigShareOauthCredentials extends Credentials {
     Secret getTokenSecret();
 
 }
-{% endhighlight %}
+```
 
 Then we can implement our `FigShareOauthCredentials`.
 
-{% highlight java %}
+```java {linenos=table,filename=FigShareCredentialsNameProvider.java}
 @NameWith(value = FigShareCredentialsNameProvider.class)
 public class FigShareOAuthCredentialsImpl extends BaseStandardCredentials implements FigShareOauthCredentials {
 
@@ -100,7 +98,7 @@ public class FigShareOAuthCredentialsImpl extends BaseStandardCredentials implem
     }
 
 }
-{% endhighlight %}
+```
 
 The `@NameWith` annotation defines a name provider for this credential. This name provider is used by the user interface to list the credentials by name.
 
@@ -110,7 +108,7 @@ And finally `@Extension` is for the [descriptor](https://wiki.jenkins.io/display
 
 The name provider used in the first is quite simple.
 
-{% highlight java %}
+```java {linenos=table,filename=FigShareCredentialsNameProvider.java}
 public class FigShareCredentialsNameProvider 
     extends CredentialsNameProvider<FigShareOauthCredentials> {
 
@@ -119,7 +117,7 @@ public class FigShareCredentialsNameProvider
     }
 
 }
-{% endhighlight %}
+```
 
 <center><img src='/posts/2015-09-05_using_jenkins_credentials_plugin_to_create_the_biouno_figshare_plugin/credentials_screenshot_001.png' alt="Screen shot 001" /></center>
 
@@ -131,7 +129,7 @@ These are the classes that we need to write specifically for the Credentials Plu
 
 The Jelly files are used to create forms and contribute to the Jenkins user interface. It is XML but also contains several helper tags. Our Jelly form for the credentials, `FigShareOAuthCredentialsImpl/config.jelly`, contains the following code.
 
-{% highlight xml %}
+```xml {linenos=table,filename=config.jelly}
 <?xml version="1.0" encoding="utf-8"?>
 <j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:st="jelly:stapler">
     <f:entry title="Name" field="name">
@@ -153,7 +151,7 @@ The Jelly files are used to create forms and contribute to the Jenkins user inte
         <f:password/>
     </f:entry>
 </j:jelly>
-{% endhighlight %}
+```
 
 If you look at our constructor with `@DataBoundConstructor`, you will notice where the parameters in the constructor come from.
 
@@ -165,7 +163,7 @@ This is the extension point that we used for the figshare Plug-in.
 
 The first change is that the constructor of the notifier must be prepared to receive a `credentialsId`, which the user will select out of a combo.
 
-{% highlight java %}
+```java {linenos=table,filename=FigShareNotifier.java}
 @DataBoundConstructor
 public FigShareNotifier(String credentialsId, String articleTitle, String articleDescription, String antPattern) {
     this.credentialsId = credentialsId;
@@ -189,13 +187,13 @@ public FigShareNotifier(String credentialsId, String articleTitle, String articl
                 credentialsId));
     }
 }
-{% endhighlight %}
+```
 
 The code inside the constructor after a comment is responsible for calling `CredentialsProvider` to look up for certain types of credentials. These credentials are assumed to have already been created. It is simply looking for the credential with the ID equals to the given `credentialsId`.
 
 Once the credential has been created, we can later use it to interact with figshare in another part of the code.
 
-{% highlight java %}
+```java {linenos=table}
 if (LOGGER.isLoggable(Level.FINE)) {
     LOGGER.log(Level.FINE, "Initialising the figshare API");
 }
@@ -205,11 +203,11 @@ final FigShareClient figshare = FigShareClient.to("http://api.figshare.com/", 1,
 if (LOGGER.isLoggable(Level.FINE)) {
     LOGGER.log(Level.FINE, String.format("Creating article %s, description: %s", title, description));
 }
-{% endhighlight %}
+```
 
 There is, however, one more change required in the **Descriptor of the Notifier**. You must include a `doFillCredentialsIdItems` method, which will return a list of credentials. This list is used in the job configuration, to let the user select one.
 
-{% highlight java %}
+```java {linenos=table}
 public ListBoxModel doFillCredentialsIdItems(
         @AncestorInPath Jenkins context,
         @QueryParameter String remoteBase) {
@@ -227,11 +225,11 @@ public ListBoxModel doFillCredentialsIdItems(
                         StandardCredentials.class, context, ACL.SYSTEM,
                         domainRequirements));
 }
-{% endhighlight %}
+```
 
 And here is how the `config.jelly` of the notifier looks like.
 
-{% highlight xml %}
+```xml {linenos=table,filename=config.jelly}
 <j:jelly xmlns:j="jelly:core"
          xmlns:st="jelly:stapler"
          xmlns:d="jelly:define"
@@ -257,7 +255,7 @@ And here is how the `config.jelly` of the notifier looks like.
     </f:entry>
 
 </j:jelly>
-{% endhighlight %}
+```
 
 The `<c:select/>` is a special tag, provided by the Credentials Plug-in, that will call your `doFillCredentialsIdItems` method to fill a combo box with credentials ID's for the user to pick one.
 

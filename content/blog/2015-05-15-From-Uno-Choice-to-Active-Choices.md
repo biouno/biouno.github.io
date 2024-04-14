@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "From Uno-Choice to Active Choices"
 description: "How the BioUno Uno-Choices became the Jenkins Active Choices Plugin"
-category: 
 tags: [Jenkins, life-sciences, analysis, bioinformatics, Active-Choices]
 author: Ioannis K. Moutsatsos
 date: 2015-05-15

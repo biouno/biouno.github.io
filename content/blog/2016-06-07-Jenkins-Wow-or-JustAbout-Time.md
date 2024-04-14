@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Is it Wow or Just about Time?"
 description: "Jenkins workflow visualization is a must have. But is it enough?"
-category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 date: 2016-06-07

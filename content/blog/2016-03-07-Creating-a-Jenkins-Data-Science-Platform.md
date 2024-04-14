@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Creating a Jenkins Data Science Platform"
 description: "Why Jenkins makes a good platform for data science tasks"
-category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, reporting]
 author: Ioannis K. Moutsatsos
 date: 2016-03-07

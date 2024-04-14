@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Jenkins: Documenting Data with Metadata"
 description: "Civilizing Data Artifacts in Jenkins"
-category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, metadata]
 author: Ioannis K. Moutsatsos
 date: 2016-10-22

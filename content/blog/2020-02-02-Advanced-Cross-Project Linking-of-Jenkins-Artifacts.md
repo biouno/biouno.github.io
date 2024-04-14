@@ -1,15 +1,13 @@
 ---
-layout: single
 title: "Advanced Cross-Project Linking of Jenkins Artifacts"
 description: "Linking Data-Source Builds and their Metadata"
-category: 
 tags: [Jenkins, workflow, data-sciences, analysis, bioinformatics, metadata]
 author: Ioannis K. Moutsatsos
 date: 2020-02-02
 ---
 # Introduction
  
-In [Documenting Data with Metadata]({% post_url 2016-10-22-Jenkins-Metadata-Introduction %}) we discussed how [Jenkins](https://jenkins.io/) lacks a built-in framework for relating arbitrary Jenkins projects, builds, and artifacts. This creates a challenge for linking data and metadata generated in independent builds.
+In [Documenting Data with Metadata]({{< ref "2016-10-22-Jenkins-Metadata-Introduction.html" >}}) we discussed how [Jenkins](https://jenkins.io/) lacks a built-in framework for relating arbitrary Jenkins projects, builds, and artifacts. This creates a challenge for linking data and metadata generated in independent builds.
  
 Jenkins job and build configuration, parameters and artifacts are persisted as separate files on the server file system. When Jenkins starts, it builds an in-memory **Jenkins object model**  from the XML configuration and build files of every project, as well as from the file structure of the 'jobs' folder. However, there is no dedicated RDBMS (relational database management system) backing up this Jenkins model, and no attempt is made to formally relate builds to each other. Once the server is shutdown, the object model is lost and needs to be rebuild from scratch on the next restart.
  

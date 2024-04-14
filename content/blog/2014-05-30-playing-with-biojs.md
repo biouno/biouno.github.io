@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Playing with BioJS"
 description: "BioJS and Jenkins"
-category: 
 tags: [jenkins, biojs]
 author: Bruno P. Kinoshita
 date: 2014-05-30
@@ -26,7 +24,7 @@ trees. A few things that I learned:
 
 The [JQuery Plug-in](https://wiki.jenkins.io/display/JENKINS/jQuery+Plugin) simply adds 
 JQuery into Jenkins web page, but the same approach won't work with BioJS since it is 
-framework agnostic (which is great) and each component may have different dependencies 
+framework-agnostic (which is great) and each component may have different dependencies 
 (YUI, JQuery UI, ...).
 
 The simplest way to produce artifacts using BioJS in Jenkins, and serve the content 
