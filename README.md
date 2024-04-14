@@ -1,5 +1,7 @@
 # BioUno.org
 
+[![Deploy Hugo site to Pages](https://github.com/biouno/biouno.github.io/actions/workflows/pages.yaml/badge.svg)](https://github.com/biouno/biouno.github.io/actions/workflows/pages.yaml)
+
 BioUno website.
 
 ## Building
