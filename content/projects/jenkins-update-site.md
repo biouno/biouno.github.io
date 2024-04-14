@@ -6,7 +6,7 @@ aliases:
 ---
 
 {{< callout emoji="👾">}}
-The BioUno Jenkins update site is down. You can rebuild it locally, or install plug-ins manually.
+The BioUno Jenkins update site is offline. You can rebuild it locally, or install plug-ins manually.
 {{< /callout >}}
 
 The plug-ins developed for BioUno are too niche-specific and thus aren't released to 
@@ -38,7 +38,7 @@ will find the option to add a new update site. Fill the form with the following 
 			<td>ID</td><td>biouno-update-center</td>
 		</tr>
 		<tr>
-			<td>URL</td><td>http://biouno.org/jenkins-update-center/update-center.json</td>
+			<td>URL</td><td>https://biouno.org/jenkins-update-center/update-center.json</td>
 		</tr>
 		<tr>
 			<td>Note</td><td>BioUno Jenkins update center</td>
@@ -70,7 +70,7 @@ update centers manually. Download [our certificate](http://biouno.org/jenkins-up
 or execute `wget http://biouno.org/jenkins-update-center/biouno-update-center.crt`, and copy the certificate to `$JENKINS_ROOT/update-center-rootCAs/`. This directory will be located in your Jenkins root directory (likely the WEB-INF directory in your Web container or Jenkins root directory in most servers).
 
 Now go back to "Manage Jenkins" > "Plugins" > "Advanced" and click 
-"Check now". That will sync the plug-ins and you will be able to 
+"Check now". That will sync the plug-ins, and you will be able to 
 install any plug-in available in our update center.
 
 ## Generating update center
@@ -91,7 +91,7 @@ mvn -X -e exec:java -Dexec.args="-id biouno-update-center \
     -h /dev/null \
     -o /home/kinow/Development/java/biouno/jenkins-update-center/update-center.json \
     -r /home/kinow/Development/java/biouno/jenkins-update-center/release-history.json \
-    -repository http://biouno.org/jenkins-update-center/ \
+    -repository https://biouno.org/jenkins-update-center/ \
     -hpiDirectory /home/kinow/Development/java/biouno/jenkins-update-center \
     -nowiki \
     -key biouno-update-center.key \

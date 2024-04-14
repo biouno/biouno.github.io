@@ -6,7 +6,7 @@ weight: 100
 The BioUno project provides mainly [Jenkins Plug-ins]({{< ref "/jenkins-plugins.html" >}}) to the 
 community.
 
-The list below includes some sub-projects that started in BioUno that are re-used by these plug-ins 
+The list below includes some subprojects that started in BioUno that are re-used by these plug-ins 
 or to fill in gaps left by other projects.
 
 <table class="pure-table pure-table-bordered" style='width: 100%'>

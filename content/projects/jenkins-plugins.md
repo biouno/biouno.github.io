@@ -20,37 +20,37 @@ interface or by running a command in your shell.
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/pbs-plugin" title="BioUno PBS Plug-in">PBS Plug-in</a></td>
-			<td>This plug-ins lets you use Jenkins to control a <a href="http://www.adaptivecomputing.com/products/open-source/torque/">Torque PBS</a> cluster. More information about it in the <a href="https://github.com/biouno/pbs-plugin/wiki/Home">PBS Plug-in GitHub Wiki</a></td>
+			<td>This plug-in lets you use Jenkins to control a <a href="https://www.adaptivecomputing.com/products/open-source/torque/">Torque PBS</a> cluster. More information about it in the <a href="https://github.com/biouno/pbs-plugin/wiki/Home">PBS Plug-in GitHub Wiki</a></td>
 		</tr>
 		<tr>
 			<th colspan="2" style="background-color: #EEEEEE">Phylogenetics</th>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/figtree-plugin" title="BioUno FigTree Plug-in">FigTree Plug-in</a></td>
-			<td>Integrates <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> and Jenkins.</td>
+			<td>Integrates <a href="https://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/mrbayes-plugin" title="BioUno MrBayes Plug-in">MrBayes Plug-in</a></td>
-			<td>Integrates <a href="http://mrbayes.sourceforge.net/">MrBayes</a> and Jenkins.</td>
+			<td>Integrates <a href="https://mrbayes.sourceforge.net/">MrBayes</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<th colspan="2" style="background-color: #EEEEEE">Genetic Analysis</th>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/clumpp-plugin" title="BioUno CLUMPP Plug-in">CLUMPP Plug-in</a></td>
-			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/clumpp.html">CLUMPP</a> and Jenkins.</td>
+			<td>Integrates <a href="https://www.stanford.edu/group/rosenberglab/clumpp.html">CLUMPP</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/distruct-plugin" title="BioUno Distruct Plug-in">Distruct Plug-in</a></td>
-			<td>Integrates <a href="http://www.stanford.edu/group/rosenberglab/distruct.html">Distruct</a> and Jenkins.</td>
+			<td>Integrates <a href="https://www.stanford.edu/group/rosenberglab/distruct.html">Distruct</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/structure-plugin" title="BioUno Structure Plug-in">Structure Plug-in</a></td>
-			<td>Integrates <a href="http://pritch.bsd.uchicago.edu/software.html">Structure</a> and Jenkins.</td>
+			<td>Integrates <a href="https://pritch.bsd.uchicago.edu/software.html">Structure</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/biouno/structure-harvester-plugin" title="BioUno Structure Harvester Plug-in">Structure Harvester Plug-in</a></td>
-			<td>Integrates <a href="http://taylor0.biology.ucla.edu/structureHarvester/">Structure Harvester</a> and Jenkins.</td>
+			<td>Integrates <a href="https://taylor0.biology.ucla.edu/structureHarvester/">Structure Harvester</a> and Jenkins.</td>
 		</tr>
 		<tr>
 			<th colspan="2" style="background-color: #EEEEEE">Chemical Structures</th>
@@ -111,7 +111,7 @@ a brief description.
 		</tr>
 		<tr>
 			<td><a href="https://wiki.jenkins.io/display/JENKINS/Backup+Plugin">Backup Plugin</a></td>
-			<td>For creating back ups for your Jenkins instance and jobs.</td>
+			<td>For creating back-ups for your Jenkins instance and jobs.</td>
 		</tr>
 		<tr>
 			<td><a href="https://wiki.jenkins.io/display/JENKINS/Email-ext+plugin">E-mail-ext Plug-in</a></td>
