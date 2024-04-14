@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Plotting graphs and creating image galleries
 ---
 

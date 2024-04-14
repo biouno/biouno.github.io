@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Active Choices Plugin Tutorials
-url: 'tutorials/active-choices-plugin/'
+url: /tutorials/active-choices-plugin/
 ---
 
 * [Using masked passwords with the Active Choices Plug-in](using-masked-passwords-with-the-active-choices-plugin.html)

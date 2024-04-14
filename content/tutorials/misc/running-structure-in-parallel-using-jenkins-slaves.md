@@ -16,7 +16,7 @@ title: Running Structure in parallel using Jenkins slaves
 
 <div class='center'>
 <div id="videoplayer" style="display:none;">&nbsp;</div>
-<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/video2.png" id="videoimage" width="500" />
+<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/video2.png" id="videoimage" width="500" alt="Screenshot" />
 </div>
 
 <p>
@@ -26,12 +26,12 @@ title: Running Structure in parallel using Jenkins slaves
 </p>
 
 <p>
-	Now go to the main configuration page in Jenkins and add an Structure installation.
+	Now go to the main configuration page in Jenkins and add a Structure installation.
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_001.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -40,13 +40,13 @@ title: Running Structure in parallel using Jenkins slaves
 	FreeStyle job is enough to run Structure in a single machine (local or 
 	remotely). But for running Structure in parallel across many nodes, 
 	you'll need a Multi-configuration job. Give it any name. We are using 
-	the <a href="http://bodegaphylo.wikispot.org/Structure">Bodega 
+	the <a href="https://bodegaphylo.wikispot.org/Structure">Bodega 
 	tutorial on Structure</a> data as example.
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_002.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -58,7 +58,7 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_003.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -71,26 +71,26 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_004.png" alt="Screenshot">
 	</a>
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_005.png" alt="Screenshot">
 	</a>
 </p>
 
 <p>
 	If you want to gather all the output files of your execution, add 
 	a post build action to archive the artifacts of your build. And 
-	if you have other jobs to run afterwards, just add them in the 
+	if you have other jobs to run afterward, just add them in the 
 	post build actions section too.
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_006.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -104,7 +104,7 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_007.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -116,13 +116,13 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_008.png" alt="Screenshot">
 	</a>
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_009.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -134,7 +134,7 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_010.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -146,14 +146,14 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_011.png" alt="Screenshot">
 	</a>
 </p>
 
 <h3>Extra: aggregating output files into a single Zip file</h3>
 
 <p>
-	The screen shots below contain information on how to create a job 
+	The screenshots below contain information on how to create a job 
 	that can be triggered by the job you created in this tutorial to 
 	collect the output files and produce a single Zip file per build 
 	in Jenkins.
@@ -161,19 +161,19 @@ title: Running Structure in parallel using Jenkins slaves
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_012.png" alt="Screenshot">
 	</a>
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_013.png" alt="Screenshot">
 	</a>
 </p>
 
 <p class="center">
 	<a href="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
-		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png">
+		<img src="/img/tutorials/running-structure-in-parallel-using-jenkins-slaves/screenshot_structure_014.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -182,7 +182,7 @@ title: Running Structure in parallel using Jenkins slaves
 $(function() {
 	$('#videoimage').click(function() {
 		$('#videoplayer').show();
-		$('#videoplayer').append("<iframe width='500' height='315' src='http://www.youtube.com/embed/4xZh6xxiTv4' frameborder='0' allowfullscreen='allowfullscreen'></iframe>");
+		$('#videoplayer').append("<iframe width='500' height='315' src='https://www.youtube.com/embed/4xZh6xxiTv4' frameborder='0' allowfullscreen='allowfullscreen'></iframe>");
 		$('#videoimage').hide();
 	});
 });

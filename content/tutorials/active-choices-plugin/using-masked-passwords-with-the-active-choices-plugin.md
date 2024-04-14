@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Using masked passwords with the Active Choices Plug-in
 author: Bruno P. Kinoshita
 ---
@@ -18,7 +17,7 @@ through the parameters to annotate the console output. You can read the code tha
 But if you need the value from that global parameter, in one of your Active Choices parameters,
 you can still mimic what that builder is doing. Here is an example.
 
-```groovy
+```groovy {linenos=table,filename=example.groovy}
 // Assuming you have a global parameter called "build_password"
 
 import com.michelin.cio.hudson.plugins.maskpasswords.*;
@@ -39,6 +38,7 @@ varPasswordPairs.each { pair ->
 
 // use your myPassword variable after here
 ```
+
 ## Related tickets
 
 - [JENKINS-36456: Active Choices Reactive Parameter can't access Mask Passwords (Global name/password pairs)](https://issues.jenkins-ci.org/browse/JENKINS-36456)

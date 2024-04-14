@@ -6,13 +6,13 @@ title: Using the Jenkins R Plug-in
 <p>
 	The Jenkins R plug-in has been released to the Jenkins community. So
 	you can download it from Jenkins update site directly. Follow the
-	instructions <a href="{{ site.url }}/installing-plugins.html" title="Installing plug-ins">here</a> to install the plug-in.
+	instructions <a href="{{< ref installing-plugins.html >}}" title="Installing plug-ins">here</a> to install the plug-in.
 </p>
 
 <p>
 	After you've installed the plug-in, proceed by creating a FreeStyle
 	project. Now add a build step to <em>Execute R script</em>. You'll
-	need <a href="http://www.r-project.org" title="R project">R</a>
+	need <a href="https://www.r-project.org" title="R project">R</a>
 	installed, as the plug-in calls RCmd to execute the scripts.
 </p>
 
@@ -22,7 +22,7 @@ title: Using the Jenkins R Plug-in
 </p>
 
 <p>
-	We will use an example from <a href="http://www.harding.edu/fmccown/r/">http://www.harding.edu/fmccown/r/</a>,
+	We will use an example from <a href="https://www.harding.edu/fmccown/r/">http://www.harding.edu/fmccown/r/</a>,
 	that is a very introductory article describing how to plot data with
 	R. Copy any of his examples and paste in the <em>Script</em>
 	text-area.

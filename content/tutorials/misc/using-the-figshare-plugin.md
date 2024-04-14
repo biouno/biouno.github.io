@@ -5,15 +5,15 @@ title: Using the figshare Plug-in
 
 <p>
 	The figshare plug-in is available from our
-	<a href="http://biouno.org/jenkins-update-site.html">update center</a>.
-	It integrates Jenkins and <a href="http://figshare.com">figshare</a>.
+	<a href="https://biouno.org/jenkins-update-site.html">update center</a>.
+	It integrates Jenkins and <a href="https://figshare.com">figshare</a>.
 </p>
 
 <p>
 	The first thing you have to do is set up an Application in figshare to
 	allow Jenkins to talk to figshare. You can do that by clicking on your user
 	name, and going to Applications. Then give it a name and fill the other details. 
-	The Access codes tab will be automatic generated for you, but you still have
+	The Access codes tab will be generated automatically for you, but you still have
 	to change the permissions.
 </p>
 
@@ -23,7 +23,7 @@ title: Using the figshare Plug-in
 </p>
 
 <p class="center">
-	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_001.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_001.png">
+	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_001.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_001.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -35,7 +35,7 @@ title: Using the figshare Plug-in
 </p>
 
 <p class="center">
-	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_002.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_002.png">
+	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_002.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_002.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -46,18 +46,18 @@ title: Using the figshare Plug-in
 </p>
 
 <p class="center">
-	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_003.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_003.png">
+	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_003.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_003.png" alt="Screenshot">
 	</a>
 </p>
 
 <p class="center">
-	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_004.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_004.png">
+	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_004.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_004.png" alt="Screenshot">
 	</a>
 </p>
 
 <p>Now go to figshare.com and review your articles.</p>
 
 <p class="center">
-	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_005.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_005.png">
+	<a href="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_005.png"> <img src="/img/tutorials/using-the-figshare-plugin/screenshot_figshare_005.png" alt="Screenshot">
 	</a>
 </p>
