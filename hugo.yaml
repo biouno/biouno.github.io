@@ -56,6 +56,11 @@ menu:
       url: "https://github.com/biouno/"
       params:
         icon: github
+    - name: Twitter
+      weight: 5
+      url: "https://twitter.com/biouno/"
+      params:
+        icon: twitter
 
 permalinks:
   blog: '/:year/:month/:day/:title'
