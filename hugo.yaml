@@ -102,3 +102,8 @@ outputFormats:
 services:
   rss:
     limit: 42
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
