@@ -16,7 +16,7 @@ for you at _http://localhost:8080_.
 	
 <p class="center">
     <a href="/img/screenshot_jenkins_getting_started.png">
-        <img src="/img/screenshot_jenkins_getting_started.png">
+        <img src="/img/screenshot_jenkins_getting_started.png" alt="Screenshot">
     </a>
 </p>
 	
@@ -32,7 +32,7 @@ there is a book with practical exercises and detailed explanation about Jenkins.
 	
 <p class="center">
     <a href="https://github.com/wakaleo/jenkins-the-definitive-guide-book">
-        <img src="/img/jenkins-cover-small.png" title="Jenkins Book Cover">
+        <img src="/img/jenkins-cover-small.png" title="Jenkins Book Cover" alt="Jenkins Book Cover">
     </a>
 </p>
 	

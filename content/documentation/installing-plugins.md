@@ -18,7 +18,7 @@ aliases:
 
 <p class="center">
 	<a href="/img/screenshot_installing_plugins_001.png">
-		<img src="/img/screenshot_installing_plugins_001.png">
+		<img src="/img/screenshot_installing_plugins_001.png" alt="Screenshot">
 	</a>
 </p>
 

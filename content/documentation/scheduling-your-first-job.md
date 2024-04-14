@@ -8,7 +8,7 @@ aliases:
 	let's create a simple job. Go to the main screen.</p>
 
 <p class="center">
-	<a href="/img/screenshot_scheduling_001.png"> <img src="/img/screenshot_scheduling_001.png">
+	<a href="/img/screenshot_scheduling_001.png"> <img src="/img/screenshot_scheduling_001.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -18,7 +18,7 @@ aliases:
 </p>
 
 <p class="center">
-	<a href="/img/screenshot_scheduling_002.png"> <img src="/img/screenshot_scheduling_002.png">
+	<a href="/img/screenshot_scheduling_002.png"> <img src="/img/screenshot_scheduling_002.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -37,7 +37,7 @@ aliases:
 </p>
 
 <p class="center">
-	<a href="/img/screenshot_scheduling_003.png"> <img src="/img/screenshot_scheduling_003.png">
+	<a href="/img/screenshot_scheduling_003.png"> <img src="/img/screenshot_scheduling_003.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -45,7 +45,7 @@ aliases:
 	builds are being executed every 5 minutes, just like you scheduled.</p>
 
 <p class="center">
-	<a href="/img/screenshot_scheduling_004.png"> <img src="/img/screenshot_scheduling_004.png">
+	<a href="/img/screenshot_scheduling_004.png"> <img src="/img/screenshot_scheduling_004.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -53,7 +53,7 @@ aliases:
 	and who/when triggered its execution.</p>
 
 <p class="center">
-	<a href="/img/screenshot_scheduling_005.png"> <img src="/img/screenshot_scheduling_005.png">
+	<a href="/img/screenshot_scheduling_005.png"> <img src="/img/screenshot_scheduling_005.png" alt="Screenshot">
 	</a>
 </p>
 

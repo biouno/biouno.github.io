@@ -13,7 +13,7 @@ send an e-mail when the build is broken.
 
 <p class="center">
 	<a href="/img/screenshot_notifications_001.png">
-		<img src="/img/screenshot_notifications_001.png">
+		<img src="/img/screenshot_notifications_001.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -21,7 +21,7 @@ All you have to do is fill in the e-mail address.
 
 <p class="center">
 	<a href="/img/screenshot_notifications_002.png">
-		<img src="/img/screenshot_notifications_002.png">
+		<img src="/img/screenshot_notifications_002.png" alt="Screenshot">
 	</a>
 </p>
 
@@ -33,11 +33,11 @@ Not only with e-mails, there are plug-ins for sending Skype
 messages, launching USB missiles, using GTalk, Jabber, IRC, among
 other notification channels.
 
-Below is an example picture of email-ext plug-in, that lets you to
+Below is an example picture of email-ext plug-in, that lets you
 add more options when sending e-mail notifications.
 
 <p class="center">
 	<a href="/img/screenshot_notifications_003.png">
-		<img src="/img/screenshot_notifications_003.png">
+		<img src="/img/screenshot_notifications_003.png" alt="Screenshot">
 	</a>
 </p>
