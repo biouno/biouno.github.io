@@ -24,11 +24,11 @@ The project roadmap includes in no specific order:
     	</tr>
     	<tr>
     		<td>3</td>
-    		<td>Integrate <strong>Jenkins</strong> and <strong><a href="http://galaxyproject.org">Galaxy</a></strong> (we can use a lot of nice UI features from Galaxy).</td>
+    		<td>Integrate <strong>Jenkins</strong> and <strong><a href="https://galaxyproject.org">Galaxy</a></strong> (we can use a lot of nice UI features from Galaxy).</td>
     	</tr>
     	<tr>
     		<td>4</td>
-    		<td>Take a look at how <a href="http://cellprofiler.org">CellProfiler</a> handles batch processing. Jenkins can probably be used as an alternative.</td>
+    		<td>Take a look at how <a href="https://cellprofiler.org">CellProfiler</a> handles batch processing. Jenkins can probably be used as an alternative.</td>
     	</tr>
     	<tr>
     		<td>5</td>
@@ -48,7 +48,7 @@ The project roadmap includes in no specific order:
     	</tr>
     	<tr>
     		<td>9</td>
-    		<td>Investigate if creating an alternative, <strong>pure Java, <a href="http://www.drmaa.org/">DRMAA</a> API</strong>, and a PBS binding would be doable.</td>
+    		<td>Investigate if creating an alternative, <strong>pure Java, <a href="https://www.drmaa.org/">DRMAA</a> API</strong>, and a PBS binding would be doable.</td>
     	</tr>
     	<tr>
     		<td>10</td>
